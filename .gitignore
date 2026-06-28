@@ -1,0 +1,2 @@
+*.aux *.log *.out *.toc *.lof *.lot *.bbl *.blg *.idx *.ind *.ilg *.synctex.gz
+*.tmp *.swp *.bak .DS_Store Thumbs.db .vscode/ .idea/

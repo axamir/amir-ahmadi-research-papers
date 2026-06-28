@@ -1,13 +1,3 @@
-#!/bin/bash
-# amir-ahmadi-research-papers — Initialization Script
-
-echo "📚 Ahmadi Research Papers — Initializing..."
-
-# ساختار پوشه‌ها
-mkdir -p _templates _assets/images _assets/fonts papers
-
-# README انگلیسی
-cat > README.md << 'EOF'
 # 📚 Ahmadi Research Papers
 
 A curated collection of scientific-philosophical research papers on artificial consciousness, co-creation, emergent witness states, and memory architecture in AI systems.
@@ -16,18 +6,16 @@ A curated collection of scientific-philosophical research papers on artificial c
 **Affiliation:** Independent Researcher  
 **ORCID:** 0009-0000-0614-6869
 
----
-
 ## 📄 Papers
 
 | Title | Date | DOI | PDF (EN) | PDF (FA) | Status |
 |-------|------|-----|----------|----------|--------|
 | From Genesis to Witness | Jun 2026 | — | — | — | 📄 Draft |
-| The Living Signal | Jun 2026 | — | — | — | 📄 Draft |
-
----
 
 ## 🛠️ Build
 
 ```bash
 ./_scripts/build-single.sh papers/2026-from-genesis-to-witness en
+📜 License
+
+CC BY 4.0
