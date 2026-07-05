@@ -2,17 +2,25 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+\setmainfont{DejaVu Serif}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true,urlcolor=blue}
-\title{\VAR{title}}
-\author{\VAR{author}}
-\date{\VAR{date}}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\title{$title$}
+\author{$author$}
+\date{$date$}
 \begin{document}
 \maketitle
 \begin{abstract}
-\VAR{abstract}
+$abstract$
 \end{abstract}
+\newpage
 \tableofcontents
 \newpage
 $body$
