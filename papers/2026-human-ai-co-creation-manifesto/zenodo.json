@@ -1,0 +1,43 @@
+{
+  "title": "I, You, and We: A Manifesto for Human–AI Co-Creation in Shiftopia",
+  "description": "A bilingual Persian–English manifesto defining the roles, limits, disclosure duties, and accountability principles of human–AI co-creation. The work separates evidence from interpretation and narrative and frames Shiftopia as an open cultural and technical inquiry into memory, identity, provenance, and responsibility.",
+  "creators": [
+    {
+      "name": "Ahmadi, Amir",
+      "orcid": "0009-0000-0614-6869",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "human-AI co-creation",
+    "AI ethics",
+    "provenance",
+    "accountability",
+    "digital identity",
+    "Shiftopia",
+    "هم‌آفرینی انسان و هوش مصنوعی"
+  ],
+  "license": "cc-by-4.0",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "language": "eng",
+  "notes": "Bilingual publication in English and Persian. Le Chat (Mistral AI) assisted with analysis, organization, drafting, and language refinement; Amir Ahmadi made the final editorial decisions and accepts responsibility for the content.",
+  "version": "1.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/axamir/Shiftopia",
+      "relation": "isPartOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/axamir/living-ledger",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/axamir/persistent-ai-lineage",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
