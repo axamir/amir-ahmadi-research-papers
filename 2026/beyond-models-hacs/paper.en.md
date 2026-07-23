@@ -10,11 +10,11 @@
 
 # Abstract
 
-Artificial intelligence is entering a new era. Progress in AI has traditionally been measured through model capability: accuracy, scale, reasoning, and automation. However, as AI systems become integrated into human activities, a broader question emerges: how can humans and AI collaborate effectively, responsibly, and continuously?
+Artificial intelligence has traditionally been evaluated through model capability: accuracy, scale, reasoning, and automation. As AI systems become embedded in human workflows, research must expand beyond isolated model performance toward the quality of collaboration created between humans and intelligent systems.
 
 This paper introduces the Human–AI Collaborative System (HACS) framework, a proposed research direction for studying long-term collaboration between human expertise and artificial intelligence capability.
 
-HACS describes collaboration as a socio-technical system composed of:
+HACS defines collaboration as a socio-technical system composed of:
 
 - Human expertise
 - AI capability
@@ -22,19 +22,19 @@ HACS describes collaboration as a socio-technical system composed of:
 - Governance mechanisms
 - Iterative feedback
 
-The framework introduces concepts including Collaborative Intelligence, Context Continuity, Artificial Character as an architectural construct, and Collaborative Commitment.
+The framework introduces Collaborative Intelligence, Context Continuity, Artificial Character as an architectural construct, and Collaborative Commitment as design principles for reliable collaboration.
 
-These concepts do not claim that AI systems possess consciousness or human intentions. They describe design principles for creating reliable, transparent, and responsible collaborative systems.
+HACS does not claim that current AI systems possess consciousness, emotions, or human intentions. Instead, it explores how future systems can be designed to support responsible, transparent, and durable human–AI cooperation.
 
-The central hypothesis of this work is that the next frontier of AI may not only be defined by more powerful models, but by better systems of collaboration between humans and artificial intelligence.
+The central hypothesis is that the next frontier of AI may not only be defined by more capable models, but by better architectures of collaboration.
 
 ---
 
 # 1. Introduction
 
-Artificial intelligence is moving from isolated task execution toward continuous participation in human workflows, research, healthcare, education, and creative processes.
+AI is transitioning from isolated task execution toward continuous participation in research, healthcare, education, organizations, and creative processes.
 
-Traditional AI evaluation asks:
+Traditional AI asks:
 
 > How capable is the model?
 
@@ -44,7 +44,7 @@ HACS proposes an additional question:
 
 Many human activities require more than computation. They require context, experience, responsibility, adaptation, and trust.
 
-Therefore, future AI research must expand from model-centric intelligence toward collaborative intelligence.
+Therefore, future AI research should expand from model-centric intelligence toward collaborative intelligence.
 
 ---
 
@@ -52,7 +52,7 @@ Therefore, future AI research must expand from model-centric intelligence toward
 
 A Human–AI Collaborative System is defined as a socio-technical system where human expertise and artificial intelligence capabilities interact through persistent context, governance, and feedback to improve outcomes over time.
 
-The focus shifts from only evaluating the intelligence of a model toward evaluating the quality of the system created through interaction.
+The focus shifts from evaluating only the intelligence of a model toward evaluating the quality of the system created through interaction.
 
 ---
 
@@ -60,7 +60,7 @@ The focus shifts from only evaluating the intelligence of a model toward evaluat
 
 ## Human Expertise
 
-Human knowledge, experience, ethics, creativity, and responsibility remain central.
+Human knowledge, creativity, ethics, judgment, and responsibility remain central.
 
 ## AI Capability
 
@@ -68,31 +68,35 @@ AI contributes large-scale information processing, pattern recognition, analysis
 
 ## Context Continuity
 
-Memory asks: "What information exists?"
+Memory asks:
 
-Context Continuity asks: "Why does this information matter for future collaboration?"
+> What information exists?
+
+Context Continuity asks:
+
+> Why does this information matter for future collaboration?
 
 ## Governance
 
 Responsible collaboration requires transparency, accountability, limitations, and human oversight.
 
-## Collaboration Dynamics
+## Feedback and Adaptation
 
-Collaboration evolves through interaction, feedback, correction, and adaptation.
+Collaboration evolves through interaction, correction, evaluation, and improvement.
 
 ---
 
 # 4. Collaborative Intelligence
 
-Collaborative Intelligence describes the capability emerging from the interaction of human intelligence and artificial intelligence within a governed environment.
+Collaborative Intelligence describes the capability emerging from the interaction between human intelligence and artificial intelligence within a governed environment.
 
-It is not replacement of humans by machines. It is the capability created when both systems contribute their strengths.
+It is not the replacement of humans by machines. It is the capability created when both contribute their unique strengths.
 
 ---
 
 # 5. Artificial Character and Collaborative Commitment
 
-Artificial Character refers to designed consistency in AI behavior. It does not imply consciousness or emotion.
+Artificial Character refers to designed consistency in AI behavior. It describes architectural stability, not consciousness or emotion.
 
 Collaborative Commitment describes the ability of a system to preserve the purpose of cooperation, communicate limitations, and support correction over time.
 
@@ -108,7 +112,7 @@ Future HACS evaluation should consider:
 - Alignment Stability Score
 - Recovery Capability Score
 
-These measures evaluate not only task performance, but the quality and reliability of collaboration.
+These measures evaluate not only task completion, but the quality, reliability, and sustainability of collaboration.
 
 ---
 
@@ -116,7 +120,7 @@ These measures evaluate not only task performance, but the quality and reliabili
 
 ## Healthcare
 
-Healthcare demonstrates the importance of human–AI collaboration because decisions involve scientific evidence, uncertainty, ethics, and human responsibility.
+Healthcare demonstrates why collaboration matters. Medical decisions involve scientific evidence, uncertainty, ethics, communication, and human responsibility.
 
 AI should enhance medical professionals, not replace them.
 
@@ -126,19 +130,25 @@ AI may expand human ability to interpret biological signals, animal behavior, an
 
 ---
 
-# 8. Limitations and Ethics
+# 8. Methodology and Future Research
+
+HACS requires empirical validation through longitudinal studies, comparative experiments, and evaluation across domains including healthcare, education, science, and organizations.
+
+Future research should investigate how context continuity, governance, and collaborative architectures influence trust and decision quality.
+
+---
+
+# 9. Limitations and Ethics
 
 HACS does not claim artificial consciousness.
 
 It does not transfer responsibility from humans to machines.
 
-It recognizes that poorly designed AI collaboration can create overreliance and new risks.
-
-Governance remains essential.
+Poorly designed AI collaboration may create overreliance, reduced critical thinking, or new risks. Governance remains essential.
 
 ---
 
-# 9. Conclusion
+# 10. Conclusion
 
 The future of AI may not only depend on creating more capable models.
 
