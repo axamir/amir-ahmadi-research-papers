@@ -2,12 +2,16 @@ cff-version: 1.2.0
 title: "Beyond Models: Toward Enduring Human–AI Collaborative Systems"
 message: "If you use this research framework, please cite this work."
 
+type: article
+
 authors:
   - family-names: "Ahmadi"
     given-names: "Amir"
 
 version: "1.0.0"
 date-released: "2026-07-23"
+
+abstract: "A research framework introducing Human–AI Collaborative Systems (HACS) as a way to study long-term collaboration between human expertise and artificial intelligence capability through context continuity, governance, and feedback."
 
 keywords:
   - Human-AI Collaboration
