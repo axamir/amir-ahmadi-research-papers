@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Beyond Models: Toward Enduring Human–AI Collaborative Systems"
+message: "If you use this research framework, please cite this work."
+
+authors:
+  - family-names: "Ahmadi"
+    given-names: "Amir"
+
+version: "1.0.0"
+date-released: "2026-07-23"
+
+keywords:
+  - Human-AI Collaboration
+  - Collaborative Intelligence
+  - Human-Centered AI
+  - AI Governance
+  - Responsible AI
+  - Socio-Technical Systems
+  - Context Continuity
+
+license: "CC BY 4.0"
