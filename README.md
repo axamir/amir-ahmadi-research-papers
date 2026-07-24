@@ -17,7 +17,7 @@ A curated bilingual research archive exploring the evolution of human–AI relat
 
 ---
 
-# 📌 Latest Release
+# 📌 Latest Stable Release
 
 ## v1.0.0 — Beyond Models: Toward Enduring Human–AI Collaborative Systems
 
@@ -45,6 +45,44 @@ Release tag:
 
 ---
 
+# 🔄 Current Development Line
+
+## v1.1.0-dev — Living & Versioned Research
+
+Development after `v1.0.0` treats HACS as a **living, versioned research framework**.
+
+New versions are not intended to appear merely on a schedule. A new stable release should correspond to a substantive research change, such as:
+
+- documented domain-informed contributions,
+- clearer or revised concepts,
+- critique and responses,
+- case studies,
+- empirical testing,
+- stronger comparison with adjacent research,
+- or material architectural changes.
+
+The stable `v1.0.0` tag remains a historical snapshot. Work on `main` may evolve toward the next release without rewriting that prior record.
+
+A central methodological idea is that the development process can itself be documented:
+
+```text
+Interactions / domain perspectives
+            ↓
+Concept extraction and synthesis
+            ↓
+          HACS
+            ↓
+Stable versioned release
+            ↓
+Critique / testing / contribution
+            ↓
+      Subsequent release
+```
+
+This does **not** mean that every conversation is scientific evidence. Human contributions should be attributed according to their actual role: design input, practitioner perspective, domain-informed observation, conceptual contribution, or empirical evidence where a defined method supports that designation.
+
+---
+
 # Featured Research Framework
 
 ## Beyond Models: Toward Enduring Human–AI Collaborative Systems
@@ -59,7 +97,7 @@ The framework explores:
 - Trust Calibration
 - Responsible AI Governance
 
-📁 Framework release:
+📁 Framework directory:  
 `2026/beyond-models-hacs/`
 
 ---
@@ -68,7 +106,7 @@ The framework explores:
 
 | Title | Date | DOI | English | فارسی | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🚀 v1.0.0 Released |
+| Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🔄 v1.1.0-dev / v1.0.0 stable |
 | From Genesis to Witness | Jun 2026 | — | — | — | 📄 Draft |
 | Reflections and Their Owners — The Identity Crisis in the Age of Co-Creation | Jul 2026 | — | [Source](papers/2026-reflections-and-their-owners/paper.md) | [متن](papers/2026-reflections-and-their-owners/paper.fa.md) | 📝 Draft |
 | From Stamp to Alliance: Redefining AI Certification | Jul 2026 | [10.5281/zenodo.21206302](https://doi.org/10.5281/zenodo.21206302) | [Text](papers/2026-from-stamp-to-alliance/paper.en.md) | [متن](papers/2026-from-stamp-to-alliance/paper.fa.md) | ✅ Published |
