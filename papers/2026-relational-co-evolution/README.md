@@ -10,7 +10,7 @@ This directory contains the bilingual working paper:
 **Author:** Amir Ahmadi  
 **Affiliation:** Independent Researcher  
 **ORCID:** 0009-0000-0614-6869  
-**Status:** Complete working draft for scholarly review  
+**Status:** Public Working Paper  
 **Version:** 0.2.0  
 **Date:** 24 July 2026
 
@@ -28,4 +28,6 @@ This is an independent paper by Amir Ahmadi. Dr Iryna Kuksa has not reviewed, en
 
 Version 0.2.0 adds explicit methodology and limitations, strengthens in-text attribution, and defines speculative concepts as research proposals rather than established findings.
 
-No public invitation, tagging, or attribution of collaboration should occur before direct review and consent.
+This version is published for open scholarly examination, criticism, and revision. Publication does not present the framework as a settled answer.
+
+Public discussion may cite and tag the authors of referenced work for transparent scholarly dialogue, but must not imply endorsement, participation, or co-authorship.
