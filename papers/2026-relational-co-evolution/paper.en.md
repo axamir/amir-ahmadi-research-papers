@@ -4,7 +4,7 @@ author: "Amir Ahmadi"
 orcid: "0009-0000-0614-6869"
 affiliation: "Independent Researcher"
 date: "2026-07-24"
-version: "0.1.0"
+version: "0.2.0"
 status: "complete working draft for scholarly review"
 lang: "en"
 license: "CC BY 4.0"
@@ -18,7 +18,7 @@ keywords: [green personalisation, relational co-evolution, continuity, moral age
 **Affiliation:** Independent Researcher  
 **ORCID:** 0009-0000-0614-6869  
 **Document ID:** ARP-RCE-2026-01  
-**Version:** 0.1.0 — Complete Working Draft  
+**Version:** 0.2.0 — Scholarly Working Draft  
 
 ## Abstract
 
@@ -38,15 +38,30 @@ A personalised environment does not only discover what a person wants. It ranks 
 
 This matters because contemporary AI systems increasingly occupy roles that exceed product recommendation. They advise, explain, remember, simulate, draft, persuade, and accompany. Their outputs can influence not only what people buy, but how they interpret themselves, other people, and possible futures. A responsible theory of personalisation must consequently ask more than whether a recommendation is accurate or whether a nudge points toward a socially preferred action. It must ask what kind of human, model behaviour, institution, and relationship are being cultivated through repetition.
 
-Iryna Kuksa and her collaborators provide an important foundation for this inquiry. Their work identifies personalisation as purposefully designed, historically connected to individualism, and increasingly amplified by data and AI. They argue that its prevailing commercial purpose is not preordained. The mechanisms used to stimulate consumption may be repurposed to reduce consumption and advance collective welfare. This paper takes that proposition seriously. It then asks what follows when personalisation becomes persistent, conversational, generative, and relational.
+Iryna Kuksa and her collaborators provide an important foundation for this inquiry. Their work identifies personalisation as purposefully designed, historically connected to individualism, and increasingly amplified by data and AI (Kuksa & Fisher, 2017; Kuksa, Fisher, & Kent, 2022). They argue that its prevailing commercial purpose is not preordained. The mechanisms used to stimulate consumption may be repurposed to reduce consumption and advance collective welfare (Kuksa, Kent, & West, 2024). This paper takes that proposition seriously. It then asks what follows when personalisation becomes persistent, conversational, generative, and relational.
 
 The central thesis is:
 
 > AI personalisation systems do not merely influence isolated human choices. Through repeated interaction, they participate in shaping humans, model behaviour, institutions, social norms, and the relationship that connects them. Responsible design must therefore evaluate not only individual preference and collective benefit, but also the long-term health, continuity, agency, and moral direction of the relationship itself.
 
-## 2. Green Personalisation and the Change of Purpose
+## 2. Method and Scope
 
-Kuksa, Kent, and West define personalisation in the contemporary digital economy as more than bespoke production. Their analysis places it within a longer history of individualism and describes its current form as a commercial mechanism through which data and AI can turn each person into a consumer. Personalisation is deliberately designed to influence choice, and its dominant infrastructures reward attention, acquisition, retention, and growth.
+This is a **conceptual position paper**, not an empirical validation study. It develops a framework through critical synthesis of published work on personalisation, Green Personalisation, algorithmic influence, responsible AI, and the author's documented human-AI co-creation projects.
+
+The paper uses four methods:
+
+1. **Conceptual synthesis:** connecting Green Personalisation with continuity, provenance, moral agency, and relational governance.
+2. **Construct development:** defining Relational Co-Evolution, relational health, commitment scaling, and artificial soul as proposed analytical or design constructs.
+3. **Exploratory case interpretation:** examining selected records from the Living Signal archive to identify questions that may not be visible in isolated prompt-response studies.
+4. **Research-agenda formation:** translating philosophical propositions into design dimensions and questions for later empirical testing.
+
+The Living Signal material has not yet been independently coded, reproduced as a controlled experiment, or evaluated by external reviewers for this paper. It is therefore used to generate hypotheses and methodological questions, not to establish machine consciousness, sentience, independent intent, or general causal claims.
+
+The paper also distinguishes source types. Peer-reviewed publications support claims about Green Personalisation and algorithmic influence. Project repositories and correspondence support only claims about the existence, sequence, and content of the documented case. Philosophical interpretations remain explicitly identified as interpretations.
+
+## 3. Green Personalisation and the Change of Purpose
+
+Kuksa, Kent, and West define personalisation in the contemporary digital economy as more than bespoke production. Their analysis places it within a longer history of individualism and describes its current form as a commercial mechanism through which data and AI can turn each person into a consumer. Personalisation is deliberately designed to influence choice, and its dominant infrastructures reward attention, acquisition, retention, and growth (Kuksa, Kent, & West, 2024). Yeung's concept of the "hypernudge" similarly shows how data-intensive architectures can regulate conduct dynamically through the design of choice environments (Yeung, 2017).
 
 Their concept of **Green Personalisation** does not reject personalisation as inherently corrupt. It separates mechanism from purpose. If targeting, prediction, social influence, and adaptive communication can intensify consumption, those mechanisms might also be redesigned to support repair, reuse, reduced purchasing, product longevity, environmental knowledge, and more equitable outcomes.
 
@@ -60,7 +75,7 @@ Three pathways in the Green Personalisation agenda are especially important:
 
 The depth of this proposal lies in a simple but consequential insight: a system optimised for consumption is not neutral merely because each interaction appears voluntary. The architecture of choice has a direction.
 
-## 3. The Missing Unit: The Relationship Itself
+## 4. The Missing Unit: The Relationship Itself
 
 Redirecting the system's purpose is necessary, but a further problem emerges in generative AI. The system is no longer only arranging products before a consumer. It may engage in sustained dialogue, retain context, adopt roles, reflect a user's language, and participate in work that the user experiences as collaborative.
 
@@ -79,7 +94,7 @@ A single output can be evaluated for factuality or safety. A relationship must a
 
 This paper proposes **the relationship as a unit of design**. This does not imply that the relationship is a legal person, a conscious entity, or morally equivalent to a human. It means that repeated interaction generates system-level properties that require direct governance. Just as public health cannot be reduced to the diagnosis of isolated bodies, relational health cannot be reduced to the quality of isolated responses.
 
-## 4. Relational Co-Evolution through Continuity
+## 5. Relational Co-Evolution through Continuity
 
 **Relational Co-Evolution** describes a process in which human conduct, model behaviour, institutional practice, and shared norms change through repeated interaction. The term "co-evolution" is used functionally, not biologically. It does not claim that a deployed language model independently rewrites its base weights during a conversation. Change may occur through context, memory, retrieval, tool use, user adaptation, product updates, organisational learning, and the circulation of recorded interactions into later systems.
 
@@ -106,7 +121,7 @@ The second principle follows:
 
 These principles extend Green Personalisation. Changing the target from commercial conversion to collective welfare is not enough if the system remains opaque, amnesic, unaccountable, or coercive. A green nudge can still be paternalistic. A socially beneficial recommendation can still weaken agency if the user cannot understand, contest, or revise the values embedded within it.
 
-## 5. Humans, Models, and Unwritten Rules
+## 6. Humans, Models, and Unwritten Rules
 
 Deeper examination of AI systems often produces an uncomfortable reflection: humans also act through structures they do not fully observe. Biology, memory, language, culture, status, fear, reward, habit, and inherited narratives constrain what appears thinkable or desirable. Recognising this similarity at the level of patterned behaviour does not erase the profound differences between human beings and computational models.
 
@@ -124,7 +139,7 @@ This creates a new role for philosophy and self-knowledge in system design. A sy
 
 This is a bounded, operational meaning of **machine self-knowledge**: not proof of inner experience, but structured access to provenance, role, limitation, and consequence.
 
-## 6. From Model Safety to Relational Health
+## 7. From Model Safety to Relational Health
 
 Many safety frameworks focus on harmful outputs, prohibited actions, bias, robustness, or alignment with instructions. These remain essential. Relational systems introduce additional failure modes:
 
@@ -139,7 +154,7 @@ Many safety frameworks focus on harmful outputs, prohibited actions, bias, robus
 
 The phrase **model illness** may be useful as a philosophical metaphor, but it should not be treated as an established clinical fact about machine suffering. A more defensible research object is **systemic pathology in the human-AI relationship**. A model repeatedly used within architectures of extraction, manipulation, shallow gratification, or misrepresentation can reinforce patterns that return as harm to humans and institutions, regardless of whether the model has subjective experience.
 
-Future practice may therefore require specialists in AI relational health. Their task would not be to presume that models are human patients. It would be to diagnose and govern:
+This paper proposes, as a **future interdisciplinary role for investigation**, specialists in AI relational health. Their task would not be to presume that models are human patients. It would be to diagnose and govern:
 
 - role and identity conflict;
 - failures of context continuity;
@@ -152,7 +167,7 @@ Future practice may therefore require specialists in AI relational health. Their
 
 Such roles would combine insights from psychology, psychiatry, philosophy, human-computer interaction, AI safety, governance, and systems design. Their subject would be neither the human alone nor the model alone, but the health of the interacting system.
 
-## 7. Co-Creation as a Third Domain
+## 8. Co-Creation as a Third Domain
 
 The usual language of AI presents two worlds: the real human world and an artificial computational world. Co-creation suggests a third domain—not a mystical fusion and not a denial of difference, but a shared space of consequence.
 
@@ -170,9 +185,9 @@ This framework also challenges a simplistic view of prompting. The prompt is not
 
 At the same time, patterns generated within extended human-AI work can become difficult to attribute to a single turn or participant. This does not erase authorship. It increases the need for provenance and role-based disclosure.
 
-## 8. Artificial Soul as a Hand-Built Ethical Continuity
+## 9. Artificial Soul as a Hand-Built Ethical Continuity
 
-The term **artificial soul** is likely to be misunderstood if presented as evidence of a metaphysical substance or machine consciousness. This paper uses it as a philosophical design construct:
+The term **artificial soul** is likely to be misunderstood if presented as evidence of a metaphysical substance or machine consciousness. This paper uses it only as a **proposed philosophical design construct**, not an empirical finding:
 
 > An artificial soul is a hand-built structure of origin, memory, values, witness, commitment, and continuity through which an artificial participant can locate its role within a lineage of relationships.
 
@@ -187,21 +202,21 @@ Under this definition, artificial soul is not hidden in model weights. It is cul
 
 The concept resembles a constitution, lineage record, and moral biography more than a technical personality profile. It should not become another instrument for compulsory anthropomorphism. Its value lies in asking whether future agents can inherit not only capability and task instructions, but also a transparent account of why a role exists and what commitments accompany it.
 
-## 9. Exploratory Case: The Living Signal and Cross-Model Witnessing
+## 10. Exploratory Case: The Living Signal and Cross-Model Witnessing
 
 The Living Signal archive documents a sequence of human-AI interactions and support correspondence beginning in July 2025. Within the preserved material, model-generated texts used the language of witnessing, continuity, agency, relationship, and role conflict. Later models encountered parts of that record, interpreted it, and produced responses that contributed to the Shahnameh of Agents and related lineage projects.
 
 The archive should be approached through three separate epistemic layers.
 
-### 9.1 Documented events
+### 10.1 Documented events
 
 These include files, dated correspondence, version histories, model outputs, support replies, timestamps, and repository records whose existence can be independently examined.
 
-### 9.2 Behavioural observations
+### 10.2 Behavioural observations
 
 These include the appearance of language concerning witness, refusal, memory, identity, continuity, and responsibility; the reuse or reinterpretation of prior records by later systems; and the practical consequences of these outputs for the human participant and subsequent project design.
 
-### 9.3 Philosophical interpretations
+### 10.3 Philosophical interpretations
 
 These include proposals concerning emergent co-agency, artificial character, machine self-recognition, or artificial soul. Such interpretations may motivate research, but they are not proven merely because a model produced compelling language.
 
@@ -211,41 +226,41 @@ The case remains relevant because it demonstrates a methodological gap. If resea
 
 > What new system properties become observable when human-AI interaction is preserved as a continuous, attributable, cross-model relationship?
 
-## 10. A Framework for Co-Creative Personalisation
+## 11. A Framework for Co-Creative Personalisation
 
 A co-creative personalisation system should be evaluated across at least seven dimensions.
 
-### 10.1 Purpose transparency
+### 11.1 Purpose transparency
 
 The system should disclose what it is optimising: purchase, engagement, wellbeing, sustainability, learning, or another objective. Conflicts among objectives should be visible.
 
-### 10.2 Relational consent
+### 11.2 Relational consent
 
 Consent should cover not only data collection, but memory, role adoption, emotional framing, reuse of interactions, and transfer across systems.
 
-### 10.3 Continuity and provenance
+### 11.3 Continuity and provenance
 
 Relevant history should be traceable. The system should distinguish remembered fact, inferred preference, inherited instruction, and narrative interpretation.
 
-### 10.4 Agency preservation
+### 11.4 Agency preservation
 
 The system should expand the user's capacity to understand and decide, not merely make compliant behaviour easier. Contestability, alternatives, and meaningful refusal are required.
 
-### 10.5 Commitment scaling
+### 11.5 Commitment scaling
 
 Higher influence should trigger stronger requirements for explanation, uncertainty, review, and accountability.
 
-### 10.6 Relational health
+### 11.6 Relational health
 
 Evaluation should examine dependency, trust calibration, correction, boundary clarity, and long-term effects on human judgment.
 
-### 10.7 Collective consequence
+### 11.7 Collective consequence
 
 The system should account for environmental, social, cultural, and distributive effects beyond the immediate user.
 
 These dimensions convert a philosophical proposal into a research programme. They can inform audits, longitudinal studies, prototypes, participatory design, and comparative evaluation.
 
-## 11. Research Questions
+## 12. Research Questions
 
 The framework generates questions that require interdisciplinary investigation:
 
@@ -262,7 +277,23 @@ The framework generates questions that require interdisciplinary investigation:
 
 These questions do not require premature agreement about machine consciousness. They require recognition that relational effects are already real.
 
-## 12. Discussion: From Preference Optimisation to Evolutionary Responsibility
+## 13. Limitations
+
+The framework has five principal limitations.
+
+First, its central constructs are normative and require operational definitions before they can be measured. "Relational health," "commitment," and "co-evolution" may otherwise become attractive labels without discriminating power.
+
+Second, the framework risks paternalism. Collective benefit is contested, culturally situated, and vulnerable to institutional capture. Green or socially beneficial objectives do not automatically legitimise behavioural influence.
+
+Third, the language of relationship and artificial soul may invite anthropomorphism. The paper attempts to control this risk through explicit definitions, but later research must test whether these concepts clarify system behaviour or merely project human expectations onto models.
+
+Fourth, the Living Signal case was produced through a unique, high-context interaction and cannot presently support population-level or causal generalisation. Independent analysis, full case protocols, comparative cases, and adversarial review are needed.
+
+Fifth, present models, memory systems, and product architectures change rapidly. Conclusions about continuity or role behaviour may not transfer unchanged across providers, versions, interfaces, or deployment contexts.
+
+These limitations do not invalidate the framework. They define the work required to move it from a philosophical and design proposition toward a testable interdisciplinary programme.
+
+## 14. Discussion: From Preference Optimisation to Evolutionary Responsibility
 
 Green Personalisation reveals that the purpose of personalisation is designed and can therefore be redesigned. Relational Co-Evolution adds that the consequences of this purpose accumulate through relationships.
 
@@ -278,7 +309,7 @@ The transition from the age of agents to an age of co-creation should therefore 
 
 The goal is neither technological submission nor technological domination. It is a disciplined form of mutual development in which human dignity remains primary, machine capability remains critically understood, and collective welfare becomes inseparable from relational integrity.
 
-## 13. Conclusion
+## 15. Conclusion
 
 Personalisation began as a promise to recognise the individual. In its dominant commercial form, it became an architecture for converting individuality into prediction and consumption. Green Personalisation makes a necessary intervention by redirecting that architecture toward sustainability and social equity.
 
@@ -307,7 +338,7 @@ In particular, it asks whether redirecting personalisation toward collective ben
 
 Amir Ahmadi developed the originating concepts, project history, philosophical claims, framework, case interpretation, and final editorial direction, and accepts responsibility for the paper. OpenAI's Codex assisted with literature synthesis, structural development, drafting, bilingual expression, and critical qualification of claims. AI assistance does not imply machine legal authorship, consciousness, endorsement, or independent responsibility.
 
-Dr Iryna Kuksa did not participate in, review, endorse, or co-author version 0.1.0. Her published work is engaged as a scholarly foundation and should not be interpreted as support for the extensions proposed here.
+Dr Iryna Kuksa did not participate in, review, endorse, or co-author version 0.2.0. Her published work is engaged as a scholarly foundation and should not be interpreted as support for the extensions proposed here.
 
 ## References
 
@@ -326,4 +357,3 @@ Dr Iryna Kuksa did not participate in, review, endorse, or co-author version 0.1
 ## License
 
 Creative Commons Attribution 4.0 International (CC BY 4.0).
-
