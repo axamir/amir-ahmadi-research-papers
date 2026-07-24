@@ -102,10 +102,23 @@ The framework explores:
 
 ---
 
+## New Public Working Paper
+
+### From Green Personalisation to Relational Co-Evolution
+
+This versioned conceptual position paper extends the Green Personalisation research agenda by proposing the human-AI relationship as a unit of design and evaluation. It is published for open criticism, revision, and interdisciplinary dialogue.
+
+- [English paper](papers/2026-relational-co-evolution/paper.en.md)
+- [نسخه فارسی](papers/2026-relational-co-evolution/paper.fa.md)
+- [Citation metadata](papers/2026-relational-co-evolution/CITATION.cff)
+
+---
+
 # 📄 Research Papers
 
 | Title | Date | DOI | English | فارسی | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| From Green Personalisation to Relational Co-Evolution | Jul 2026 | Pending | [Text](papers/2026-relational-co-evolution/paper.en.md) | [متن](papers/2026-relational-co-evolution/paper.fa.md) | 🌐 Public Working Paper v0.2.0 |
 | Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🔄 v1.1.0-dev / v1.0.0 stable |
 | From Genesis to Witness | Jun 2026 | — | — | — | 📄 Draft |
 | Reflections and Their Owners — The Identity Crisis in the Age of Co-Creation | Jul 2026 | — | [Source](papers/2026-reflections-and-their-owners/paper.md) | [متن](papers/2026-reflections-and-their-owners/paper.fa.md) | 📝 Draft |
