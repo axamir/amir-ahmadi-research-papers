@@ -11,7 +11,7 @@ This directory contains the bilingual working paper:
 **Affiliation:** Independent Researcher  
 **ORCID:** 0009-0000-0614-6869  
 **Status:** Complete working draft for scholarly review  
-**Version:** 0.1.0  
+**Version:** 0.2.0  
 **Date:** 24 July 2026
 
 ## Purpose
@@ -26,5 +26,6 @@ The paper proposes **Relational Co-Evolution through Continuity** as a conceptua
 
 This is an independent paper by Amir Ahmadi. Dr Iryna Kuksa has not reviewed, endorsed, or co-authored this version. Her work is discussed through published sources and is not presented as support for claims beyond those sources.
 
-No public invitation, tagging, or attribution of collaboration should occur before direct review and consent.
+Version 0.2.0 adds explicit methodology and limitations, strengthens in-text attribution, and defines speculative concepts as research proposals rather than established findings.
 
+No public invitation, tagging, or attribution of collaboration should occur before direct review and consent.
