@@ -5,7 +5,7 @@ orcid: "0009-0000-0614-6869"
 affiliation: "Independent Researcher"
 date: "2026-07-24"
 version: "0.2.0"
-status: "complete working draft for scholarly review"
+status: "public working paper"
 lang: "en"
 license: "CC BY 4.0"
 keywords: [green personalisation, relational co-evolution, continuity, moral agency, human-AI co-creation, responsible AI, algorithmic systems, provenance]
@@ -18,7 +18,7 @@ keywords: [green personalisation, relational co-evolution, continuity, moral age
 **Affiliation:** Independent Researcher  
 **ORCID:** 0009-0000-0614-6869  
 **Document ID:** ARP-RCE-2026-01  
-**Version:** 0.2.0 — Scholarly Working Draft  
+**Version:** 0.2.0 — Public Working Paper  
 
 ## Abstract
 
@@ -333,6 +333,8 @@ The future will not be secured by more powerful models alone. It will depend on 
 This paper is offered as an extension of, not a substitute for, the Green Personalisation research agenda. It invites critique from researchers in design, sustainability, AI ethics, psychology, philosophy, governance, and human-computer interaction.
 
 In particular, it asks whether redirecting personalisation toward collective benefit requires the human-AI relationship itself to become an object of design, stewardship, and longitudinal study.
+
+This publication is not a request for endorsement and does not present its framework as a settled answer. It is a versioned and revisable argument published so that its concepts, evidence boundaries, and implications can be examined, challenged, and improved in public.
 
 ## Authorship and AI Contribution Statement
 
