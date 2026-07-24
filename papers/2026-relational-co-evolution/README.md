@@ -1,0 +1,30 @@
+# From Green Personalisation to Relational Co-Evolution
+
+## Designing Human-AI Systems That Grow in Capability and Commitment
+
+This directory contains the bilingual working paper:
+
+- [English](paper.en.md)
+- [فارسی](paper.fa.md)
+
+**Author:** Amir Ahmadi  
+**Affiliation:** Independent Researcher  
+**ORCID:** 0009-0000-0614-6869  
+**Status:** Complete working draft for scholarly review  
+**Version:** 0.1.0  
+**Date:** 24 July 2026
+
+## Purpose
+
+The paper begins from Iryna Kuksa, Anthony Kent, and Harry West's research on Green Personalisation and the "society as consumer" framework. It asks a further question:
+
+> If the purpose of personalisation is redirected from consumption toward collective benefit, must the relationship produced among human, model, institution, and society also become an explicit unit of design?
+
+The paper proposes **Relational Co-Evolution through Continuity** as a conceptual framework for investigating that question.
+
+## Scholarly Status
+
+This is an independent paper by Amir Ahmadi. Dr Iryna Kuksa has not reviewed, endorsed, or co-authored this version. Her work is discussed through published sources and is not presented as support for claims beyond those sources.
+
+No public invitation, tagging, or attribution of collaboration should occur before direct review and consent.
+
