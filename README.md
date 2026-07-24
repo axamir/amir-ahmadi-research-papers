@@ -17,6 +17,34 @@ A curated bilingual research archive exploring the evolution of human–AI relat
 
 ---
 
+# 📌 Latest Release
+
+## v1.0.0 — Beyond Models: Toward Enduring Human–AI Collaborative Systems
+
+**Initial Research Release**
+
+The first public release of the **Human–AI Collaborative System (HACS)** framework.
+
+This release explores a transition from model-centric artificial intelligence toward enduring human–AI collaborative systems, focusing on long-term interaction, context continuity, human agency, and responsible governance.
+
+Included:
+
+- Research paper (English)
+- Research paper (Persian)
+- HACS conceptual framework
+- Architecture documentation
+- Evaluation framework
+- Governance principles
+- Research diagrams
+- Bibliography
+- Citation metadata
+
+Release tag:
+
+`v1.0.0`
+
+---
+
 # Featured Research Framework
 
 ## Beyond Models: Toward Enduring Human–AI Collaborative Systems
@@ -40,7 +68,7 @@ The framework explores:
 
 | Title | Date | DOI | English | فارسی | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🚀 Research Release |
+| Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🚀 v1.0.0 Released |
 | From Genesis to Witness | Jun 2026 | — | — | — | 📄 Draft |
 | Reflections and Their Owners — The Identity Crisis in the Age of Co-Creation | Jul 2026 | — | [Source](papers/2026-reflections-and-their-owners/paper.md) | [متن](papers/2026-reflections-and-their-owners/paper.fa.md) | 📝 Draft |
 | From Stamp to Alliance: Redefining AI Certification | Jul 2026 | [10.5281/zenodo.21206302](https://doi.org/10.5281/zenodo.21206302) | [Text](papers/2026-from-stamp-to-alliance/paper.en.md) | [متن](papers/2026-from-stamp-to-alliance/paper.fa.md) | ✅ Published |
