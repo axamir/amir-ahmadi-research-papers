@@ -3,7 +3,8 @@
 ## A Research Framework for the Future of Human–AI Collaboration
 
 **Author:** Amir Ahmadi  
-**Version:** 1.0.0 Research Release  
+**Development line:** 1.1.0-dev  
+**Latest stable release:** v1.0.0  
 **Year:** 2026
 
 ---
@@ -148,7 +149,37 @@ Poorly designed AI collaboration may create overreliance, reduced critical think
 
 ---
 
-# 10. Conclusion
+# 10. Living Research and Versioned Development
+
+This paper is maintained as a **versioned research artifact**, not as a claim of conceptual finality.
+
+The stable `v1.0.0` release records the first public formulation of HACS. Subsequent versions are intended to evolve only when substantive research changes occur: new domain-informed contributions, clearer definitions, documented critique, empirical findings, stronger comparisons with adjacent fields, or changes to the architecture itself.
+
+The development path is therefore treated as part of the research record:
+
+```text
+Observed interactions and domain perspectives
+                    ↓
+        Concept extraction and synthesis
+                    ↓
+               HACS framework
+                    ↓
+          Stable versioned release
+                    ↓
+      Critique, testing, and contribution
+                    ↓
+             Subsequent release
+```
+
+In this sense, HACS has a reflexive property: **a framework about enduring human–AI collaboration is itself being developed through an observable, versioned process of human–AI collaboration.**
+
+This does not make every conversation or personal observation empirical evidence. Contributions from collaborators, practitioners, and domain experts should be identified according to their actual role—for example as design input, practitioner perspective, domain-informed observation, conceptual contribution, or, where appropriate, empirical evidence supported by a defined method.
+
+Version history is therefore intended to preserve both continuity and accountability. Earlier releases remain stable historical snapshots rather than being retrospectively rewritten.
+
+---
+
+# 11. Conclusion
 
 The future of AI may not only depend on creating more capable models.
 
