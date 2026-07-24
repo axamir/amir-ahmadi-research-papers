@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "From Green Personalisation to Relational Co-Evolution: Designing Human-AI Systems That Grow in Capability and Commitment"
+message: "If you use or discuss this public working paper, please cite this version."
+type: article
+authors:
+  - family-names: "Ahmadi"
+    given-names: "Amir"
+    orcid: "https://orcid.org/0009-0000-0614-6869"
+version: "0.2.0"
+date-released: "2026-07-24"
+abstract: "A conceptual position paper proposing Relational Co-Evolution through Continuity as an extension of Green Personalisation, with the human-AI relationship treated as a unit of design and evaluation."
+keywords:
+  - Green Personalisation
+  - Relational Co-Evolution
+  - Human-AI Co-Creation
+  - Continuity
+  - Moral Agency
+  - Responsible AI
+  - Provenance
+license: "CC-BY-4.0"
+repository-code: "https://github.com/axamir/amir-ahmadi-research-papers"
