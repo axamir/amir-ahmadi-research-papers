@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Beyond Intelligence: From Artificial Capability to Human-AI Co-Creation"
+message: "If you use this work, please cite it as a research artifact."
+type: article
+
+authors:
+  - family-names: "Ahmadi"
+    given-names: "Amir"
+
+abstract: >
+  A conceptual framework exploring the evolution of artificial intelligence
+  beyond capability toward continuity, agency, governance, and human-AI
+  co-creation.
+
+keywords:
+  - Artificial Intelligence
+  - Human-AI Collaboration
+  - AI Governance
+  - Agentic AI
+  - Intelligence Architecture
+  - Co-Creation
+
+version: "1.0"
+date-released: "2026-08-03"
+
+license: "CC BY 4.0"
+
+repository-code: "https://github.com/axamir/amir-ahmadi-research-papers"
