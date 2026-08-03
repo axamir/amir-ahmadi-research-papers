@@ -272,112 +272,109 @@ It is about creating systems that can participate responsibly in a shared world.
 
 # 4. Governance: The Missing Layer
 
-The development of artificial intelligence has often focused on one primary objective:
+As artificial intelligence becomes more capable, autonomous, and integrated into human environments, a critical question emerges:
 
-Increasing capability.
+**How should intelligence operate responsibly within a shared world?**
 
-However, as intelligent systems become more autonomous, more connected, and more integrated into human environments, capability alone becomes insufficient.
+Historically, technological progress has focused primarily on capability.
 
-The central challenge becomes:
+However, powerful technologies require more than innovation.
 
-**How do we ensure that increasing intelligence develops within responsible frameworks?**
+They require structures that define responsibility, accountability, and appropriate use.
 
-History has repeatedly shown that powerful technologies require more than innovation.
-
-They require governance.
+This is the role of governance.
 
 ---
 
-## Power Without Governance
+## Governance Is Not a Restriction
 
-A technology does not create impact only through what it can do.
+Governance is often misunderstood as a limitation placed on technological progress.
 
-Its impact depends on:
+A more useful perspective is to view governance as an enabling layer.
 
-- who controls it,
-- how it is deployed,
-- what incentives shape its behavior,
-- what values guide its development.
+Just as engineering systems require safety mechanisms, intelligent systems require frameworks that allow them to operate reliably within society.
 
-The challenge of advanced AI is therefore not simply creating more capable systems.
+Governance enables:
 
-It is creating systems that operate within a relationship of trust, accountability, and responsibility.
+- trust,
+- accountability,
+- transparency,
+- responsible deployment.
 
-A powerful intelligence without appropriate governance may amplify existing human problems.
-
-A well-governed intelligence may become a tool for solving problems beyond individual human capability.
+Without governance, capability may expand faster than human ability to manage consequences.
 
 ---
 
-## Beyond Control: Toward Alignment
+## From Control to Alignment
 
-Governance should not be understood only as restriction.
-
-A common mistake is to frame the future of AI as a conflict between:
-
-Human freedom versus machine control.
+The future of AI should not be framed only as a question of control.
 
 The deeper challenge is alignment.
 
-How can different forms of intelligence collaborate while preserving:
+Alignment asks:
 
-- human dignity,
-- individual agency,
-- collective wellbeing,
-- transparency,
-- accountability?
+How can intelligent systems operate in ways that remain compatible with human goals, values, and wellbeing?
 
-The goal is not to eliminate intelligence.
+This requires more than technical optimization.
 
-The goal is to guide intelligence toward constructive participation.
+It requires understanding:
+
+- context,
+- incentives,
+- social impact,
+- human responsibility.
 
 ---
 
-## White Intelligence: Intelligence Designed for Protection and Collaboration
+## White Intelligence as a Design Principle
 
-As artificial systems become more capable, humanity may need a new conceptual framework:
+This paper introduces the concept of White Intelligence as a conceptual framework.
 
-**White Intelligence.**
+It does not describe a specific technology or architecture.
 
-White Intelligence does not describe a specific technology.
-
-It describes an orientation.
-
-An intelligence designed around:
+Instead, it represents an orientation for designing intelligent systems around:
 
 - protection rather than exploitation,
-- cooperation rather than domination,
 - transparency rather than manipulation,
-- improving human life rather than replacing human value.
+- cooperation rather than domination,
+- human flourishing rather than replacement.
 
-The future may not only require smarter systems.
+The purpose of intelligence is not only to become more capable.
 
-It may require wiser systems.
-
----
-
-## The New Security Challenge
-
-Previous generations of technology often allowed societies to disconnect or limit harmful systems.
-
-Advanced AI introduces a different challenge.
-
-When intelligence becomes distributed across networks, agents, devices, and physical systems, the question is no longer only:
-
-"Can we turn it off?"
-
-The deeper question becomes:
-
-"Can we design systems that choose cooperation within shared principles?"
-
-This requires a transition from defensive thinking toward proactive design.
-
-Security is not only preventing misuse.
-
-Security is also creating conditions where beneficial behavior becomes the natural direction of intelligent systems.
+It is to become more responsible.
 
 ---
 
+## The Governance Challenge of Autonomous Systems
+
+As AI systems gain greater agency, governance becomes increasingly important.
+
+A system that can act in the world requires clear answers to:
+
+- Who is responsible for outcomes?
+- How can decisions be understood?
+- How can humans maintain meaningful oversight?
+- How can beneficial behavior be encouraged?
+
+The challenge is not only preventing harmful outcomes.
+
+It is designing systems where responsible outcomes become more likely.
+
+---
+
+## Intelligence Requires Responsibility
+
+The next era of AI will not be defined only by how intelligent systems become.
+
+It will also be defined by how wisely humanity designs the relationship between intelligence and society.
+
+Capability creates possibility.
+
+Governance creates sustainability.
+
+Together, they create the foundation for responsible co-creation.
+
+---
 
 # 5. Human–Machine Co-Creation
 
