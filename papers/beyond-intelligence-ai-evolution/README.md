@@ -3,105 +3,139 @@
 ## The Missing Chapter of AI Evolution:
 ## Continuity, Governance, and Human–Machine Co-Creation
 
-**Research Position Paper — v0.1**
+**Research Position Paper — v0.2**
 
 **Author:** Amir Ahmadi  
-**Research Focus:** AI & Verifiable Systems  
-**Topics:** Persistent Intelligence, AI Governance, Human–AI Co-Creation
+**Research Focus:** AI & Verifiable Systems
 
 ---
 
-## Abstract
+## Overview
 
-The evolution of Artificial Intelligence has often been measured by increasing capability.
+Artificial Intelligence has traditionally been measured by capability:
 
-From symbolic reasoning systems to machine learning, deep learning, and generative AI, each generation has expanded what machines can accomplish.
+How much can a system calculate?
+How much information can it process?
+How complex can its outputs become?
 
-However, capability alone may not define the next era of intelligence.
+This paper explores a deeper question:
 
-The next fundamental challenge may not simply be creating systems that process more information or produce better outputs.
+> What happens when artificial intelligence moves beyond capability and enters a future of continuity, agency, governance, and collaboration?
 
-It may be understanding what happens when artificial systems develop continuity.
+The central argument is that the next evolution of AI may not be defined only by more powerful models.
 
-Human intelligence is shaped not only by information processing, but by memory, experience, identity, reflection, values, and meaning accumulated over time.
-
-As AI moves toward autonomous agents, embodied systems, robotics, neural interfaces, and deeper integration with human environments, humanity faces a fundamental question:
-
-**Are we only creating more powerful tools, or are we beginning to design new forms of intelligence and new models of collaboration?**
-
-This paper explores a possible next chapter of AI evolution: the transition from intelligence as capability toward intelligence as continuity, responsibility, and co-creation.
+It may be defined by the design of meaningful relationships between humans and intelligent systems.
 
 ---
 
-## Research Question
+## Core Framework
 
-What happens when artificial intelligence moves beyond isolated capability and enters a state of continuity, interaction, and long-term collaboration with humans?
+This paper proposes a conceptual architecture:
 
----
+Capability
+↓
+Context
+↓
+Continuity
+↓
+Agency
+↓
+Governance
+↓
+Co-Creation
 
-## Core Thesis
-
-The next evolution of AI will not be defined only by:
-
-- larger models
-- more parameters
-- faster computation
-- better outputs
-
-It may be defined by:
-
-- continuity
-- context
-- trust
-- governance
-- responsibility
-- meaningful collaboration
+Each layer represents a deeper stage in the relationship between intelligence and the world.
 
 ---
 
-## Paper Structure
+## Key Concepts
 
-### 1. The Capability Paradigm
-A review of how AI development has historically focused on increasing machine capability.
+### Artificial Continuity
 
-### 2. The Missing Dimension: Continuity
-Exploring why intelligence requires more than computation and information processing.
+Exploring how future intelligent systems may move beyond isolated interactions toward long-term contextual relationships.
 
-### 3. From Models to Persistent Intelligence
-Examining the transition from isolated AI interactions toward systems with long-term context.
+### Human–Machine Co-Creation
 
-### 4. Intelligence Beyond the Screen
-Exploring embodied AI, robotics, neural interfaces, and physical-world integration.
+Moving beyond the replacement narrative toward collaborative intelligence.
 
-### 5. Governance as the Next Challenge
-Understanding why future AI requires frameworks beyond technical capability.
+### White Intelligence
 
-### 6. Human–Machine Co-Creation
-Moving beyond humans versus machines toward collaborative intelligence.
+A conceptual framework describing intelligence designed around:
+
+- protection,
+- transparency,
+- responsibility,
+- human flourishing.
+
+### Intelligence, Agency, and Autonomy
+
+A distinction between:
+
+- the ability to understand,
+- the ability to act,
+- the ability to operate independently.
+
+---
+
+## Research Sections
+
+1. The Capability Paradigm  
+2. The Missing Dimension: Continuity  
+3. When Intelligence Leaves the Screen  
+4. Governance: The Missing Layer  
+5. Human–Machine Co-Creation  
+6. Beyond Human vs Machine  
+7. Intelligence, Agency, and Autonomy  
+8. The Human Layer  
+9. Real-World Applications  
+10. Limitations and Open Questions  
+11. A New Architecture of Intelligence  
+
+---
+
+## Documents
+
+- [Main Paper](./paper-en.md)
+- [Author's Note](./authors-note.md)
+- [References](./references.md)
+- [Architecture Figure](./figures/intelligence-architecture.md)
 
 ---
 
 ## Status
 
-Current version:
+Current Version:
 
-**v0.1 — Initial Research Draft**
+**v0.2 — Research Refinement Draft**
 
-This paper is an evolving research document. Future versions will expand theoretical frameworks, examples, references, and practical implications.
+The document is an evolving research artifact. Future versions will include:
 
----
-
-## Repository
-
-Part of:
-
-**Amir Ahmadi Research Papers**
-
-Research artifacts exploring Artificial Intelligence, human systems, and future models of collaboration.
+- expanded academic references,
+- visual models,
+- deeper case studies,
+- multilingual editions.
 
 ---
 
-## License
+## Suggested Citation
 
-Draft research material.  
-All rights reserved by the author unless otherwise stated.
+Ahmadi, Amir.  
+"Beyond Intelligence: The Missing Chapter of AI Evolution — Continuity, Governance, and Human–Machine Co-Creation."  
+Amir Ahmadi Research Papers, 2026.
+
+---
+
+## Research Direction
+
+This work explores the intersection of:
+
+- Artificial Intelligence
+- Human–Computer Interaction
+- AI Governance
+- Autonomous Systems
+- Future Models of Collaboration
+
+The goal is not to predict one future.
+
+The goal is to develop better questions for building one.
+
