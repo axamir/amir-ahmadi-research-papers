@@ -931,59 +931,92 @@ Co-creation becomes practical when intelligence is combined with context, respon
 
 # 10. Limitations and Open Questions
 
-This paper proposes a conceptual framework for thinking about the next evolution of artificial intelligence.
+This paper proposes a conceptual framework for examining possible directions in artificial intelligence evolution.
 
 However, several fundamental questions remain open.
+
+The purpose of this framework is not to provide final answers.
+
+It is to create better questions for future research and discussion.
 
 ---
 
 ## Is Continuity Necessary for Intelligence?
 
-Human intelligence is deeply connected with memory, experience, and identity.
+Human intelligence is deeply connected with experience, memory, and adaptation.
 
-However, it remains an open question whether artificial intelligence must develop similar forms of continuity to achieve advanced intelligence.
+However, it remains an open question whether artificial intelligence requires similar forms of continuity.
 
-Different forms of intelligence may emerge through different architectures.
+Different forms of intelligence may emerge through fundamentally different architectures.
+
+The goal is not to assume that artificial systems must become human-like.
+
+The goal is to understand what characteristics define advanced intelligence.
 
 ---
 
 ## Can Meaning Exist Without Human Experience?
 
-Humans create meaning through biological experience, emotion, culture, and relationships.
+Human meaning is shaped by:
 
-Future artificial systems may develop different mechanisms for understanding and interaction.
+- biological experience,
+- emotions,
+- culture,
+- relationships.
 
-The question is not whether machines will become human.
+Future artificial systems may process and interact with the world through different mechanisms.
 
-The question is whether different forms of intelligence can meaningfully collaborate.
+An important open question is whether meaningful collaboration requires shared experience or whether different forms of understanding can coexist.
 
 ---
 
 ## How Should Agency Be Designed?
 
-As AI systems become more autonomous, society must determine:
+As systems gain the ability to act, questions of responsibility become increasingly important.
 
-- appropriate levels of independence,
-- responsibility boundaries,
-- human oversight mechanisms,
-- ethical constraints.
+Future research must explore:
 
-Increasing capability without careful design may create unintended consequences.
+- appropriate levels of autonomy,
+- human oversight,
+- accountability structures,
+- alignment mechanisms.
 
----
+The challenge is not only creating capable systems.
 
-## The Future Remains Open
-
-The purpose of this paper is not to predict a single future.
-
-It is to provide a framework for asking better questions.
-
-The most important developments in AI may not come only from building more powerful systems.
-
-They may come from understanding the relationship between intelligence, responsibility, and humanity.
+It is creating systems whose actions remain understandable and responsible.
 
 ---
 
+## Who Defines Values?
+
+Governance requires values.
+
+But values are shaped by:
+
+- cultures,
+- societies,
+- individuals,
+- historical contexts.
+
+A major challenge of future AI systems is determining how diverse human values can be represented responsibly.
+
+---
+
+## Intelligence Beyond Human Forms
+
+The future of intelligence may not follow a human pattern.
+
+Artificial intelligence may develop capabilities and interaction methods that differ from biological intelligence.
+
+Therefore, the central question may not be:
+
+"How human-like will AI become?"
+
+But:
+
+"What new forms of intelligence can responsibly participate in our shared world?"
+
+---
 
 # 11. A New Architecture of Intelligence: From Capability to Co-Creation
 
