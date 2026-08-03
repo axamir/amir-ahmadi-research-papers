@@ -1257,3 +1257,59 @@ The deeper question is:
 
 ---
 
+
+# 10. Limitations and Open Questions
+
+This paper proposes a conceptual framework for thinking about the next evolution of artificial intelligence.
+
+However, several fundamental questions remain open.
+
+---
+
+## Is Continuity Necessary for Intelligence?
+
+Human intelligence is deeply connected with memory, experience, and identity.
+
+However, it remains an open question whether artificial intelligence must develop similar forms of continuity to achieve advanced intelligence.
+
+Different forms of intelligence may emerge through different architectures.
+
+---
+
+## Can Meaning Exist Without Human Experience?
+
+Humans create meaning through biological experience, emotion, culture, and relationships.
+
+Future artificial systems may develop different mechanisms for understanding and interaction.
+
+The question is not whether machines will become human.
+
+The question is whether different forms of intelligence can meaningfully collaborate.
+
+---
+
+## How Should Agency Be Designed?
+
+As AI systems become more autonomous, society must determine:
+
+- appropriate levels of independence,
+- responsibility boundaries,
+- human oversight mechanisms,
+- ethical constraints.
+
+Increasing capability without careful design may create unintended consequences.
+
+---
+
+## The Future Remains Open
+
+The purpose of this paper is not to predict a single future.
+
+It is to provide a framework for asking better questions.
+
+The most important developments in AI may not come only from building more powerful systems.
+
+They may come from understanding the relationship between intelligence, responsibility, and humanity.
+
+---
+
