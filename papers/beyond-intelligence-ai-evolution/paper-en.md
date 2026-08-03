@@ -1475,3 +1475,23 @@ The future of AI may therefore depend not only on building smarter systems, but 
 
 ---
 
+
+# Research Position
+
+This paper proposes that the future evolution of artificial intelligence should not be evaluated only by increasing capability.
+
+Instead, it suggests examining AI development through a broader framework involving:
+
+- capability,
+- context,
+- continuity,
+- agency,
+- governance,
+- co-creation.
+
+This framework does not claim that artificial systems will become human-like.
+
+Rather, it explores how different forms of intelligence may interact within shared environments.
+
+---
+
