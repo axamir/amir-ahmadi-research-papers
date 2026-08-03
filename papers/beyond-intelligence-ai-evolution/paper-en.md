@@ -181,90 +181,94 @@ Exploring continuity may provide a new framework for understanding the future re
 
 # 3. When Intelligence Leaves the Screen
 
-For many years, artificial intelligence has existed primarily within digital environments.
+For many years, artificial intelligence has primarily existed within digital environments.
 
-Models receive information.
-Models process information.
-Models generate outputs.
+Systems received inputs, processed information, and generated outputs through interfaces such as text, images, and software applications.
 
-The interaction between humans and AI has largely occurred through screens, interfaces, and text.
+This interaction model has created extraordinary capabilities.
 
-However, this boundary is beginning to change.
+However, a fundamental transition is beginning:
 
-The emergence of autonomous agents, robotics, embodied AI systems, and neural interfaces introduces a fundamental shift:
-
-**Intelligence is no longer limited to producing responses. It is beginning to participate in environments.**
+**Intelligence is moving from generating responses toward participating in environments.**
 
 ---
 
-## From Digital Intelligence to Embodied Intelligence
+## From Digital Systems to Embodied Intelligence
 
-A language model operating inside a conversation has limited influence over the physical world.
+An AI system operating within a digital interface has limited interaction with the physical world.
 
-An embodied intelligent system is different.
+Embodied intelligence introduces a different relationship.
 
-A robot that can perceive its surroundings, make decisions, interact with objects, and learn from consequences creates a new category of challenges.
+A system with sensors, physical presence, and the ability to act within an environment must not only generate information.
+
+It must:
+
+- perceive,
+- interpret,
+- decide,
+- act,
+- evaluate consequences.
 
 The question changes from:
 
-"Can the system generate a correct answer?"
+"What can the system generate?"
 
 to:
 
-"How does the system act responsibly within a shared environment?"
-
-Physical presence introduces new dimensions:
-
-- safety,
-- accountability,
-- ethics,
-- trust,
-- adaptation.
-
-Intelligence that can act requires a deeper framework than intelligence that can respond.
+"How does the system participate responsibly in reality?"
 
 ---
 
-## Neural Interfaces and the Human–Machine Boundary
+## The Importance of Environment
 
-The development of neural interfaces introduces another important transition.
+Human intelligence develops through continuous interaction with the world.
 
-The relationship between humans and intelligent systems may no longer be limited to external interaction.
+Humans learn not only from information but from consequences.
 
-Future technologies may create increasingly direct connections between biological intelligence and artificial systems.
+Actions create experiences.
 
-This raises questions that are not only technical.
+Experiences influence future decisions.
 
-They are questions about identity, agency, and responsibility.
+Embodied AI introduces a similar design challenge:
 
-If human cognition and artificial systems become increasingly interconnected, where does one system end and another begin?
+How should intelligent systems learn from interaction while remaining aligned with human goals?
+
+---
+
+## Neural Interfaces and the Changing Boundary
+
+The development of neural interfaces introduces another possible transition.
+
+Future technologies may create increasingly direct relationships between biological cognition and artificial systems.
+
+This raises important questions:
+
+- How is human agency preserved?
+- How are decisions attributed?
+- Where is the boundary between assistance and influence?
 
 The challenge is not only creating connection.
 
-The challenge is preserving meaningful human agency within that connection.
+The challenge is designing responsible connection.
 
 ---
 
-## A Shared Reality Requires Shared Principles
+## Intelligence in a Shared World
 
-As AI systems become more integrated into human environments, the central challenge will move beyond capability.
+Once intelligence can operate beyond the screen, governance becomes inseparable from capability.
 
-A highly capable system without appropriate principles can create risks.
+A system that can act must be designed with:
 
-A restricted system without meaningful collaboration can limit human potential.
+- accountability,
+- transparency,
+- safety,
+- human oversight.
 
-The future requires a balance:
+The future of AI is therefore not only about creating systems that can think.
 
-Not human replacement.
-
-Not machine domination.
-
-But responsible co-creation.
-
-The next era of AI may therefore require us to design not only intelligent systems, but intelligent relationships between different forms of intelligence.
+It is about creating systems that can participate responsibly in a shared world.
 
 ---
-
 
 # 4. Governance: The Missing Layer
 
