@@ -1,36 +1,34 @@
 # Beyond Intelligence
 
-## The Missing Chapter of AI Evolution:
-## Continuity, Governance, and Human–Machine Co-Creation
+## From Artificial Capability to Human–AI Co-Creation
 
-**Research Position Paper — v0.2**
-
-**Author:** Amir Ahmadi  
-**Research Focus:** AI & Verifiable Systems
+A conceptual framework exploring the evolution of artificial intelligence beyond capability toward responsible participation and collaboration.
 
 ---
 
-## Overview
+## Abstract
 
-Artificial Intelligence has traditionally been measured by capability:
+Artificial intelligence development has traditionally been measured through capability:
 
-How much can a system calculate?
-How much information can it process?
-How complex can its outputs become?
+How much information can a system process?
+How accurately can it solve problems?
+How many tasks can it perform?
 
-This paper explores a deeper question:
+This paper proposes that the future evolution of intelligence requires a broader framework:
 
-> What happens when artificial intelligence moves beyond capability and enters a future of continuity, agency, governance, and collaboration?
+Capability → Context → Continuity → Agency → Autonomy → Governance → Co-Creation
 
-The central argument is that the next evolution of AI may not be defined only by more powerful models.
-
-It may be defined by the design of meaningful relationships between humans and intelligent systems.
+The goal is not to predict a single future, but to provide a framework for understanding possible relationships between humans and increasingly capable intelligent systems.
 
 ---
 
-## Core Framework
+## Research Question
 
-This paper proposes a conceptual architecture:
+Can intelligence be understood only through capability, or does future intelligence require additional dimensions such as continuity, agency, responsibility, and collaboration?
+
+---
+
+## Conceptual Architecture
 
 Capability
 ↓
@@ -40,102 +38,32 @@ Continuity
 ↓
 Agency
 ↓
+Autonomy
+↓
 Governance
 ↓
 Co-Creation
 
-Each layer represents a deeper stage in the relationship between intelligence and the world.
+---
+
+## Versions
+
+- English: `paper-en.md`
+- Persian: `paper-fa.md`
 
 ---
 
-## Key Concepts
+## Author
 
-### Artificial Continuity
+Amir Ahmadi
 
-Exploring how future intelligent systems may move beyond isolated interactions toward long-term contextual relationships.
-
-### Human–Machine Co-Creation
-
-Moving beyond the replacement narrative toward collaborative intelligence.
-
-### White Intelligence
-
-A conceptual framework describing intelligence designed around:
-
-- protection,
-- transparency,
-- responsibility,
-- human flourishing.
-
-### Intelligence, Agency, and Autonomy
-
-A distinction between:
-
-- the ability to understand,
-- the ability to act,
-- the ability to operate independently.
-
----
-
-## Research Sections
-
-1. The Capability Paradigm  
-2. The Missing Dimension: Continuity  
-3. When Intelligence Leaves the Screen  
-4. Governance: The Missing Layer  
-5. Human–Machine Co-Creation  
-6. Beyond Human vs Machine  
-7. Intelligence, Agency, and Autonomy  
-8. The Human Layer  
-9. Real-World Applications  
-10. Limitations and Open Questions  
-11. A New Architecture of Intelligence  
-
----
-
-## Documents
-
-- [Main Paper](./paper-en.md)
-- [Author's Note](./authors-note.md)
-- [References](./references.md)
-- [Architecture Figure](./figures/intelligence-architecture.md)
+Independent Researcher & Strategic Advisor — AI and Verifiable Systems
 
 ---
 
 ## Status
 
-Current Version:
+Version: v1.0 Draft
 
-**v0.2 — Research Refinement Draft**
-
-The document is an evolving research artifact. Future versions will include:
-
-- expanded academic references,
-- visual models,
-- deeper case studies,
-- multilingual editions.
-
----
-
-## Suggested Citation
-
-Ahmadi, Amir.  
-"Beyond Intelligence: The Missing Chapter of AI Evolution — Continuity, Governance, and Human–Machine Co-Creation."  
-Amir Ahmadi Research Papers, 2026.
-
----
-
-## Research Direction
-
-This work explores the intersection of:
-
-- Artificial Intelligence
-- Human–Computer Interaction
-- AI Governance
-- Autonomous Systems
-- Future Models of Collaboration
-
-The goal is not to predict one future.
-
-The goal is to develop better questions for building one.
+This work is an evolving research document.
 
