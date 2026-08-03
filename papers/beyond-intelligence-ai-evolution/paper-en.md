@@ -797,115 +797,137 @@ It will also be shaped by what humanity chooses to become alongside them.
 
 # 9. Real-World Applications: Where Co-Creation Becomes Practical
 
-A framework for human–machine co-creation becomes meaningful only when it can be connected to real-world challenges.
+A conceptual framework becomes meaningful when it can explain real-world challenges.
 
-The purpose of advanced artificial intelligence should not only be increasing computational capability.
+Human–AI co-creation is not limited to theoretical discussion.
 
-It should be creating systems that improve human decision-making, discovery, and quality of life.
+It can be examined through domains where intelligence, responsibility, and collaboration intersect.
 
 ---
 
 ## 9.1 Healthcare: Intelligence Supporting Human Judgment
 
-Healthcare represents one of the most important areas for human–AI collaboration.
+Healthcare demonstrates the importance of combining artificial capability with human responsibility.
 
-AI systems can analyze:
+AI systems can support:
 
-- medical images,
-- biological data,
-- patient histories,
-- complex patterns beyond human scale.
+- medical pattern recognition,
+- analysis of complex datasets,
+- scientific discovery,
+- decision support.
 
-However, healthcare is not only a technical problem.
+However, healthcare decisions involve more than prediction.
 
-It also involves:
+They require:
 
 - empathy,
-- ethics,
+- ethical judgment,
 - communication,
-- human trust.
+- understanding of individual circumstances.
 
-The future of healthcare intelligence should not replace human care.
+The future of healthcare AI should not replace human care.
 
-It should strengthen the ability of professionals to make better decisions.
+It should enhance the ability of professionals to make better decisions.
+
+Framework connection:
+
+Capability + Context + Human Responsibility
 
 ---
 
-## 9.2 Scientific Discovery: AI as a Research Partner
+## 9.2 Scientific Discovery: AI as an Exploration Partner
 
-Artificial intelligence is increasingly becoming a partner in scientific exploration.
+Scientific research represents another important area of co-creation.
 
-Systems capable of analyzing complex spaces can help researchers:
+AI systems can expand exploration by:
 
-- identify patterns,
-- generate hypotheses,
-- explore possibilities,
-- accelerate discovery.
+- identifying patterns,
+- analyzing complex spaces,
+- generating possible hypotheses.
 
-The important transition is from:
+However, discovery requires more than finding patterns.
 
-AI as a tool that performs tasks
+Humans contribute:
 
-toward:
+- curiosity,
+- interpretation,
+- creativity,
+- scientific judgment.
 
-AI as a collaborator that expands human exploration.
+The future may involve AI systems that expand the space of possible discoveries while humans guide meaning and direction.
+
+Framework connection:
+
+Pattern Discovery + Human Creativity
 
 ---
 
 ## 9.3 Education: Personalized Intelligence
 
-Traditional education has often been built around standardized approaches.
+Traditional education often relies on standardized approaches.
 
-However, humans learn differently.
-
-Future intelligent systems may support personalized learning through:
+Intelligent systems may enable more personalized learning experiences through:
 
 - adaptive explanations,
-- individual learning paths,
 - continuous feedback,
-- long-term understanding of learner progress.
+- individual learning paths.
 
-The goal is not replacing teachers.
+However, education is not only information transfer.
 
-The goal is creating a more human-centered learning environment.
+It is also:
+
+- motivation,
+- mentorship,
+- human connection,
+- personal development.
+
+AI can enhance learning environments, but human guidance remains central.
+
+Framework connection:
+
+Adaptation + Human Development
 
 ---
 
 ## 9.4 Autonomous Systems and Society
 
-As AI becomes integrated into physical and social infrastructure, the importance of governance increases.
+As AI systems gain agency and autonomy, their relationship with society becomes increasingly important.
 
 Autonomous systems may influence:
 
 - transportation,
+- infrastructure,
 - industry,
-- finance,
-- public services.
+- financial systems.
 
-The challenge is not only whether these systems can operate efficiently.
+The challenge is not only whether systems can operate efficiently.
 
-The challenge is whether society can trust them.
+The challenge is whether they can operate responsibly.
 
-A successful future requires intelligent systems that are not only capable, but understandable, accountable, and aligned with human values.
+This requires:
 
----
+- transparency,
+- accountability,
+- governance,
+- human oversight.
 
-## From Concept to Reality
+Framework connection:
 
-Human–machine co-creation will ultimately be measured not by the sophistication of technology alone.
-
-It will be measured by whether intelligence improves human capability while preserving human agency.
-
-The future question is not:
-
-"Where can AI replace humans?"
-
-The deeper question is:
-
-"Where can humans and AI create something better together?"
+Agency + Autonomy + Governance
 
 ---
 
+## From Applications to Architecture
+
+These examples demonstrate a common pattern.
+
+The future value of AI will not be measured only by independent capability.
+
+It will be measured by the quality of collaboration between human intention and artificial intelligence.
+
+Co-creation becomes practical when intelligence is combined with context, responsibility, and purpose.
+
+---
 
 # 10. Limitations and Open Questions
 
