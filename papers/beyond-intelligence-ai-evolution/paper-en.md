@@ -581,102 +581,87 @@ It may be the creation of a shared environment where different forms of intellig
 
 # 7. Intelligence, Agency, and Autonomy: Clarifying the Future Debate
 
-One of the biggest challenges in discussions about advanced artificial intelligence is the tendency to treat intelligence, agency, and autonomy as the same concept.
+One of the most important challenges in discussions about advanced artificial intelligence is the tendency to combine several different concepts into one.
 
-They are related, but they represent different dimensions.
+Intelligence, agency, and autonomy are related, but they represent different dimensions.
 
-Understanding the difference is essential for designing responsible future systems.
-
----
-
-## Intelligence: The Ability to Understand and Solve Problems
-
-Intelligence refers to the ability to process information, recognize patterns, learn, reason, and generate solutions.
-
-A system can demonstrate intelligence through:
-
-- problem solving,
-- prediction,
-- reasoning,
-- adaptation,
-- knowledge synthesis.
-
-However, intelligence alone does not necessarily imply independent action.
-
-A highly intelligent system may still operate only when instructed.
+Understanding their distinction is essential for designing future intelligent systems.
 
 ---
 
-## Agency: The Ability to Pursue Goals
+## Intelligence: The Ability to Understand
 
-Agency introduces another dimension:
+Intelligence refers to the ability to:
 
-The ability of a system to take actions toward an objective.
+- process information,
+- recognize patterns,
+- reason,
+- learn,
+- solve problems.
 
-An agent does not only respond.
+A system can demonstrate intelligence without independently taking action.
+
+For example, a model may provide sophisticated analysis while still requiring human direction.
+
+---
+
+## Agency: The Ability to Act Toward Goals
+
+Agency introduces a different capability.
+
+An agent does not only produce responses.
 
 It can:
 
 - evaluate situations,
 - choose strategies,
-- execute tasks,
-- adapt actions based on outcomes.
+- execute actions,
+- adapt based on results.
 
-The transition from models to AI agents represents a significant shift.
+The transition from models to agents represents a shift:
 
-The question changes from:
+From generating answers.
 
-"What answer can the system provide?"
-
-to:
-
-"What actions can the system take?"
+Toward participating in processes.
 
 ---
 
 ## Autonomy: The Ability to Operate Independently
 
-Autonomy refers to the degree of independence a system has while operating.
+Autonomy describes the degree to which a system can function without continuous human intervention.
 
 An autonomous system may:
 
+- manage tasks,
 - make decisions,
-- manage processes,
 - interact with environments,
-- continue operations without continuous human instruction.
+- continue operations over time.
 
-However, autonomy without appropriate governance creates new challenges.
+However, autonomy increases the importance of governance.
 
-The more independent a system becomes, the more important questions of responsibility, transparency, and alignment become.
+The more independent a system becomes, the more important questions of responsibility and accountability become.
 
 ---
 
-## Why This Distinction Matters
+## The Relationship Between These Layers
 
-A future intelligent system may combine all three dimensions:
+These concepts can be represented as:
 
-Intelligence:
-The ability to understand.
+Intelligence
+↓
+Agency
+↓
+Autonomy
+↓
+Governance
 
-Agency:
-The ability to act.
+Higher capability does not automatically create responsible behavior.
 
-Autonomy:
-The ability to operate independently.
+A system may become more intelligent without becoming more aligned.
 
-The combination creates powerful possibilities.
+A system may become more autonomous without becoming more trustworthy.
 
-It also creates a responsibility:
-
-The future of AI cannot be designed only around increasing capability.
-
-It must also consider:
-
-- purpose,
-- values,
-- accountability,
-- human oversight,
-- long-term impact.
+Therefore, future AI development requires all dimensions to evolve together.
 
 ---
 
@@ -688,14 +673,13 @@ The future debate should not only ask:
 
 It should also ask:
 
-"How should intelligence act within a shared world?"
+"What responsibilities emerge when intelligence gains the ability to act?"
 
-Because the challenge ahead is not only creating systems that can think.
+The challenge ahead is not only creating systems that can think.
 
 It is creating systems that can participate responsibly.
 
 ---
-
 
 # 8. The Human Layer: Preparing Humanity for Co-Creation
 
