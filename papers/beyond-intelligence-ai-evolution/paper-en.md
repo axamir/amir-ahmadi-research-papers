@@ -40,42 +40,50 @@ Artificial Intelligence; Human–AI Collaboration; AI Governance; Persistent Int
 
 # 1. Introduction: The Capability Paradigm
 
-For decades, artificial intelligence has been measured primarily through capability.
+The development of artificial intelligence has historically been measured through capability.
 
-Can a machine calculate faster?
+A system is considered more advanced when it can process more information, solve more complex problems, generate more accurate outputs, or perform tasks previously associated with human expertise.
 
-Can it recognize patterns?
+This approach has produced remarkable achievements.
 
-Can it understand language?
+Modern AI systems can analyze complex datasets, generate content, support scientific discovery, and assist decision-making across many domains.
 
-Can it generate content, code, or scientific hypotheses?
+However, a fundamental question remains:
 
-These questions have guided much of AI development.
+**Is increasing capability alone sufficient to describe the evolution of intelligence?**
 
-The dominant assumption has been:
+Human intelligence is not defined only by the ability to solve problems.
 
-> More data + more computation + better algorithms = more capable intelligence.
+It is also shaped by:
 
-This approach has created extraordinary achievements.
+- accumulated experience,
+- contextual understanding,
+- reflection,
+- adaptation,
+- relationships,
+- meaning.
 
-Modern AI systems can analyze massive datasets, support scientific research, automate workflows, and generate outputs that previously required human expertise.
+A human does not approach every situation as an isolated calculation.
 
-But an important distinction remains:
+Human decisions emerge from continuity across time.
 
-**Capability is not the same as intelligence.**
+This creates a possible gap in current AI discussions.
 
-A calculator performs arithmetic better than humans.
+While artificial systems have achieved extraordinary capability, the relationship between capability and deeper forms of intelligence remains an open research question.
 
-A database stores more information than individuals.
+This paper proposes that the next stage of AI evolution should be examined through a broader framework:
 
-A search engine retrieves knowledge faster than traditional methods.
+From capability toward context.
 
-Yet human intelligence contains another dimension:
+From isolated responses toward continuity.
 
-**continuity.**
+From automation toward collaboration.
+
+The goal is not to argue that artificial systems must become human-like.
+
+The goal is to explore how different forms of intelligence may interact responsibly within shared environments.
 
 ---
-
 
 # 2. The Missing Dimension: Continuity
 
