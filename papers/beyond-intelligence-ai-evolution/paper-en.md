@@ -1,7 +1,6 @@
 # Beyond Intelligence
 
-## The Missing Chapter of AI Evolution:
-## Continuity, Governance, and Human–Machine Co-Creation
+## From Artificial Capability to Human–AI Co-Creation
 
 **Research Position Paper — v0.1**
 
@@ -29,6 +28,13 @@ As artificial intelligence moves beyond isolated interactions toward autonomous 
 **Are we simply creating more powerful tools, or are we beginning to design new forms of intelligence and new models of collaboration?**
 
 This paper explores a possible next chapter of AI evolution: the transition from intelligence as capability toward intelligence as continuity, responsibility, and co-creation.
+
+---
+
+
+## Keywords
+
+Artificial Intelligence; Human–AI Collaboration; AI Governance; Persistent Intelligence; Autonomous Agents; Embodied AI; Human-Centered AI; Future Intelligence Systems
 
 ---
 
