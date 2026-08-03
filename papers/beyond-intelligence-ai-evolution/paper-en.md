@@ -1020,182 +1020,151 @@ But:
 
 # 11. A New Architecture of Intelligence: From Capability to Co-Creation
 
-The evolution of artificial intelligence can be understood not only as an increase in computational capability, but as a transition through different layers of intelligent interaction.
+Throughout this paper, artificial intelligence evolution has been examined through multiple dimensions:
 
-This paper proposes a conceptual architecture for understanding this transition:
+capability, context, continuity, agency, autonomy, governance, and collaboration.
 
-Capability
-↓
-Context
-↓
-Continuity
-↓
-Agency
-↓
-Governance
-↓
-Co-Creation
+These dimensions can be represented as a conceptual architecture:
 
-Each layer represents a deeper relationship between intelligence and the world.
+             CO-CREATION
+                  ▲
+                  |
+             GOVERNANCE
+                  ▲
+                  |
+             AUTONOMY
+                  ▲
+                  |
+              AGENCY
+                  ▲
+                  |
+            CONTINUITY
+                  ▲
+                  |
+              CONTEXT
+                  ▲
+                  |
+           CAPABILITY
+
+This model does not represent a fixed technological roadmap.
+
+It represents a framework for understanding how intelligent systems may evolve from isolated capabilities toward responsible participation.
 
 ---
 
-## Layer 1: Capability
+## Capability: The Foundation
 
-Capability represents the foundation of intelligent systems.
+Capability represents the ability to process information, recognize patterns, generate outputs, and solve problems.
 
-It includes:
-
-- computation,
-- pattern recognition,
-- prediction,
-- generation,
-- problem solving.
-
-Modern AI has achieved remarkable progress at this layer.
+It is the foundation of modern artificial intelligence.
 
 However, capability alone does not define a complete intelligence system.
 
 ---
 
-## Layer 2: Context
+## Context: Meaning Through Relationships
 
-Context transforms information into meaningful understanding.
+Context allows information to become meaningful.
 
-Without context, information remains isolated.
+It connects:
 
-Context allows systems to consider:
+- information,
+- situations,
+- objectives,
+- environments.
 
-- circumstances,
-- relationships,
-- goals,
-- previous states,
-- environmental conditions.
-
-A system that understands context can move beyond simple responses toward more meaningful interaction.
+Without context, intelligence remains limited to isolated responses.
 
 ---
 
-## Layer 3: Continuity
+## Continuity: Learning Across Time
 
-Continuity connects experiences across time.
+Continuity connects previous experiences with future adaptation.
 
-It represents the ability to maintain meaningful relationships between:
+It represents the transition from temporary interaction toward persistent intelligence.
 
-- past experiences,
-- present decisions,
-- future adaptation.
+Continuity is not simply storing information.
 
-Continuity is not simply memory.
-
-It is the process through which experience influences evolution.
+It is the ability of experience to influence future states.
 
 ---
 
-## Layer 4: Agency
+## Agency: Intelligence in Action
 
-Agency introduces action.
+Agency introduces the ability to pursue objectives and perform actions.
 
-An intelligent system with agency does not only analyze situations.
+The transition from models to agents represents a movement from:
 
-It can:
+answer generation
 
-- pursue objectives,
-- make choices,
-- execute processes,
-- adapt strategies.
+toward:
 
-However, agency requires responsibility.
-
-The ability to act creates the need for appropriate governance.
+participation in processes.
 
 ---
 
-## Layer 5: Governance
+## Autonomy: Independent Operation
 
-Governance provides the framework within which intelligence operates.
+Autonomy describes the degree of independence a system has while operating.
 
-As systems become more capable and autonomous, governance becomes a fundamental layer.
+As autonomy increases, the importance of governance also increases.
+
+Capability without responsibility creates uncertainty.
+
+---
+
+## Governance: Responsible Intelligence
+
+Governance provides the structures required for safe and accountable participation.
 
 It includes:
 
-- accountability,
 - transparency,
+- accountability,
 - alignment,
-- safety,
 - human oversight.
 
-Governance is not a limitation of intelligence.
-
-It is the structure that allows intelligence to participate responsibly.
+Governance allows intelligence to become sustainable within society.
 
 ---
 
-## Layer 6: Co-Creation
+## Co-Creation: The Future Relationship
 
-The final layer represents a shift from intelligence as a tool toward intelligence as a collaborative partner.
+The final layer is not replacement.
 
-Co-creation does not mean replacing human contribution.
+It is collaboration.
 
-It means combining different forms of capability:
+Co-creation represents an environment where:
 
 Human intelligence contributes:
 
-- meaning,
-- values,
 - purpose,
-- ethical judgment.
+- values,
+- meaning,
+- responsibility.
 
 Artificial intelligence contributes:
 
 - scale,
-- speed,
+- exploration,
 - synthesis,
-- exploration.
+- computational capability.
 
-Together, they create a new possibility:
+The future of intelligence may therefore not be defined by one form of intelligence surpassing another.
 
-A shared intelligence environment where humans and artificial systems enhance each other's capabilities.
+It may be defined by the quality of interaction between different forms of intelligence.
 
 ---
 
 ## The Architectural Shift
 
-The important transition is not simply:
+The central transition proposed by this paper is:
 
-More powerful models.
+From capability to relationship.
 
-The deeper transition is:
+From isolated systems to persistent interaction.
 
-From capability toward relationship.
+From automation to collaboration.
 
-From response toward participation.
-
-From automation toward collaboration.
-
-From isolated intelligence toward shared intelligence.
-
-The future of AI may therefore depend not only on building smarter systems, but on designing better architectures for interaction between intelligence and humanity.
-
----
-
-
-# Research Position
-
-This paper proposes that the future evolution of artificial intelligence should not be evaluated only by increasing capability.
-
-Instead, it suggests examining AI development through a broader framework involving:
-
-- capability,
-- context,
-- continuity,
-- agency,
-- governance,
-- co-creation.
-
-This framework does not claim that artificial systems will become human-like.
-
-Rather, it explores how different forms of intelligence may interact within shared environments.
-
----
+From intelligence as a tool toward intelligence as a participant in a shared world.
 
