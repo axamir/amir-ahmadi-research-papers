@@ -1201,3 +1201,13 @@ The next evolution of intelligence may not be defined by machines becoming more 
 
 It may be defined by humanity becoming better prepared to collaborate with new forms of intelligence.
 
+
+
+## Figure 1. Evolutionary Architecture of Intelligence
+
+The following figure summarizes the conceptual architecture proposed in this paper.
+
+It represents a transition from isolated capability toward responsible human–AI co-creation.
+
+![Figure 1 — Evolutionary Architecture of Intelligence](figures/figure-1-intelligence-architecture.svg)
+
