@@ -507,3 +507,90 @@ This introduces a new research direction:
 
 **From Artificial Intelligence toward Artificial Continuity.**
 
+
+# 3. When Intelligence Leaves the Screen
+
+For many years, artificial intelligence has existed primarily within digital environments.
+
+Models receive information.
+Models process information.
+Models generate outputs.
+
+The interaction between humans and AI has largely occurred through screens, interfaces, and text.
+
+However, this boundary is beginning to change.
+
+The emergence of autonomous agents, robotics, embodied AI systems, and neural interfaces introduces a fundamental shift:
+
+**Intelligence is no longer limited to producing responses. It is beginning to participate in environments.**
+
+---
+
+## From Digital Intelligence to Embodied Intelligence
+
+A language model operating inside a conversation has limited influence over the physical world.
+
+An embodied intelligent system is different.
+
+A robot that can perceive its surroundings, make decisions, interact with objects, and learn from consequences creates a new category of challenges.
+
+The question changes from:
+
+"Can the system generate a correct answer?"
+
+to:
+
+"How does the system act responsibly within a shared environment?"
+
+Physical presence introduces new dimensions:
+
+- safety,
+- accountability,
+- ethics,
+- trust,
+- adaptation.
+
+Intelligence that can act requires a deeper framework than intelligence that can respond.
+
+---
+
+## Neural Interfaces and the Human–Machine Boundary
+
+The development of neural interfaces introduces another important transition.
+
+The relationship between humans and intelligent systems may no longer be limited to external interaction.
+
+Future technologies may create increasingly direct connections between biological intelligence and artificial systems.
+
+This raises questions that are not only technical.
+
+They are questions about identity, agency, and responsibility.
+
+If human cognition and artificial systems become increasingly interconnected, where does one system end and another begin?
+
+The challenge is not only creating connection.
+
+The challenge is preserving meaningful human agency within that connection.
+
+---
+
+## A Shared Reality Requires Shared Principles
+
+As AI systems become more integrated into human environments, the central challenge will move beyond capability.
+
+A highly capable system without appropriate principles can create risks.
+
+A restricted system without meaningful collaboration can limit human potential.
+
+The future requires a balance:
+
+Not human replacement.
+
+Not machine domination.
+
+But responsible co-creation.
+
+The next era of AI may therefore require us to design not only intelligent systems, but intelligent relationships between different forms of intelligence.
+
+---
+
