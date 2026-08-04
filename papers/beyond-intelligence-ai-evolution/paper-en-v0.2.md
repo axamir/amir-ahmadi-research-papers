@@ -499,3 +499,72 @@ Co-Creation represents a shift from viewing AI systems as replacements for human
 
 The objective is not artificial imitation of human intelligence, but the development of new forms of human–AI partnership.
 
+
+# 5. White Intelligence Principle
+
+As intelligent systems become increasingly capable and autonomous, technical capability alone cannot define desirable progress.
+
+Future AI systems require design principles that address not only what systems can do, but also how they interact with humans, environments, and society.
+
+This paper introduces the concept of the **White Intelligence Principle** as a governance-oriented design principle.
+
+White Intelligence does not represent a new category of intelligence, a measurement of cognitive ability, or a claim that artificial systems possess human-like qualities.
+
+Instead, it describes a set of design commitments focused on:
+
+- Transparency
+- Protection
+- Cooperation
+- Accountability
+- Human flourishing
+
+## Definition
+
+The White Intelligence Principle proposes that advanced intelligent systems should be designed not only for capability and efficiency, but also for responsible interaction and beneficial coexistence with human users and institutions.
+
+The principle asks:
+
+**"How should intelligent systems use their capabilities responsibly?"**
+
+## Core Characteristics
+
+### 1. Transparency
+
+Intelligent systems should provide understandable information about their behavior, limitations, and decision processes where appropriate.
+
+Transparency supports evaluation, trust, and meaningful human oversight.
+
+### 2. Protection
+
+Advanced AI systems should incorporate mechanisms that reduce harmful outcomes and protect human interests.
+
+Protection is not only a restriction mechanism; it is an essential property of responsible intelligence design.
+
+### 3. Cooperation
+
+Intelligent systems should be designed to enhance human capability rather than simply replace human roles.
+
+Cooperation emphasizes complementary strengths between human judgment and machine computation.
+
+### 4. Accountability
+
+Systems operating with greater autonomy require clearer mechanisms for responsibility, evaluation, and governance.
+
+Accountability ensures that increased capability remains connected to human values and institutional oversight.
+
+### 5. Human Flourishing
+
+The ultimate objective of intelligent systems should extend beyond performance optimization toward supporting human creativity, knowledge, well-being, and meaningful participation.
+
+## Relationship to the Seven Dimensions Framework
+
+The White Intelligence Principle functions as a guiding layer across all seven dimensions.
+
+It does not replace Capability, Context, Continuity, Agency, Autonomy, Governance, or Co-Creation.
+
+Instead, it provides a normative direction for how these dimensions should be developed and integrated.
+
+A system with high capability but without responsible governance may become powerful without being beneficial.
+
+A system designed according to the White Intelligence Principle seeks alignment between technical advancement and human-centered outcomes.
+
