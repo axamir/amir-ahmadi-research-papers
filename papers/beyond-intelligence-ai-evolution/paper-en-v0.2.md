@@ -244,3 +244,63 @@ Context describes the conditions under which performance becomes meaningful.
 
 Together, these dimensions form the foundation for more advanced forms of intelligent interaction.
 
+
+# 4.3 Continuity
+
+Continuity represents the degree to which previous states, interactions, and experiences meaningfully influence future system behavior over time.
+
+While memory refers to the storage and retrieval of information, continuity concerns the relationship between past and future states.
+
+Memory answers:
+
+**"What information is available to the system?"**
+
+Continuity asks:
+
+**"Does previous experience meaningfully shape future behavior?"**
+
+A system may possess memory without demonstrating continuity.
+
+For example, a system that retrieves stored information without adapting its future responses based on previous interactions may have memory capabilities but limited continuity.
+
+## Operational Definition
+
+A system demonstrates continuity when three conditions are present:
+
+### 1. Persistence
+
+Relevant information, states, or interaction history remain available across time.
+
+### 2. Causal Influence
+
+Previous states have measurable influence on future decisions, responses, or actions.
+
+### 3. Adaptation
+
+The system's behavior changes based on accumulated interactions or experiences.
+
+## Evaluation Questions
+
+Continuity can be examined through questions such as:
+
+- Does the system preserve relevant information across interactions?
+- Do previous interactions influence future behavior?
+- Can changes in system behavior be attributed to historical experience?
+- Does the system adapt over time?
+
+## Example
+
+A persistent AI research assistant that learns a user's preferred methods, maintains project context, and adapts future collaboration demonstrates continuity.
+
+A stateless system that treats each interaction independently demonstrates limited continuity, even if it produces highly capable responses.
+
+## Conceptual Importance
+
+Continuity introduces a temporal dimension into the evaluation of intelligent systems.
+
+It does not imply consciousness, human identity, or subjective experience.
+
+Instead, continuity describes a structural property of systems in which information, interaction history, and previous states participate in shaping future behavior.
+
+This distinction becomes increasingly important as AI systems move from isolated tools toward persistent collaborators operating across extended periods of interaction.
+
