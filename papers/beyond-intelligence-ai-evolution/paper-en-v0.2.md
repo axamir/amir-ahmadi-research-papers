@@ -279,7 +279,7 @@ Previous states have measurable influence on future decisions, responses, or act
 
 The system's behavior changes based on accumulated interactions or experiences.
 
-#### Evaluation Questions
+### Evaluation Questions
 
 Continuity can be examined through questions such as:
 
@@ -326,7 +326,7 @@ A system demonstrates agency when it can:
 - Initiate processes beyond simple immediate responses
 - Manage multi-step activities toward a desired outcome
 
-#### Evaluation Questions
+### Evaluation Questions
 
 Agency can be examined through questions such as:
 
@@ -372,7 +372,7 @@ A system demonstrates autonomy according to factors such as:
 - Ability to handle unexpected situations
 - Ability to maintain objectives during execution
 
-#### Evaluation Questions
+### Evaluation Questions
 
 Autonomy can be examined through questions such as:
 
@@ -427,7 +427,7 @@ A governed intelligent system provides mechanisms for:
 - Safety constraints
 - Evaluation and monitoring
 
-#### Evaluation Questions
+### Evaluation Questions
 
 Governance can be examined through questions such as:
 
@@ -481,7 +481,7 @@ The final outcome emerges through an iterative interaction process rather than i
 
 Human responsibility, evaluation, and decision authority remain clearly defined.
 
-#### Evaluation Questions
+### Evaluation Questions
 
 Co-Creation can be examined through questions such as:
 
