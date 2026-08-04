@@ -883,3 +883,57 @@ The transition beyond intelligence is therefore not only a question of increasin
 
 It is a question of designing relationships between humans and intelligent systems that preserve responsibility, enable collaboration, and create meaningful shared outcomes.
 
+
+# 10. References
+
+## Cognitive Science and Distributed Intelligence
+
+1. Clark, A., & Chalmers, D. (1998).  
+The Extended Mind. *Analysis, 58*(1), 7–19.
+
+2. Hutchins, E. (1995).  
+*Cognition in the Wild*. MIT Press.
+
+
+## Human-Centered AI and Human-AI Interaction
+
+3. Shneiderman, B. (2022).  
+*Human-Centered AI*. Oxford University Press.
+
+4. Amershi, S., et al. (2019).  
+Guidelines for Human-AI Interaction.  
+Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems.
+
+
+## AI Alignment and Governance
+
+5. Russell, S. (2019).  
+*Human Compatible: Artificial Intelligence and the Problem of Control*. Viking.
+
+6. Amodei, D., et al. (2016).  
+Concrete Problems in AI Safety.
+
+
+## Agentic AI and Intelligent Systems
+
+7. Yao, S., et al. (2023).  
+ReAct: Synergizing Reasoning and Acting in Language Models.
+
+8. Schick, T., et al. (2023).  
+Toolformer: Language Models Can Teach Themselves to Use Tools.
+
+
+## Embodied and Situated Intelligence
+
+9. Brooks, R. A. (1991).  
+Intelligence Without Representation.  
+Artificial Intelligence, 47(1–3), 139–159.
+
+10. Pfeifer, R., & Bongard, J. (2006).  
+*How the Body Shapes the Way We Think*. MIT Press.
+
+
+## Future Directions in AI Systems
+
+11. Research on persistent AI agents, multi-agent systems, and long-term human-AI collaboration provides additional foundations for future development of this framework.
+
