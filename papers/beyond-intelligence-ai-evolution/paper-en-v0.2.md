@@ -184,7 +184,7 @@ Capability answers the fundamental question:
 
 **"What can the system do?"**
 
-## Operational Interpretation
+### Operational Interpretation
 
 A system demonstrates capability when it can:
 
@@ -192,11 +192,11 @@ A system demonstrates capability when it can:
 - Produce useful and reliable outputs
 - Improve performance within a specific domain
 
-## Evaluation Question
+### Evaluation Question
 
 How effectively can the system accomplish a given objective compared with alternative approaches?
 
-## Limitation
+### Limitation
 
 Capability alone does not explain whether a system understands its environment, maintains information over time, acts independently, or collaborates responsibly.
 
@@ -217,7 +217,7 @@ Context answers the question:
 
 **"Does the system understand the situation in which information exists?"**
 
-## Operational Interpretation
+### Operational Interpretation
 
 A system demonstrates contextual capability when it can:
 
@@ -226,17 +226,17 @@ A system demonstrates contextual capability when it can:
 - Distinguish important signals from irrelevant information
 - Connect information with specific goals and situations
 
-## Evaluation Question
+### Evaluation Question
 
 Does the system's behavior change meaningfully when the surrounding context changes?
 
-## Example
+### Example
 
 A medical AI system interpreting patient information requires contextual understanding beyond identifying individual symptoms.
 
 The meaning of medical data depends on history, environment, objectives, and human expertise.
 
-## Relationship to Capability
+### Relationship to Capability
 
 Capability describes performance.
 
@@ -263,7 +263,7 @@ A system may possess memory without demonstrating continuity.
 
 For example, a system that retrieves stored information without adapting its future responses based on previous interactions may have memory capabilities but limited continuity.
 
-## Operational Definition
+### Operational Definition
 
 A system demonstrates continuity when three conditions are present:
 
@@ -279,7 +279,7 @@ Previous states have measurable influence on future decisions, responses, or act
 
 The system's behavior changes based on accumulated interactions or experiences.
 
-## Evaluation Questions
+#### Evaluation Questions
 
 Continuity can be examined through questions such as:
 
@@ -288,13 +288,13 @@ Continuity can be examined through questions such as:
 - Can changes in system behavior be attributed to historical experience?
 - Does the system adapt over time?
 
-## Example
+### Example
 
 A persistent AI research assistant that learns a user's preferred methods, maintains project context, and adapts future collaboration demonstrates continuity.
 
 A stateless system that treats each interaction independently demonstrates limited continuity, even if it produces highly capable responses.
 
-## Conceptual Importance
+### Conceptual Importance
 
 Continuity introduces a temporal dimension into the evaluation of intelligent systems.
 
@@ -317,7 +317,7 @@ Agency introduces the question:
 
 **"Can the system initiate and pursue objectives?"**
 
-## Operational Definition
+### Operational Definition
 
 A system demonstrates agency when it can:
 
@@ -326,7 +326,7 @@ A system demonstrates agency when it can:
 - Initiate processes beyond simple immediate responses
 - Manage multi-step activities toward a desired outcome
 
-## Evaluation Questions
+#### Evaluation Questions
 
 Agency can be examined through questions such as:
 
@@ -334,13 +334,13 @@ Agency can be examined through questions such as:
 - Can it select actions based on those goals?
 - Does it initiate useful processes rather than only respond?
 
-## Example
+### Example
 
 An AI research assistant that identifies missing information, proposes additional experiments, and organizes a research workflow demonstrates a degree of agency.
 
 A traditional question-answering system that only responds to user prompts demonstrates capability but limited agency.
 
-## Relationship to Continuity
+### Relationship to Continuity
 
 Continuity provides historical context that may influence agency.
 
@@ -363,7 +363,7 @@ Autonomy answers the question:
 
 **"How independently can the system operate?"**
 
-## Operational Definition
+### Operational Definition
 
 A system demonstrates autonomy according to factors such as:
 
@@ -372,7 +372,7 @@ A system demonstrates autonomy according to factors such as:
 - Ability to handle unexpected situations
 - Ability to maintain objectives during execution
 
-## Evaluation Questions
+#### Evaluation Questions
 
 Autonomy can be examined through questions such as:
 
@@ -380,7 +380,7 @@ Autonomy can be examined through questions such as:
 - Can the system continue operating without continuous supervision?
 - Can it adapt when conditions change?
 
-## Example
+### Example
 
 A self-driving vehicle demonstrates operational autonomy because it can navigate complex environments without continuous human control.
 
@@ -388,7 +388,7 @@ However, autonomy does not necessarily imply higher intelligence.
 
 A highly autonomous system may still require strong governance mechanisms.
 
-## Relationship Between Agency and Autonomy
+### Relationship Between Agency and Autonomy
 
 Agency and autonomy are related but distinct.
 
@@ -417,7 +417,7 @@ Governance answers the question:
 
 **"Can the system be understood, guided, evaluated, and trusted?"**
 
-## Operational Definition
+### Operational Definition
 
 A governed intelligent system provides mechanisms for:
 
@@ -427,7 +427,7 @@ A governed intelligent system provides mechanisms for:
 - Safety constraints
 - Evaluation and monitoring
 
-## Evaluation Questions
+#### Evaluation Questions
 
 Governance can be examined through questions such as:
 
@@ -436,13 +436,13 @@ Governance can be examined through questions such as:
 - Are there mechanisms for accountability?
 - Can system performance and risks be evaluated over time?
 
-## Example
+### Example
 
 An AI system used in healthcare requires more than high diagnostic capability.
 
 It requires governance mechanisms that support reliability, explanation, oversight, and responsible deployment.
 
-## Relationship to Other Dimensions
+### Relationship to Other Dimensions
 
 Governance interacts with all other dimensions.
 
@@ -465,7 +465,7 @@ Co-Creation answers the question:
 
 **"Does interaction between humans and AI produce outcomes beyond isolated contributions?"**
 
-## Operational Definition
+### Operational Definition
 
 A system demonstrates co-creation when three conditions are present:
 
@@ -481,7 +481,7 @@ The final outcome emerges through an iterative interaction process rather than i
 
 Human responsibility, evaluation, and decision authority remain clearly defined.
 
-## Evaluation Questions
+#### Evaluation Questions
 
 Co-Creation can be examined through questions such as:
 
@@ -489,11 +489,11 @@ Co-Creation can be examined through questions such as:
 - Are human and AI contributions meaningfully integrated?
 - Does the interaction create new possibilities rather than simply automate existing tasks?
 
-## Example
+### Example
 
 A scientist working with an AI research partner represents a co-creative relationship when the AI helps generate hypotheses, explore possibilities, and analyze complex information while human expertise guides interpretation and responsibility.
 
-## Conceptual Importance
+### Conceptual Importance
 
 Co-Creation represents a shift from viewing AI systems as replacements for human capability toward understanding them as collaborative systems.
 
@@ -518,7 +518,7 @@ Instead, it describes a set of design commitments focused on:
 - Accountability
 - Human flourishing
 
-## Definition
+### Definition
 
 The White Intelligence Principle proposes that advanced intelligent systems should be designed not only for capability and efficiency, but also for responsible interaction and beneficial coexistence with human users and institutions.
 
@@ -526,7 +526,7 @@ The principle asks:
 
 **"How should intelligent systems use their capabilities responsibly?"**
 
-## Core Characteristics
+### Core Characteristics
 
 ### 1. Transparency
 
@@ -556,7 +556,7 @@ Accountability ensures that increased capability remains connected to human valu
 
 The ultimate objective of intelligent systems should extend beyond performance optimization toward supporting human creativity, knowledge, well-being, and meaningful participation.
 
-## Relationship to the Seven Dimensions Framework
+### Relationship to the Seven Dimensions Framework
 
 The White Intelligence Principle functions as a guiding layer across all seven dimensions.
 
