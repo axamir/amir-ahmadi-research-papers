@@ -142,3 +142,105 @@ Capability describes what a system can accomplish.
 
 The additional dimensions describe how the system relates to information, time, objectives, humans, and society.
 
+
+# 4. The Seven Dimensions Framework
+
+The evolution of intelligent systems cannot be adequately described through a single measurement of capability.
+
+This framework proposes seven interacting dimensions that describe different properties of increasingly complex AI systems:
+
+1. Capability
+2. Context
+3. Continuity
+4. Agency
+5. Autonomy
+6. Governance
+7. Co-Creation
+
+These dimensions are not presented as a fixed developmental sequence. They represent complementary analytical properties that may appear at different levels across different architectures.
+
+A system may demonstrate high capability while having limited continuity, or high autonomy while requiring stronger governance mechanisms.
+
+The framework therefore provides a multidimensional perspective for evaluating intelligent systems rather than a linear prediction of their evolution.
+
+
+---
+
+# 4.1 Capability
+
+Capability represents the ability of an AI system to perform tasks, generate outputs, solve problems, or achieve measurable objectives.
+
+Historically, capability has been the primary metric through which artificial intelligence progress has been evaluated.
+
+Examples include:
+
+- Task performance
+- Accuracy
+- Efficiency
+- Reasoning ability
+- Problem-solving capacity
+
+Capability answers the fundamental question:
+
+**"What can the system do?"**
+
+## Operational Interpretation
+
+A system demonstrates capability when it can:
+
+- Perform defined tasks above a measurable threshold
+- Produce useful and reliable outputs
+- Improve performance within a specific domain
+
+## Evaluation Question
+
+How effectively can the system accomplish a given objective compared with alternative approaches?
+
+## Limitation
+
+Capability alone does not explain whether a system understands its environment, maintains information over time, acts independently, or collaborates responsibly.
+
+A system can be highly capable while remaining context-limited, stateless, or dependent on continuous human direction.
+
+
+---
+
+# 4.2 Context
+
+Context represents the ability of an intelligent system to interpret information according to surrounding conditions, objectives, and environmental factors.
+
+Information without context may produce technically correct but practically inappropriate outcomes.
+
+Context transforms isolated information processing into situated intelligence.
+
+Context answers the question:
+
+**"Does the system understand the situation in which information exists?"**
+
+## Operational Interpretation
+
+A system demonstrates contextual capability when it can:
+
+- Incorporate relevant environmental information
+- Adjust responses according to changing circumstances
+- Distinguish important signals from irrelevant information
+- Connect information with specific goals and situations
+
+## Evaluation Question
+
+Does the system's behavior change meaningfully when the surrounding context changes?
+
+## Example
+
+A medical AI system interpreting patient information requires contextual understanding beyond identifying individual symptoms.
+
+The meaning of medical data depends on history, environment, objectives, and human expertise.
+
+## Relationship to Capability
+
+Capability describes performance.
+
+Context describes the conditions under which performance becomes meaningful.
+
+Together, these dimensions form the foundation for more advanced forms of intelligent interaction.
+
