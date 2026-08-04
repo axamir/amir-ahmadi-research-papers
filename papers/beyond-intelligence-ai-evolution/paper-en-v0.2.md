@@ -685,3 +685,79 @@ toward:
 
 This multidimensional perspective may support more precise discussions around AI development, deployment, and responsible design.
 
+
+# 7. Limitations and Open Questions
+
+This framework provides a conceptual model for analyzing intelligent systems beyond capability metrics.
+
+However, several limitations and open questions remain.
+
+Recognizing these limitations is essential because the proposed framework is intended as a foundation for discussion and future research, not as a complete theory of intelligence.
+
+## 7.1 Conceptual Rather Than Empirical Framework
+
+The Seven Dimensions Framework is currently a conceptual synthesis.
+
+While each dimension is grounded in existing research areas, the framework itself requires further empirical validation.
+
+Future research should investigate whether these dimensions can be measured consistently across different AI architectures.
+
+## 7.2 Measurement of Continuity
+
+Continuity is introduced as a distinct dimension separating simple memory mechanisms from meaningful influence of previous states on future behavior.
+
+However, developing reliable metrics for continuity remains an open challenge.
+
+Future work may explore methods for measuring:
+
+- Persistence of relevant information
+- Long-term behavioral adaptation
+- Causal influence of historical interactions
+- Stability and transformation of system states over time
+
+## 7.3 Avoiding Anthropomorphic Interpretation
+
+The framework does not assume that artificial systems possess consciousness, subjective experience, human identity, or human-like understanding.
+
+Terms such as agency, continuity, and collaboration describe functional and structural properties of systems rather than claims about inner experience.
+
+Maintaining this distinction is essential for precise discussion.
+
+## 7.4 Relationship Between Dimensions
+
+The seven dimensions are presented as interacting properties rather than independent measurements.
+
+Future research should examine:
+
+- Whether certain dimensions depend on others
+- Whether specific combinations produce emergent capabilities
+- How different architectures express these dimensions
+
+For example, higher autonomy may increase the need for stronger governance mechanisms.
+
+## 7.5 Governance Challenges
+
+As intelligent systems become more capable and autonomous, governance mechanisms must evolve accordingly.
+
+Open questions include:
+
+- Who defines acceptable system behavior?
+- How should accountability be distributed between humans and AI systems?
+- What forms of oversight are appropriate for different levels of autonomy?
+
+## 7.6 Applicability Across Different AI Architectures
+
+Different AI systems may express these dimensions in different ways.
+
+A language-based system, robotic system, scientific assistant, and multi-agent architecture may demonstrate different profiles.
+
+Future research should test the framework across diverse system categories.
+
+## 7.7 Open Research Question
+
+The central open question emerging from this framework is:
+
+**How can intelligent systems become increasingly capable while remaining understandable, governable, and beneficial participants in human environments?**
+
+This question represents one of the defining challenges for the next generation of artificial intelligence research.
+
