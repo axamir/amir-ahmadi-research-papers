@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+
+<rect width="900" height="700" fill="white"/>
+
+<!-- Title -->
+<text x="450" y="50"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="26"
+      font-weight="bold">
+Seven Dimensions Interaction Framework
+</text>
+
+<!-- Capability -->
+<rect x="325" y="560" width="250" height="70" rx="12"
+      fill="white" stroke="black" stroke-width="2"/>
+<text x="450" y="602"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="22">
+Capability
+</text>
+
+
+<!-- Context -->
+<rect x="325" y="450" width="250" height="70" rx="12"
+      fill="white" stroke="black" stroke-width="2"/>
+<text x="450" y="492"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="22">
+Context
+</text>
+
+
+<!-- Continuity Core -->
+<circle cx="450" cy="330" r="95"
+        fill="white"
+        stroke="black"
+        stroke-width="3"/>
+
+<text x="450" y="320"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="24"
+      font-weight="bold">
+Continuity
+</text>
+
+<text x="450" y="355"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="15">
+Temporal Core
+</text>
+
+
+<!-- Agency -->
+<rect x="80" y="280" width="220" height="70" rx="12"
+      fill="white" stroke="black" stroke-width="2"/>
+<text x="190" y="322"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="22">
+Agency
+</text>
+
+
+<!-- Autonomy -->
+<rect x="600" y="280" width="220" height="70" rx="12"
+      fill="white" stroke="black" stroke-width="2"/>
+<text x="710" y="322"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="22">
+Autonomy
+</text>
+
+
+<!-- Governance -->
+<rect x="325" y="160" width="250" height="70" rx="12"
+      fill="white" stroke="black" stroke-width="2"/>
+<text x="450" y="202"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="22">
+Governance
+</text>
+
+
+<!-- Co Creation -->
+<rect x="325" y="70" width="250" height="70" rx="12"
+      fill="white" stroke="black" stroke-width="2"/>
+<text x="450" y="112"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="22">
+Co-Creation
+</text>
+
+
+<!-- Feedback text -->
+<text x="700" y="600"
+      font-family="Arial"
+      font-size="16">
+Feedback Loop:
+</text>
+
+<text x="700" y="625"
+      font-family="Arial"
+      font-size="16">
+Co-Creation → Context
+</text>
+
+<text x="700" y="650"
+      font-family="Arial"
+      font-size="16">
+→ Continuity
+</text>
+
+
+<!-- Lines -->
+<g stroke="black" stroke-width="2" fill="none">
+
+<line x1="450" y1="560" x2="450" y2="520"/>
+<line x1="450" y1="450" x2="450" y2="425"/>
+
+<line x1="300" y1="315" x2="355" y2="330"/>
+<line x1="600" y1="315" x2="545" y2="330"/>
+
+<line x1="450" y1="235" x2="450" y2="235"/>
+<line x1="450" y1="230" x2="450" y2="235"/>
+
+<line x1="450" y1="160" x2="450" y2="140"/>
+
+</g>
+
+</svg>
