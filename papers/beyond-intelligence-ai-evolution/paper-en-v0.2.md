@@ -70,3 +70,75 @@ By separating continuity from memory, this framework highlights a dimension incr
 
 This work contributes a conceptual synthesis connecting perspectives from artificial intelligence, cognitive science, human–computer interaction, and AI governance.
 
+
+# 2. Related Foundations
+
+The evolution of intelligent systems is connected to multiple research traditions that have examined intelligence beyond isolated task performance.
+
+This framework does not attempt to replace these fields. Instead, it provides a conceptual bridge between them by identifying shared questions around context, persistence, action, responsibility, and collaboration.
+
+## 2.1 Cognitive Science and Situated Intelligence
+
+Research in cognitive science has demonstrated that intelligence is not only an internal computational process but is also shaped by interaction with environments, contexts, and external representations.
+
+Situated cognition and related approaches emphasize that intelligent behavior emerges through the relationship between an agent and its surrounding conditions.
+
+This perspective informs the Context dimension of this framework.
+
+## 2.2 Extended Mind and Distributed Cognition
+
+Theories such as the Extended Mind perspective explore how cognitive processes may extend beyond biological boundaries through interaction with tools, environments, and external information structures.
+
+This work provides an important foundation for understanding how future AI systems may participate in extended cognitive processes without requiring human-like cognition.
+
+The Continuity dimension builds upon this question by examining how previous interactions and states influence future system behavior.
+
+## 2.3 Agentic AI Systems
+
+Recent advances in agentic AI have shifted attention from passive response generation toward systems capable of planning, tool use, goal management, and multi-step execution.
+
+These developments introduce new questions regarding agency, autonomy, and appropriate governance mechanisms.
+
+This framework distinguishes these concepts by treating Agency as goal-directed action capability and Autonomy as the degree of independent operation.
+
+## 2.4 Human–Computer Interaction and Human-Centered AI
+
+Human–Computer Interaction research has long examined how humans and computational systems can cooperate effectively.
+
+Human-centered AI approaches emphasize transparency, human control, usability, and beneficial collaboration.
+
+The Co-Creation dimension extends this conversation by focusing on how human and AI capabilities may become complementary in producing shared outcomes.
+
+## 2.5 AI Governance and Responsible Systems
+
+As AI systems become more capable and autonomous, governance becomes increasingly important.
+
+Rather than viewing governance only as an external restriction, this framework treats governance as an integrated dimension of intelligent system design.
+
+This includes accountability, transparency, oversight, and alignment with human values.
+
+
+# 3. Beyond Capability Metrics
+
+Capability has historically been the dominant measurement of AI progress.
+
+Benchmark performance, accuracy, efficiency, and task completion remain important indicators of system quality.
+
+However, increasingly complex AI systems introduce challenges that capability metrics alone cannot capture.
+
+A system may achieve high performance while lacking:
+
+- Understanding of context
+- Persistence across time
+- Goal-directed behavior
+- Responsible operation
+- Effective human collaboration
+
+Therefore, evaluating future intelligent systems requires a broader conceptual framework.
+
+The purpose of this paper is not to reduce the importance of capability, but to place capability within a larger multidimensional model.
+
+Capability describes what a system can accomplish.
+
+The additional dimensions describe how the system relates to information, time, objectives, humans, and society.
+
