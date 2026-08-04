@@ -304,3 +304,103 @@ Instead, continuity describes a structural property of systems in which informat
 
 This distinction becomes increasingly important as AI systems move from isolated tools toward persistent collaborators operating across extended periods of interaction.
 
+
+# 4.4 Agency
+
+Agency represents the ability of an intelligent system to initiate and pursue goal-directed actions.
+
+Agency is distinct from capability.
+
+A system may be highly capable at completing tasks while remaining entirely reactive to external instructions.
+
+Agency introduces the question:
+
+**"Can the system initiate and pursue objectives?"**
+
+## Operational Definition
+
+A system demonstrates agency when it can:
+
+- Represent or receive objectives
+- Select actions toward achieving those objectives
+- Initiate processes beyond simple immediate responses
+- Manage multi-step activities toward a desired outcome
+
+## Evaluation Questions
+
+Agency can be examined through questions such as:
+
+- Can the system formulate or maintain goals?
+- Can it select actions based on those goals?
+- Does it initiate useful processes rather than only respond?
+
+## Example
+
+An AI research assistant that identifies missing information, proposes additional experiments, and organizes a research workflow demonstrates a degree of agency.
+
+A traditional question-answering system that only responds to user prompts demonstrates capability but limited agency.
+
+## Relationship to Continuity
+
+Continuity provides historical context that may influence agency.
+
+A persistent system may use previous interactions to improve goal selection and action planning.
+
+However, continuity alone does not guarantee agency.
+
+A system may remember previous information without independently pursuing objectives.
+
+
+---
+
+# 4.5 Autonomy
+
+Autonomy represents the degree to which an intelligent system can operate independently while pursuing objectives.
+
+While agency concerns the ability to act toward goals, autonomy concerns the amount of external intervention required during operation.
+
+Autonomy answers the question:
+
+**"How independently can the system operate?"**
+
+## Operational Definition
+
+A system demonstrates autonomy according to factors such as:
+
+- Duration of independent operation
+- Number of required human interventions
+- Ability to handle unexpected situations
+- Ability to maintain objectives during execution
+
+## Evaluation Questions
+
+Autonomy can be examined through questions such as:
+
+- How much human guidance is required?
+- Can the system continue operating without continuous supervision?
+- Can it adapt when conditions change?
+
+## Example
+
+A self-driving vehicle demonstrates operational autonomy because it can navigate complex environments without continuous human control.
+
+However, autonomy does not necessarily imply higher intelligence.
+
+A highly autonomous system may still require strong governance mechanisms.
+
+## Relationship Between Agency and Autonomy
+
+Agency and autonomy are related but distinct.
+
+Agency describes whether a system can pursue goals.
+
+Autonomy describes how independently it can pursue those goals.
+
+A system may have:
+
+- High agency with limited autonomy
+- High autonomy with limited intelligence
+- High capability without either agency or autonomy
+
+Understanding this distinction is essential for evaluating future intelligent systems.
+
