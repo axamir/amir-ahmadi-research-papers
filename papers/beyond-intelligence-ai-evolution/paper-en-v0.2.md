@@ -568,3 +568,120 @@ A system with high capability but without responsible governance may become powe
 
 A system designed according to the White Intelligence Principle seeks alignment between technical advancement and human-centered outcomes.
 
+
+# 6. Framework Evaluation
+
+A conceptual framework becomes more useful when it provides a method for analyzing real systems.
+
+The Seven Dimensions Framework is not intended to produce a single score or ranking for intelligent systems.
+
+Instead, it provides a structured approach for examining different characteristics of AI architectures and understanding their strengths, limitations, and design requirements.
+
+Different systems may demonstrate different profiles across the seven dimensions.
+
+A highly capable system may have limited continuity or autonomy, while a less capable system may demonstrate strong contextual adaptation or human collaboration.
+
+The purpose of evaluation is therefore not to determine which system is "more intelligent", but to understand how different dimensions interact within a given architecture.
+
+
+## 6.1 Evaluation Approach
+
+Each system can be analyzed through the following questions:
+
+| Dimension | Evaluation Question |
+|---|---|
+| Capability | What tasks can the system perform? |
+| Context | How does the system use situational information? |
+| Continuity | Do previous states influence future behavior? |
+| Agency | Can the system pursue goals? |
+| Autonomy | How independently can it operate? |
+| Governance | Can humans understand and guide its behavior? |
+| Co-Creation | Does interaction produce shared value? |
+
+
+This approach allows researchers, designers, and policymakers to evaluate systems beyond traditional performance metrics.
+
+
+---
+
+# 6.2 Example System Profiles
+
+## 6.2.1 Conversational AI Assistant
+
+A conversational AI assistant represents a class of systems focused on language interaction, information processing, and task support.
+
+Typical profile:
+
+| Dimension | Level | Description |
+|---|---|---|
+| Capability | High | Strong performance in language-based tasks |
+| Context | Medium | Depends on available context windows and information sources |
+| Continuity | Low-Medium | Depends on persistent memory mechanisms |
+| Agency | Low | Primarily responds to user requests |
+| Autonomy | Low | Requires human direction |
+| Governance | Medium | Requires monitoring and safety mechanisms |
+| Co-Creation | Medium | Can enhance human creativity and productivity |
+
+This profile demonstrates that high capability does not automatically imply high autonomy or continuity.
+
+
+---
+
+## 6.2.2 Autonomous Robotic System
+
+An autonomous robotic system represents a different intelligence profile in which interaction with the physical environment is central.
+
+Typical profile:
+
+| Dimension | Level | Description |
+|---|---|---|
+| Capability | Medium-High | Performs specialized physical tasks |
+| Context | High | Continuously interprets environmental conditions |
+| Continuity | Medium | Maintains operational state over time |
+| Agency | High | Executes goal-directed actions |
+| Autonomy | High | Operates with limited direct intervention |
+| Governance | High | Requires strong safety constraints |
+| Co-Creation | Medium | Collaborates with humans in physical environments |
+
+This example demonstrates that autonomy and agency can exist independently from human-like intelligence.
+
+
+---
+
+## 6.2.3 AI Scientific Collaborator
+
+An AI scientific collaborator represents a future class of systems designed to support discovery, reasoning, and knowledge creation.
+
+Typical profile:
+
+| Dimension | Level | Description |
+|---|---|---|
+| Capability | High | Performs advanced analytical tasks |
+| Context | High | Integrates domain knowledge and research goals |
+| Continuity | High | Maintains long-term research context |
+| Agency | Medium | Suggests and pursues research directions |
+| Autonomy | Medium | Operates with human supervision |
+| Governance | High | Requires scientific accountability |
+| Co-Creation | High | Produces knowledge through human-AI collaboration |
+
+This profile represents the type of human–AI relationship emphasized by the Co-Creation dimension.
+
+
+---
+
+# 6.3 Comparative Interpretation
+
+These examples demonstrate that intelligent systems cannot be adequately compared through capability alone.
+
+Different architectures optimize different dimensions.
+
+The framework therefore shifts the question from:
+
+"How intelligent is this system?"
+
+toward:
+
+"What type of intelligence-related properties does this system demonstrate, and how should those properties be governed?"
+
+This multidimensional perspective may support more precise discussions around AI development, deployment, and responsible design.
+
