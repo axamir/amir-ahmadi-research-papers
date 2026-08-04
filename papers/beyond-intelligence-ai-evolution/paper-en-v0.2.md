@@ -404,3 +404,98 @@ A system may have:
 
 Understanding this distinction is essential for evaluating future intelligent systems.
 
+
+# 4.6 Governance
+
+Governance represents the mechanisms through which intelligent systems remain accountable, controllable, transparent, and aligned with human objectives.
+
+As AI systems become more capable, governance cannot be treated only as an external limitation imposed after development.
+
+Instead, governance should be considered an integrated dimension of intelligent system design.
+
+Governance answers the question:
+
+**"Can the system be understood, guided, evaluated, and trusted?"**
+
+## Operational Definition
+
+A governed intelligent system provides mechanisms for:
+
+- Transparency of operation
+- Human oversight
+- Accountability pathways
+- Safety constraints
+- Evaluation and monitoring
+
+## Evaluation Questions
+
+Governance can be examined through questions such as:
+
+- Can humans understand important aspects of system behavior?
+- Can humans influence or correct system actions?
+- Are there mechanisms for accountability?
+- Can system performance and risks be evaluated over time?
+
+## Example
+
+An AI system used in healthcare requires more than high diagnostic capability.
+
+It requires governance mechanisms that support reliability, explanation, oversight, and responsible deployment.
+
+## Relationship to Other Dimensions
+
+Governance interacts with all other dimensions.
+
+Higher capability, agency, and autonomy increase the importance of governance rather than reducing it.
+
+A more powerful system requires stronger mechanisms for transparency, control, and accountability.
+
+
+---
+
+# 4.7 Co-Creation
+
+Co-Creation represents a form of human–AI interaction in which humans and intelligent systems contribute complementary capabilities toward shared outcomes.
+
+Co-Creation does not imply replacing human judgment or transferring responsibility to machines.
+
+Instead, it describes a collaborative process in which value emerges through interaction.
+
+Co-Creation answers the question:
+
+**"Does interaction between humans and AI produce outcomes beyond isolated contributions?"**
+
+## Operational Definition
+
+A system demonstrates co-creation when three conditions are present:
+
+### 1. Complementary Contribution
+
+Human and AI capabilities contribute different but valuable forms of input.
+
+### 2. Interactive Value Creation
+
+The final outcome emerges through an iterative interaction process rather than independent outputs.
+
+### 3. Preserved Responsibility
+
+Human responsibility, evaluation, and decision authority remain clearly defined.
+
+## Evaluation Questions
+
+Co-Creation can be examined through questions such as:
+
+- Does collaboration improve outcomes compared with human-only or AI-only approaches?
+- Are human and AI contributions meaningfully integrated?
+- Does the interaction create new possibilities rather than simply automate existing tasks?
+
+## Example
+
+A scientist working with an AI research partner represents a co-creative relationship when the AI helps generate hypotheses, explore possibilities, and analyze complex information while human expertise guides interpretation and responsibility.
+
+## Conceptual Importance
+
+Co-Creation represents a shift from viewing AI systems as replacements for human capability toward understanding them as collaborative systems.
+
+The objective is not artificial imitation of human intelligence, but the development of new forms of human–AI partnership.
+
