@@ -1,0 +1,12 @@
+{
+  "name": "Amir Ahmadi Research",
+  "short_name": "AA Research",
+  "description": "Independent research on human–AI systems, governance, identity and verifiable architectures.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f2ec",
+  "theme_color": "#12232c",
+  "icons": [
+    {"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}
+  ]
+}
