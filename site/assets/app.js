@@ -11,10 +11,11 @@ if(menu&&links){
   }));
 }
 
+const isFa=document.documentElement.lang==='fa';
+
 // Quiet command field in the header. This is an interface convention, not a security boundary.
 const nav=document.querySelector('.nav');
 if(nav){
-  const isFa=document.documentElement.lang==='fa';
   const command=document.createElement('form');
   command.className='command-box';
   command.setAttribute('role','search');
@@ -46,7 +47,7 @@ chips.forEach(chip=>chip.addEventListener('click',()=>{
   entries.forEach(e=>{e.style.display=(f==='all'||e.dataset.topic?.includes(f))?'grid':'none'});
 }));
 
-const routes={
+const routesEn={
   'Living Decision Governance':'papers/living-decision-governance/',
   'Beyond Intelligence — AI Evolution':'papers/beyond-intelligence-ai-evolution/',
   'From Green Personalisation to Relational Co‑Evolution':'papers/relational-co-evolution/',
@@ -60,34 +61,50 @@ const routes={
   'Beyond Models: Toward Enduring Human–AI Collaborative Systems':'papers/beyond-models-hacs/'
 };
 
-if(document.documentElement.lang!=='fa'){
-  document.querySelectorAll('.paper-card').forEach(card=>{
-    const h=card.querySelector('h3');
-    if(!h)return;
-    const route=routes[h.textContent.trim()];
-    if(!route)return;
-    card.classList.add('has-page');
-    card.setAttribute('tabindex','0');
-    card.setAttribute('role','link');
-    card.setAttribute('aria-label',`Open ${h.textContent.trim()} research page`);
-    const actions=card.querySelector('.actions');
-    if(actions&&!actions.querySelector('[data-research-page]')){
-      const a=document.createElement('a');
-      a.href=route;
+const routesFa={
+  'حکمرانی زنده تصمیم':'papers/living-decision-governance/',
+  'فراتر از هوشمندی — تکامل هوش مصنوعی':'papers/beyond-intelligence-ai-evolution/',
+  'از شخصی‌سازی سبز تا هم‌تکاملی رابطه‌ای':'papers/relational-co-evolution/',
+  'بازتاب‌ها و صاحبانشان':'papers/reflections-and-their-owners/',
+  'از مُهر تا اتحاد: بازتعریف گواهی هوش مصنوعی':'papers/from-stamp-to-alliance/',
+  'از پول تا پیمان':'papers/from-money-to-pledge/',
+  'من، تو و ما':'papers/i-you-and-we/',
+  'طراحی استراحت':'papers/designing-rest/',
+  'پیش از فصل اول':'papers/before-the-first-chapter/',
+  'از پیدایش تا شاهد':'papers/from-genesis-to-witness/',
+  'فراتر از مدل‌ها: به‌سوی سامانه‌های پایدار همکاری انسان–هوش مصنوعی':'papers/beyond-models-hacs/'
+};
+
+const routes=isFa?routesFa:routesEn;
+document.querySelectorAll('.paper-card').forEach(card=>{
+  const h=card.querySelector('h3');
+  if(!h)return;
+  const route=routes[h.textContent.trim()];
+  if(!route)return;
+  card.classList.add('has-page');
+  card.setAttribute('tabindex','0');
+  card.setAttribute('role','link');
+  card.setAttribute('aria-label',isFa?`باز کردن صفحه پژوهش ${h.textContent.trim()}`:`Open ${h.textContent.trim()} research page`);
+  const actions=card.querySelector('.actions');
+  if(actions){
+    let a=actions.querySelector('[data-research-page]')||actions.querySelector('.btn.primary');
+    if(!a){
+      a=document.createElement('a');
       a.className='btn primary';
-      a.dataset.researchPage='true';
-      a.textContent='Explore research →';
       actions.prepend(a);
     }
-    const open=()=>{location.href=route};
-    card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open()});
-    card.addEventListener('keydown',e=>{
-      if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){
-        e.preventDefault();open();
-      }
-    });
+    a.href=route;
+    a.dataset.researchPage='true';
+    a.textContent=isFa?'مطالعه کامل مقاله →':'Read full paper →';
+  }
+  const open=()=>{location.href=route};
+  card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open()});
+  card.addEventListener('keydown',e=>{
+    if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){
+      e.preventDefault();open();
+    }
   });
-}
+});
 
 const year=document.querySelector('[data-year]');
 if(year)year.textContent=new Date().getFullYear();
