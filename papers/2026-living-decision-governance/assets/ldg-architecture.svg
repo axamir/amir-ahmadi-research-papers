@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Living Decision Governance architecture</title>
+  <desc id="desc">Five-layer architecture and closed-loop lifecycle for human-AI decision governance.</desc>
+  <rect width="1600" height="980" fill="#f5f7f8"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="80" y="90" fill="#173448" font-size="48" font-weight="700">Living Decision Governance — Architecture</text>
+    <text x="80" y="132" fill="#667985" font-size="23">A persistent decision object connects evidence, agents, accountable humans, collective review, stakeholders and outcomes.</text>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="24">
+    <rect x="110" y="205" width="520" height="105" rx="18" fill="#16394c"/><text x="145" y="252" fill="white" font-weight="700">5 · Stakeholder sensing</text><text x="145" y="283" fill="#c5d6dc" font-size="19">Employees · customers · partners · communities · regulators</text>
+    <rect x="150" y="330" width="520" height="105" rx="18" fill="#20536a"/><text x="185" y="377" fill="white" font-weight="700">4 · Collective review</text><text x="185" y="408" fill="#d0e1e6" font-size="19">Distributed expertise · testable dissent · weighted ratification</text>
+    <rect x="190" y="455" width="520" height="105" rx="18" fill="#2e7082"/><text x="225" y="502" fill="white" font-weight="700">3 · Human accountability</text><text x="225" y="533" fill="#e0edf0" font-size="19">Interpret · sign · authorize · own escalation</text>
+    <rect x="230" y="580" width="520" height="105" rx="18" fill="#4b8e96"/><text x="265" y="627" fill="white" font-weight="700">2 · AI / agent layer</text><text x="265" y="658" fill="#edf5f5" font-size="19">Generate · challenge · verify · simulate · explain</text>
+    <rect x="270" y="705" width="520" height="105" rx="18" fill="#78a8a4"/><text x="305" y="752" fill="#102f3b" font-weight="700">1 · Data and world layer</text><text x="305" y="783" fill="#173d46" font-size="19">Business · safety · legal · market · external evidence</text>
+  </g>
+  <g transform="translate(900,220)" font-family="Inter,Arial,sans-serif">
+    <circle cx="250" cy="285" r="220" fill="none" stroke="#d1a459" stroke-width="4" stroke-dasharray="10 12"/>
+    <circle cx="250" cy="285" r="83" fill="#173448"/>
+    <text x="250" y="274" text-anchor="middle" fill="white" font-size="25" font-weight="700">DECISION</text>
+    <text x="250" y="308" text-anchor="middle" fill="#d5e1e5" font-size="18">persistent object</text>
+    <g fill="#fff" stroke="#376d7a" stroke-width="3">
+      <circle cx="250" cy="65" r="58"/><circle cx="430" cy="155" r="58"/><circle cx="470" cy="350" r="58"/><circle cx="345" cy="505" r="58"/><circle cx="150" cy="505" r="58"/><circle cx="28" cy="350" r="58"/><circle cx="70" cy="155" r="58"/>
+    </g>
+    <g fill="#173448" text-anchor="middle" font-size="17" font-weight="700">
+      <text x="250" y="60">PROPOSE</text><text x="250" y="82" font-size="13">agents</text>
+      <text x="430" y="150">VERIFY</text><text x="430" y="172" font-size="13">evidence</text>
+      <text x="470" y="345">SIGN</text><text x="470" y="367" font-size="13">human</text>
+      <text x="345" y="500">RATIFY</text><text x="345" y="522" font-size="13">collective</text>
+      <text x="150" y="500">OBSERVE</text><text x="150" y="522" font-size="13">outcomes</text>
+      <text x="28" y="345">SENSE</text><text x="28" y="367" font-size="13">stakeholders</text>
+      <text x="70" y="150">ADAPT</text><text x="70" y="172" font-size="13">authority</text>
+    </g>
+    <path d="M250 8 A277 277 0 1 1 249 8" fill="none" stroke="#d1a459" stroke-width="2" marker-end="url(#arr)"/>
+  </g>
+  <defs><marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#d1a459"/></marker></defs>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="900" y="825" fill="#173448" font-size="24" font-weight="700">Control modes</text>
+    <text x="900" y="865" fill="#2f765e" font-size="20">ACTIVE</text><text x="1010" y="865" fill="#a87820" font-size="20">WARNING</text><text x="1145" y="865" fill="#bd6730" font-size="20">RESTRICTED</text><text x="1300" y="865" fill="#a13d45" font-size="20">PAUSED</text><text x="1410" y="865" fill="#7b222d" font-size="20">STOP</text>
+    <text x="900" y="910" fill="#687b85" font-size="19">Monitoring intensity and reversibility should scale with consequence.</text>
+  </g>
+</svg>
