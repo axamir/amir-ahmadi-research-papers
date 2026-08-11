@@ -108,9 +108,11 @@ The framework explores:
 
 A closed-loop architecture for human–AI organizational decision making that treats consequential decisions as governed, continuously monitored objects rather than one-time approvals.
 
-The v0.2 working artifact now includes a single comprehensive master document, traceable intellectual origin, adjacent prior-work mapping, concrete examples, cover and architecture graphics, an executable Python reference model, verification tests, machine-readable review artifacts, and CI-based test execution.
+The v0.2 working artifact includes parallel English/Persian comprehensive references, traceable intellectual origin, adjacent prior-work mapping, concrete examples, cover and architecture graphics, an executable Python reference model, verification tests, machine-readable review artifacts, CI-based test execution, and a bilingual interactive microsite dedicated to this paper.
 
-- **[Complete master document](papers/2026-living-decision-governance/LDG_COMPLETE.md)**
+- **[Complete master document — English](papers/2026-living-decision-governance/LDG_COMPLETE.md)**
+- **[نسخه جامع فارسی](papers/2026-living-decision-governance/LDG_COMPLETE.fa.md)**
+- **[Interactive paper microsite](papers/2026-living-decision-governance/website/index.html)**
 - [English paper](papers/2026-living-decision-governance/paper.en.md)
 - [Framework README](papers/2026-living-decision-governance/README.md)
 - [Specification](papers/2026-living-decision-governance/specification.md)
@@ -119,7 +121,6 @@ The v0.2 working artifact now includes a single comprehensive master document, t
 - [Architecture diagram](papers/2026-living-decision-governance/assets/ldg-architecture.svg)
 - [Verification protocol](papers/2026-living-decision-governance/machine-readable/verification-protocol.json)
 - [AI review guide](papers/2026-living-decision-governance/machine-readable/AI-README.md)
-- [Landing page](papers/2026-living-decision-governance/website/index.html)
 - [Citation metadata](papers/2026-living-decision-governance/CITATION.cff)
 
 ### From Green Personalisation to Relational Co-Evolution
@@ -136,7 +137,7 @@ This versioned conceptual position paper extends the Green Personalisation resea
 
 | Title | Date | DOI | English | فارسی | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Living Decision Governance: An Executable Architecture for Continuous Human–AI Decision Governance | Aug 2026 | Pending | [Complete](papers/2026-living-decision-governance/LDG_COMPLETE.md) · [Paper](papers/2026-living-decision-governance/paper.en.md) | — | 🧪 Public Working Paper / Executable Artifact v0.2.0-draft |
+| Living Decision Governance: An Executable Architecture for Continuous Human–AI Decision Governance | Aug 2026 | Pending | [Complete](papers/2026-living-decision-governance/LDG_COMPLETE.md) · [Microsite](papers/2026-living-decision-governance/website/index.html) | [نسخه جامع](papers/2026-living-decision-governance/LDG_COMPLETE.fa.md) | 🧪 Public Working Paper / Executable Artifact v0.2.0-draft |
 | From Green Personalisation to Relational Co-Evolution | Jul 2026 | Pending | [Text](papers/2026-relational-co-evolution/paper.en.md) | [متن](papers/2026-relational-co-evolution/paper.fa.md) | 🌐 Public Working Paper v0.2.0 |
 | Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🔄 v1.1.0-dev / v1.0.0 stable |
 | From Genesis to Witness | Jun 2026 | — | — | — | 📄 Draft |
