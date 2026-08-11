@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Living Decision Governance — Amir Ahmadi</title>
+  <meta name="description" content="A closed-loop architecture for human–AI organizational decision making." />
+  <style>
+    :root{--bg:#0d1318;--panel:#131c23;--text:#eef4f6;--muted:#9fb1bc;--line:#29404c;--accent:#78c3c9;--warm:#d6b36c}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#0d1318,#111a20);color:var(--text);line-height:1.6}
+    main{max-width:980px;margin:auto;padding:72px 24px 96px}.eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-size:.78rem}.hero{padding:40px 0 48px;border-bottom:1px solid var(--line)}h1{font-size:clamp(2.4rem,7vw,5.6rem);line-height:.98;margin:.2em 0 .3em;max-width:900px}h2{margin-top:52px;font-size:1.6rem}.dek{font-size:1.25rem;color:var(--muted);max-width:760px}.tag{display:inline-block;margin:10px 10px 0 0;padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#cfe3e7;font-size:.9rem}.loop{margin:32px 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(19,28,35,.78);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#d6e7ea;overflow:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.card strong{color:var(--warm)}a{color:var(--accent)}blockquote{margin:28px 0;padding:4px 0 4px 22px;border-left:3px solid var(--warm);font-size:1.3rem;color:#f4e7cb}.note{color:var(--muted);font-size:.95rem}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-block;text-decoration:none;padding:10px 15px;border:1px solid var(--accent);border-radius:10px}.primary{background:var(--accent);color:#081115}footer{margin-top:70px;padding-top:28px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Public Working Paper · v0.1.0 · 2026</div>
+    <h1>Living Decision Governance</h1>
+    <p class="dek">A closed-loop architecture for human–AI organizational decision making — treating consequential decisions as governed objects that remain observable, challengeable, signed, measurable, and stoppable after deployment.</p>
+    <div><span class="tag">AI governance</span><span class="tag">human accountability</span><span class="tag">adaptive authority</span><span class="tag">stakeholder sensing</span></div>
+    <div class="cta"><a class="button primary" href="../paper.en.md">Read the paper</a><a class="button" href="../specification.md">Read the specification</a><a class="button" href="../src/ldg.py">Inspect the Python model</a></div>
+  </section>
+
+  <h2>The central shift</h2>
+  <p>Most governance processes treat a decision as an approval event. LDG treats the decision as a stateful lifecycle that can gain or lose authority as real-world evidence arrives.</p>
+  <div class="loop">Propose → Challenge → Verify → Human Sign → Collective Ratification → Execute → Observe → Stakeholder Feedback → Re-score → Slow / Restrict / Pause / Stop / Expand Authority → Learn</div>
+
+  <blockquote>The future of decision intelligence may not be better answers alone. It may be better feedback loops.</blockquote>
+
+  <h2>Core mechanisms</h2>
+  <div class="grid">
+    <div class="card"><strong>Human signatures</strong><br>Consequential agent recommendations remain attributable to accountable human authorization.</div>
+    <div class="card"><strong>Thresholds</strong><br>Warning, emergency, slowdown, suspension, and stop conditions are defined before execution.</div>
+    <div class="card"><strong>Stakeholder sensing</strong><br>Employees, customers, partners, and other affected groups contribute signals beyond executive KPIs.</div>
+    <div class="card"><strong>Adaptive authority</strong><br>Decision rights can expand, contract, pause, or terminate according to measured performance and risk.</div>
+    <div class="card"><strong>Testable dissent</strong><br>Dissent can trigger re-evaluation when it introduces a missing variable, evidence claim, constraint, or explicit alternative.</div>
+    <div class="card"><strong>Executable review</strong><br>A small Python model and machine-readable protocol make the assumptions inspectable and falsifiable.</div>
+  </div>
+
+  <h2>Origin of inquiry</h2>
+  <p>The project was triggered by a public observation from Christopher J. Skinner about enterprise AI's difficulty representing human thinking, communication, decision quality, and leadership. LDG treats that observation as a research question and develops an independent architecture around the decision lifecycle itself.</p>
+
+  <h2>Research integrity</h2>
+  <p class="note">LDG v0.1 is a conceptual and executable working paper. It is not a validated safety standard, production governance product, or empirical proof. The included simulation exists so reviewers — human or AI — can challenge the logic, change assumptions, and construct counterexamples.</p>
+
+  <footer>Amir Ahmadi · Independent Researcher · ORCID 0009-0000-0614-6869</footer>
+</main>
+</body>
+</html>
