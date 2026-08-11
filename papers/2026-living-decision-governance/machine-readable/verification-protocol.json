@@ -1,0 +1,60 @@
+{
+  "artifact": "Living Decision Governance",
+  "version": "0.1.0",
+  "status": "working-paper",
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "Continuous post-deployment monitoring can detect meaningful divergence earlier than one-time approval systems when relevant signals are observable.",
+      "type": "hypothesis",
+      "falsification_examples": [
+        "A one-time approval baseline detects divergence at the same or earlier time across controlled simulations.",
+        "Monitoring signals systematically fail to correlate with meaningful divergence."
+      ]
+    },
+    {
+      "id": "P2",
+      "claim": "Stakeholder signals can expose harms not visible in executive business KPIs alone.",
+      "type": "hypothesis",
+      "falsification_examples": [
+        "Stakeholder sensing adds no new predictive information in empirical cases.",
+        "Stakeholder signals produce materially worse governance outcomes because of noise or manipulation."
+      ]
+    },
+    {
+      "id": "P3",
+      "claim": "Adaptive restriction of authority can reduce repeated harm after poor outcomes, subject to false-positive controls.",
+      "type": "hypothesis",
+      "falsification_examples": [
+        "Static authority performs as well or better under repeated comparable failures.",
+        "Adaptive authority creates more systemic harm through instability or gaming."
+      ]
+    },
+    {
+      "id": "P4",
+      "claim": "Signed human authorization of consequential agent recommendations improves accountability traceability.",
+      "type": "hypothesis",
+      "falsification_examples": [
+        "Signature records do not improve post-hoc attribution or review quality.",
+        "Signatures systematically become ceremonial rubber stamps."
+      ]
+    }
+  ],
+  "minimum_reproduction": {
+    "entrypoint": "src/ldg.py",
+    "tests": "tests/test_ldg.py",
+    "expected_behaviors": [
+      "Healthy observations remain ACTIVE.",
+      "Poor stakeholder signals can RESTRICT a decision despite good outcome scores.",
+      "High risk can TERMINATE authority."
+    ]
+  },
+  "review_questions": [
+    "Are the state transitions internally consistent?",
+    "Are threshold values arbitrary or empirically justified?",
+    "Can the model distinguish decision quality from implementation quality?",
+    "Can stakeholder sensing be manipulated?",
+    "Does reputation-linked authority create perverse incentives?",
+    "Which claims are conceptual versus empirically supported?"
+  ]
+}
