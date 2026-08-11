@@ -1,0 +1,35 @@
+name: LDG verification
+
+on:
+  push:
+    paths:
+      - 'papers/2026-living-decision-governance/**'
+      - '.github/workflows/ldg-tests.yml'
+  pull_request:
+    paths:
+      - 'papers/2026-living-decision-governance/**'
+      - '.github/workflows/ldg-tests.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: papers/2026-living-decision-governance
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pytest
+        run: python -m pip install pytest
+
+      - name: Run LDG v0.2 tests
+        run: pytest -q tests/test_ldg_v02.py
+
+      - name: Run LDG v0.2 demo
+        run: python examples/customer_support_demo.py
