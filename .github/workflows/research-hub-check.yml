@@ -25,20 +25,33 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install publication renderer
-        run: python -m pip install --disable-pip-version-check 'Markdown>=3.7,<4'
+        run: python -m pip install --disable-pip-version-check 'Markdown>=3.7,<4' 'Pillow>=10,<12'
       - name: Validate source links
         run: python site/validate.py
       - name: Build publication artifact
         run: python site/build.py
-      - name: Verify full-text bilingual publication
+      - name: Verify launch-ready bilingual publication
         shell: bash
         run: |
+          set -euo pipefail
           test -f _site/index.html
           test -f _site/fa/index.html
-          test -f _site/papers/living-decision-governance/index.html
-          test -f _site/fa/papers/living-decision-governance/index.html
+          test -f _site/assets/polish.css
           grep -q 'rel="canonical"' _site/index.html
-          grep -q 'ScholarlyArticle' _site/papers/living-decision-governance/index.html
-          grep -q 'ScholarlyArticle' _site/fa/papers/living-decision-governance/index.html
-          grep -q 'markdown-body' _site/papers/relational-co-evolution/index.html
-          grep -q 'markdown-body' _site/fa/papers/relational-co-evolution/index.html
+          grep -q 'hreflang="fa"' _site/index.html
+          slugs=(living-decision-governance beyond-intelligence-ai-evolution relational-co-evolution reflections-and-their-owners from-stamp-to-alliance from-money-to-pledge i-you-and-we designing-rest before-the-first-chapter from-genesis-to-witness beyond-models-hacs)
+          for slug in "${slugs[@]}"; do
+            test -f "_site/papers/$slug/index.html"
+            test -f "_site/fa/papers/$slug/index.html"
+            grep -q 'ScholarlyArticle' "_site/papers/$slug/index.html"
+            grep -q 'ScholarlyArticle' "_site/fa/papers/$slug/index.html"
+            grep -q 'markdown-body' "_site/papers/$slug/index.html"
+            grep -q 'markdown-body' "_site/fa/papers/$slug/index.html"
+            grep -q 'hreflang="fa"' "_site/papers/$slug/index.html"
+            grep -q 'hreflang="en"' "_site/fa/papers/$slug/index.html"
+            ! grep -qi 'source-warning\|Test content' "_site/papers/$slug/index.html"
+            test -s "_site/assets/og/$slug-en.png"
+            test -s "_site/assets/og/$slug-fa.png"
+          done
+          grep -q 'Vazirmatn' _site/assets/polish.css
+          test -f _site/sitemap.xml
