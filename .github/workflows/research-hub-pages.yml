@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'papers/**'
+      - '2026/**'
       - '.github/workflows/research-hub-pages.yml'
   workflow_dispatch:
 
@@ -27,9 +29,11 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Install publication renderer
+        run: python -m pip install --disable-pip-version-check 'Markdown>=3.7,<4'
       - name: Validate source links
         run: python site/validate.py
-      - name: Build publication artifact
+      - name: Build bilingual full-text publication artifact
         run: python site/build.py
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
