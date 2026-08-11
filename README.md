@@ -104,6 +104,21 @@ The framework explores:
 
 ## New Public Working Paper
 
+### Living Decision Governance
+
+A closed-loop architecture for human–AI organizational decision making that treats consequential decisions as governed, continuously monitored objects rather than one-time approvals.
+
+The working artifact includes an English paper, executable specification, Python reference model, behavior tests, machine-readable verification protocol, AI review guide, citation metadata, and a standalone landing page.
+
+- [English paper](papers/2026-living-decision-governance/paper.en.md)
+- [Framework README](papers/2026-living-decision-governance/README.md)
+- [Specification](papers/2026-living-decision-governance/specification.md)
+- [Python reference model](papers/2026-living-decision-governance/src/ldg.py)
+- [Verification protocol](papers/2026-living-decision-governance/machine-readable/verification-protocol.json)
+- [AI review guide](papers/2026-living-decision-governance/machine-readable/AI-README.md)
+- [Landing page](papers/2026-living-decision-governance/website/index.html)
+- [Citation metadata](papers/2026-living-decision-governance/CITATION.cff)
+
 ### From Green Personalisation to Relational Co-Evolution
 
 This versioned conceptual position paper extends the Green Personalisation research agenda by proposing the human-AI relationship as a unit of design and evaluation. It is published for open criticism, revision, and interdisciplinary dialogue.
@@ -118,6 +133,7 @@ This versioned conceptual position paper extends the Green Personalisation resea
 
 | Title | Date | DOI | English | فارسی | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| Living Decision Governance: A Closed-Loop Architecture for Human–AI Organizational Decision Making | Aug 2026 | Pending | [Text](papers/2026-living-decision-governance/paper.en.md) | — | 🧪 Public Working Paper v0.1.0 |
 | From Green Personalisation to Relational Co-Evolution | Jul 2026 | Pending | [Text](papers/2026-relational-co-evolution/paper.en.md) | [متن](papers/2026-relational-co-evolution/paper.fa.md) | 🌐 Public Working Paper v0.2.0 |
 | Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🔄 v1.1.0-dev / v1.0.0 stable |
 | From Genesis to Witness | Jun 2026 | — | — | — | 📄 Draft |
