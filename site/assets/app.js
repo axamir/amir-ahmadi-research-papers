@@ -12,6 +12,20 @@ if(menu&&links){
 }
 
 const isFa=document.documentElement.lang==='fa';
+const repoBase='/amir-ahmadi-research-papers';
+function languagePath(targetLang){
+  let path=location.pathname;
+  const prefix=repoBase+'/';
+  if(!path.startsWith(prefix)) return targetLang==='fa'?'/fa/':'/';
+  let rest=path.slice(prefix.length);
+  if(rest==='fa') rest='fa/';
+  if(targetLang==='fa'){
+    if(!rest.startsWith('fa/')) rest='fa/'+rest;
+  }else{
+    if(rest.startsWith('fa/')) rest=rest.slice(3);
+  }
+  return prefix+rest+location.search+location.hash;
+}
 
 // Quiet command field in the header. This is an interface convention, not a security boundary.
 const nav=document.querySelector('.nav');
@@ -22,13 +36,13 @@ if(nav){
   command.setAttribute('aria-label',isFa?'کادر فرمان':'Command field');
   command.innerHTML=`<span class="command-mark">⌘</span><input type="text" autocomplete="off" spellcheck="false" aria-label="${isFa?'فرمان':'Command'}" placeholder="${isFa?'فرمان…':'command…'}"><span class="command-hint">↵</span>`;
   const anchor=nav.querySelector('.menu-btn');
-  nav.insertBefore(command,anchor);
+  nav.insertBefore(command,anchor||null);
   command.addEventListener('submit',e=>{
     e.preventDefault();
     const input=command.querySelector('input');
     const value=input.value.trim().toLowerCase();
-    if(!isFa && value==='@@fa') location.href='fa/';
-    else if(isFa && (value==='@@en'||value==='en')) location.href='../';
+    if(!isFa && value==='@@fa') location.href=languagePath('fa');
+    else if(isFa && (value==='@@en'||value==='en')) location.href=languagePath('en');
     else {
       command.classList.remove('command-error');
       void command.offsetWidth;
@@ -60,7 +74,6 @@ const routesEn={
   'From Genesis to Witness':'papers/from-genesis-to-witness/',
   'Beyond Models: Toward Enduring Human–AI Collaborative Systems':'papers/beyond-models-hacs/'
 };
-
 const routesFa={
   'حکمرانی زنده تصمیم':'papers/living-decision-governance/',
   'فراتر از هوشمندی — تکامل هوش مصنوعی':'papers/beyond-intelligence-ai-evolution/',
@@ -74,7 +87,6 @@ const routesFa={
   'از پیدایش تا شاهد':'papers/from-genesis-to-witness/',
   'فراتر از مدل‌ها: به‌سوی سامانه‌های پایدار همکاری انسان–هوش مصنوعی':'papers/beyond-models-hacs/'
 };
-
 const routes=isFa?routesFa:routesEn;
 document.querySelectorAll('.paper-card').forEach(card=>{
   const h=card.querySelector('h3');
@@ -88,20 +100,38 @@ document.querySelectorAll('.paper-card').forEach(card=>{
   const actions=card.querySelector('.actions');
   if(actions){
     let a=actions.querySelector('[data-research-page]')||actions.querySelector('.btn.primary');
-    if(!a){
-      a=document.createElement('a');
-      a.className='btn primary';
-      actions.prepend(a);
-    }
-    a.href=route;
-    a.dataset.researchPage='true';
-    a.textContent=isFa?'مطالعه کامل مقاله →':'Read full paper →';
+    if(!a){a=document.createElement('a');a.className='btn primary';actions.prepend(a)}
+    a.href=route;a.dataset.researchPage='true';a.textContent=isFa?'مطالعه کامل مقاله →':'Read full paper →';
   }
   const open=()=>{location.href=route};
   card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open()});
-  card.addEventListener('keydown',e=>{
-    if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){
-      e.preventDefault();open();
+  card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){e.preventDefault();open()}});
+});
+
+const progress=document.querySelector('.reading-progress span');
+if(progress){
+  const updateProgress=()=>{
+    const root=document.documentElement;
+    const max=Math.max(1,root.scrollHeight-root.clientHeight);
+    const pct=Math.min(100,Math.max(0,(root.scrollTop/max)*100));
+    progress.style.width=`${pct}%`;
+  };
+  updateProgress();
+  addEventListener('scroll',updateProgress,{passive:true});
+  addEventListener('resize',updateProgress,{passive:true});
+}
+
+document.querySelectorAll('.copy-citation').forEach(button=>{
+  button.addEventListener('click',async()=>{
+    const citation=button.dataset.citation||'';
+    try{
+      await navigator.clipboard.writeText(citation);
+      const original=button.textContent;
+      button.classList.add('copied');
+      button.textContent=isFa?'کپی شد ✓':'Copied ✓';
+      setTimeout(()=>{button.textContent=original;button.classList.remove('copied')},1600);
+    }catch{
+      const area=document.createElement('textarea');area.value=citation;document.body.append(area);area.select();document.execCommand('copy');area.remove();
     }
   });
 });
