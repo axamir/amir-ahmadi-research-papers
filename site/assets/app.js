@@ -11,6 +11,32 @@ if(menu&&links){
   }));
 }
 
+// Quiet command field in the header. This is an interface convention, not a security boundary.
+const nav=document.querySelector('.nav');
+if(nav){
+  const isFa=document.documentElement.lang==='fa';
+  const command=document.createElement('form');
+  command.className='command-box';
+  command.setAttribute('role','search');
+  command.setAttribute('aria-label',isFa?'کادر فرمان':'Command field');
+  command.innerHTML=`<span class="command-mark">⌘</span><input type="text" autocomplete="off" spellcheck="false" aria-label="${isFa?'فرمان':'Command'}" placeholder="${isFa?'فرمان…':'command…'}"><span class="command-hint">↵</span>`;
+  const anchor=nav.querySelector('.menu-btn');
+  nav.insertBefore(command,anchor);
+  command.addEventListener('submit',e=>{
+    e.preventDefault();
+    const input=command.querySelector('input');
+    const value=input.value.trim().toLowerCase();
+    if(!isFa && value==='@@fa') location.href='fa/';
+    else if(isFa && (value==='@@en'||value==='en')) location.href='../';
+    else {
+      command.classList.remove('command-error');
+      void command.offsetWidth;
+      command.classList.add('command-error');
+      input.select();
+    }
+  });
+}
+
 const chips=[...document.querySelectorAll('.chip')];
 const entries=[...document.querySelectorAll('.entry')];
 chips.forEach(chip=>chip.addEventListener('click',()=>{
@@ -34,32 +60,34 @@ const routes={
   'Beyond Models: Toward Enduring Human–AI Collaborative Systems':'papers/beyond-models-hacs/'
 };
 
-document.querySelectorAll('.paper-card').forEach(card=>{
-  const h=card.querySelector('h3');
-  if(!h)return;
-  const route=routes[h.textContent.trim()];
-  if(!route)return;
-  card.classList.add('has-page');
-  card.setAttribute('tabindex','0');
-  card.setAttribute('role','link');
-  card.setAttribute('aria-label',`Open ${h.textContent.trim()} research page`);
-  const actions=card.querySelector('.actions');
-  if(actions&&!actions.querySelector('[data-research-page]')){
-    const a=document.createElement('a');
-    a.href=route;
-    a.className='btn primary';
-    a.dataset.researchPage='true';
-    a.textContent='Explore research →';
-    actions.prepend(a);
-  }
-  const open=()=>{location.href=route};
-  card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open()});
-  card.addEventListener('keydown',e=>{
-    if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){
-      e.preventDefault();open();
+if(document.documentElement.lang!=='fa'){
+  document.querySelectorAll('.paper-card').forEach(card=>{
+    const h=card.querySelector('h3');
+    if(!h)return;
+    const route=routes[h.textContent.trim()];
+    if(!route)return;
+    card.classList.add('has-page');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('role','link');
+    card.setAttribute('aria-label',`Open ${h.textContent.trim()} research page`);
+    const actions=card.querySelector('.actions');
+    if(actions&&!actions.querySelector('[data-research-page]')){
+      const a=document.createElement('a');
+      a.href=route;
+      a.className='btn primary';
+      a.dataset.researchPage='true';
+      a.textContent='Explore research →';
+      actions.prepend(a);
     }
+    const open=()=>{location.href=route};
+    card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open()});
+    card.addEventListener('keydown',e=>{
+      if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){
+        e.preventDefault();open();
+      }
+    });
   });
-});
+}
 
 const year=document.querySelector('[data-year]');
 if(year)year.textContent=new Date().getFullYear();
