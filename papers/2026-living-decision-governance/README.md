@@ -11,7 +11,9 @@
 
 For the complete project in one document — origin, theory, architecture, examples, related work, executable model, falsification criteria and research roadmap — read:
 
-### **[LDG_COMPLETE.md](LDG_COMPLETE.md)**
+### **[LDG_COMPLETE.md](LDG_COMPLETE.md)** — English master reference
+### **[LDG_COMPLETE.fa.md](LDG_COMPLETE.fa.md)** — نسخه جامع فارسی هم‌تراز
+### **[Research microsite](website/index.html)** — bilingual interactive landing page
 
 The modular files below remain useful for implementation, testing, citation and machine review.
 
@@ -39,8 +41,9 @@ The project then develops an independent architecture around persistent decision
 
 ## Repository contents
 
-- `LDG_COMPLETE.md` — single comprehensive master document
-- `paper.en.md` — English working paper
+- `LDG_COMPLETE.md` — English comprehensive master document
+- `LDG_COMPLETE.fa.md` — Persian parallel comprehensive reference
+- `paper.en.md` — original English working paper
 - `specification.md` — executable conceptual specification
 - `assets/ldg-cover.svg` — project cover
 - `assets/ldg-architecture.svg` — architecture diagram
@@ -51,7 +54,7 @@ The project then develops an independent architecture around persistent decision
 - `tests/test_ldg_v02.py` — v0.2 behavior and safety tests
 - `machine-readable/verification-protocol.json` — machine-readable claims and checks
 - `machine-readable/AI-README.md` — AI-assisted adversarial review guidance
-- `website/index.html` — standalone landing page
+- `website/index.html` — bilingual interactive paper microsite
 - `CITATION.cff` — citation metadata
 
 ## Run the model
@@ -76,6 +79,20 @@ pytest -q papers/2026-living-decision-governance/tests
 ```
 
 A GitHub Actions workflow (`.github/workflows/ldg-tests.yml`) automatically runs the tests and demo when LDG files change.
+
+## Interactive microsite
+
+`website/index.html` is intentionally dedicated to this paper only. It includes:
+
+- English/Persian switching,
+- the core thesis and architecture,
+- intellectual-origin attribution,
+- a small interactive decision-state demonstrator,
+- a concrete customer-support example,
+- adjacent-research positioning,
+- and direct links to the complete paper, code, tests and machine-readable verification files.
+
+The interactive demonstrator is explanatory; `src/ldg_v02.py` remains the executable research reference model.
 
 ## Related research
 
