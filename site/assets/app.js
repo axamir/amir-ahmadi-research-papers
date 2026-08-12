@@ -136,5 +136,29 @@ document.querySelectorAll('.copy-citation').forEach(button=>{
   });
 });
 
+// Curated network: intentionally limited to the five public surfaces that support the research narrative.
+const footer=document.querySelector('.footer');
+if(footer&&!footer.querySelector('.research-network')){
+  const network=document.createElement('div');
+  network.className='research-network shell';
+  const items=[
+    ['Amir Ahmadi','https://axamir.github.io/'],
+    ['Shahnameh of Agents','https://axamir.github.io/shahnameh-of-agents/'],
+    ['Persistent AI Lineage','https://axamir.github.io/persistent-ai-lineage/'],
+    ['PDRP-88','https://axamir.github.io/PDRP-88/'],
+    ['Evidence Archive','https://axamir.github.io/echoes-consented-record/']
+  ];
+  const title=isFa?'شبکه پژوهشی':'Research Network';
+  const intro=isFa?'پنج مسیر منتخب و مرتبط با این آرشیو پژوهشی.':'A curated set of public systems connected to this research archive.';
+  network.innerHTML=`<div class="research-network-head"><div><span class="research-network-kicker">${title}</span><p>${intro}</p></div></div><div class="research-network-links">${items.map(([label,url],i)=>`<a href="${url}" target="_blank" rel="noopener"><span class="network-index">0${i+1}</span><span>${label}</span><span aria-hidden="true">↗</span></a>`).join('')}</div>`;
+  footer.prepend(network);
+
+  const style=document.createElement('style');
+  style.textContent=`
+  .research-network{padding:8px 0 34px}.research-network-head{display:flex;justify-content:space-between;gap:24px;padding:0 0 18px}.research-network-kicker{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#46535a}.research-network-head p{margin:7px 0 0;color:#70787d;font-size:.84rem;max-width:560px}.research-network-links{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.research-network-links a{min-height:86px;padding:16px 14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;text-decoration:none;border-right:1px solid var(--line);font-size:.82rem;font-weight:700;transition:background .18s ease,transform .18s ease}.research-network-links a:last-child{border-right:0}.research-network-links a:hover{background:rgba(255,255,255,.42)}.network-index{font:600 .66rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#8b9295}.research-network-links a:focus-visible{outline:3px solid #6f8d9b;outline-offset:-3px}html[dir="rtl"] .research-network-kicker{letter-spacing:0;text-transform:none}html[dir="rtl"] .research-network-links a{border-right:0;border-left:1px solid var(--line)}html[dir="rtl"] .research-network-links a:last-child{border-left:0}@media(max-width:920px){.research-network-links{grid-template-columns:1fr 1fr}.research-network-links a:nth-child(2n){border-right:0}.research-network-links a{border-bottom:1px solid var(--line)}html[dir="rtl"] .research-network-links a:nth-child(2n){border-left:0}}@media(max-width:560px){.research-network{padding-bottom:26px}.research-network-links{grid-template-columns:1fr}.research-network-links a,.research-network-links a:nth-child(2n){border-right:0;border-left:0;min-height:62px}.research-network-links a:last-child{border-bottom:0}}
+  `;
+  document.head.append(style);
+}
+
 const year=document.querySelector('[data-year]');
 if(year)year.textContent=new Date().getFullYear();
