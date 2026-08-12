@@ -35,8 +35,6 @@ jobs:
         run: python site/validate.py
       - name: Build full-text publication artifact
         run: python site/build.py
-      - name: Apply international and Persian publication surfaces
-        run: python site/international_surface.py
       - name: Apply paper-specific visual identity and social previews
         run: python site/visual_identity.py
       - name: Configure GitHub Pages

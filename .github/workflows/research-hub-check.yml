@@ -38,7 +38,8 @@ jobs:
           test -f _site/fa/index.html
           test -f _site/assets/polish.css
           grep -q 'rel="canonical"' _site/index.html
-          grep -q 'hreflang="fa"' _site/index.html
+          ! grep -q 'hreflang="fa"' _site/index.html
+          ! grep -q 'EN / FA\|EN/FA\|نسخه فارسی\|Persian edition' _site/index.html
           slugs=(living-decision-governance beyond-intelligence-ai-evolution relational-co-evolution reflections-and-their-owners from-stamp-to-alliance from-money-to-pledge i-you-and-we designing-rest before-the-first-chapter from-genesis-to-witness beyond-models-hacs)
           for slug in "${slugs[@]}"; do
             test -f "_site/papers/$slug/index.html"
@@ -47,8 +48,10 @@ jobs:
             grep -q 'ScholarlyArticle' "_site/fa/papers/$slug/index.html"
             grep -q 'markdown-body' "_site/papers/$slug/index.html"
             grep -q 'markdown-body' "_site/fa/papers/$slug/index.html"
-            grep -q 'hreflang="fa"' "_site/papers/$slug/index.html"
+            ! grep -q 'hreflang="fa"' "_site/papers/$slug/index.html"
+            ! grep -q 'EN / FA\|EN/FA\|نسخه فارسی\|Persian edition' "_site/papers/$slug/index.html"
             grep -q 'hreflang="en"' "_site/fa/papers/$slug/index.html"
+            grep -q 'لایهٔ فارسی' "_site/fa/papers/$slug/index.html"
             ! grep -qi 'source-warning\|Test content' "_site/papers/$slug/index.html"
             test -s "_site/assets/og/$slug-en.png"
             test -s "_site/assets/og/$slug-fa.png"

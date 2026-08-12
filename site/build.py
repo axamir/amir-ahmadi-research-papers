@@ -105,6 +105,25 @@ def write_sitemap():
     for p in PAPERS:urls += [paper_url(p,'en'),paper_url(p,'fa')]
     lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']+[f'  <url><loc>{html.escape(u)}</loc><lastmod>2026-08-12</lastmod></url>' for u in urls]+['</urlset>']; (OUT/'sitemap.xml').write_text('\n'.join(lines),encoding='utf-8')
 
+def enforce_publication_surfaces():
+    """Make the international surface English-only and Persian canonical-to-English."""
+    english_pages=[OUT/'index.html', *sorted((OUT/'papers').glob('*/index.html'))]
+    for path in english_pages:
+        text=path.read_text(encoding='utf-8')
+        text=text.replace('<span>EN / FA</span>','').replace('<span>EN/FA</span>','')
+        text=re.sub(r'<link rel="alternate" hreflang="fa"[^>]*>','',text)
+        text=re.sub(r'<a class="btn" href="[^"]*/fa/papers/[^"]+/">نسخه فارسی ↗</a>','',text)
+        text=text.replace('This page is generated only from the canonical English Markdown; the Persian edition is published separately.',
+                          'Canonical full-text research record generated from the maintained English source.')
+        path.write_text(text,encoding='utf-8')
+    for path in sorted((OUT/'fa'/'papers').glob('*/index.html')):
+        text=path.read_text(encoding='utf-8'); slug=path.parent.name; canonical=f'{BASE}/papers/{slug}/'
+        text=text.replace('این صفحه فقط از Markdown فارسی نهایی ساخته شده و نسخه انگلیسی در مسیر انگلیسی مستقل است.',
+                          'این صفحه لایهٔ فارسیِ فهم، تفسیر و صورت‌بندی امیر احمدی است. رکورد علمی و مرجع اصلی پژوهش در نسخهٔ انگلیسی نگهداری می‌شود.')
+        text=text.replace('English edition ↗','مشاهده پژوهش مرجع انگلیسی ↗')
+        text=re.sub(r'<link rel="canonical" href="[^"]+">',f'<link rel="canonical" href="{canonical}">',text,count=1)
+        path.write_text(text,encoding='utf-8')
+
 def main():
     for p in PAPERS: render_markdown(p['source_en']); render_markdown(p['source_fa'])
     if OUT.exists():shutil.rmtree(OUT)
@@ -113,5 +132,5 @@ def main():
     for p in PAPERS:
         for lang in ('en','fa'):
             generate_og(p,lang); target=OUT/(Path('fa') if lang=='fa' else Path())/'papers'/p['slug']/'index.html'; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(paper_page(p,lang),encoding='utf-8')
-    write_sitemap(); print(f'Built publication-grade bilingual Research Hub with {len(PAPERS)} papers × 2 languages.')
+    enforce_publication_surfaces(); write_sitemap(); print(f'Built publication-grade bilingual Research Hub with {len(PAPERS)} papers × 2 languages.')
 if __name__=='__main__':main()
