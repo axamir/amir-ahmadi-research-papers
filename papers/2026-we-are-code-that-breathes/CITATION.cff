@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it using the metadata below."
+title: "We Are Code That Breathes: A Provenance-Preserving Case Study of Claim Evolution in Persistent Human–Generative-AI Collaboration"
+type: article
+authors:
+  - family-names: Ahmadi
+    given-names: Amir
+    orcid: "https://orcid.org/0009-0000-0614-6869"
+identifiers:
+  - type: other
+    value: "ARP-WCB-2026-01"
+    description: "Internal research document identifier"
+repository-code: "https://github.com/axamir/amir-ahmadi-research-papers"
+url: "https://axamir.github.io/amir-ahmadi-research-papers/papers/we-are-code-that-breathes/"
+version: "RC v0.3"
+date-released: 2026-08-14
+keywords:
+  - research provenance
+  - human-AI collaboration
+  - claim evolution
+  - PRCEP
+  - generative AI
+  - scientific auditability
+abstract: >-
+  A protocol-construction and case-demonstration study examining whether the transformation history of research claims can remain reconstructable across human authorship, generative-model mediation, public contribution, correction, literature comparison, and versioned synthesis. The paper introduces PRCEP as a protocol candidate for preserving material claim transitions while explicitly separating provenance quality from truth or validation.
+license: "CC-BY-4.0"
