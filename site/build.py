@@ -144,12 +144,19 @@ def write_dossier_fragments(p):
 def dossier_panel(p,fa,hero=False):
     files=dossier_files(p)
     if not files:return ''
+    base=p['repo']+'/'
     label='پروندهٔ پژوهش' if fa else 'Research dossier'
-    intro='۴۱ سندِ منبع، روش و ارزیابی — داخل همین صفحه بخوانید.' if fa else '41 source, method, and evaluation documents — read them here.'
-    open_label='باز کردن پرونده' if fa else 'Open dossier'
+    title='مسیرِ دگرگونیِ ادعا را خودتان بررسی کنید.' if fa else 'Inspect how the claim changed.'
+    intro='این یک فهرست منابع نیست؛ رکوردِ قابل‌بررسیِ چالش‌ها، اصلاح‌ها و آزمونی است که استعاره‌ی آغازین را به یک پروتکلِ قابل‌ردشدن تبدیل کرد.' if fa else 'Not a bibliography: an inspectable record of the challenges, corrections, and tests that turned an opening metaphor into a falsifiable protocol.'
+    open_label='ورود به رکورد شواهد' if fa else 'Enter the evidence record'
     grouped={}
-    for group,title,path in files: grouped.setdefault(group,[]).append((title,path))
-    overview=''.join(f'<button type="button" class="dossier-quick" data-dossier-open data-dossier-key="{dossier_key(path)}"><span>{html.escape(title)}</span><b>↗</b></button>' for title,path in grouped['Record'][:3])
+    for group,doc_title,path in files: grouped.setdefault(group,[]).append((doc_title,path))
+    pathways=[
+        ('نقطهٔ آغاز: گاه‌شمار', 'Start: origin chronology', base+'data/chronology.md'),
+        ('تغییرها: انتقال‌های ادعا', 'See: claim transitions', base+'data/worked-claim-transitions.md'),
+        ('آزمون: طرح ارزیابی', 'Test: evaluation design', base+'data/evaluation-plan.md'),
+    ]
+    overview=''.join(f'<button type="button" class="dossier-quick" data-dossier-open data-dossier-key="{dossier_key(path)}"><span>{fa_label if fa else en_label}</span><b>↗</b></button>' for fa_label,en_label,path in pathways)
     dialog_groups=[]
     for group,items in grouped.items():
         group_label={'Record':'رکورد اصلی','Evidence':'شواهد و روش','Evaluation':'ارزیابی','Release':'کنترل انتشار'}[group] if fa else group
@@ -158,7 +165,8 @@ def dossier_panel(p,fa,hero=False):
     docs={dossier_key(path):path for _,_,path in files}
     dialog=f'''<dialog class="dossier-dialog" data-dossier-dialog><div class="dossier-frame"><aside class="dossier-nav"><div class="dossier-nav-head"><span class="side-label">{label}</span><button type="button" class="dossier-close" data-dossier-close aria-label="{'بستن' if fa else 'Close'}">×</button></div><p>{'نسخه‌های منبع به زبان اصلی حفظ می‌شوند.' if fa else 'Source documents remain in their original language.'}</p>{''.join(dialog_groups)}</aside><section class="dossier-reader"><header><div><span class="side-label">{'سند منبع' if fa else 'Source document'}</span><h2 data-dossier-title>{'یک سند را انتخاب کنید' if fa else 'Choose a document'}</h2></div><a data-dossier-github target="_blank" rel="noopener" hidden>{'مشاهده در GitHub ↗' if fa else 'Open on GitHub ↗'}</a></header><div class="dossier-loading" data-dossier-loading>{'از فهرستِ کناری انتخاب کنید.' if fa else 'Select an item from the left.'}</div><div class="dossier-content" data-dossier-content></div></section></div></dialog>'''
     variant=' dossier-panel--hero' if hero else ''
-    return f'''<section class="dossier-panel{variant}"><div class="dossier-panel-copy"><div class="side-label">{label}</div><p>{intro}</p></div><button type="button" class="dossier-open" data-dossier-open data-dossier-key="{next(iter(docs))}">{open_label} <span>↗</span></button><div class="dossier-quick-list">{overview}</div></section>{dialog}'''
+    proof='۴۱ سندِ اصلی <i></i> ۷ انتقال ادعا <i></i> ۵ طبقهٔ شواهد' if fa else '41 primary documents <i></i> 7 claim transitions <i></i> 5 evidence classes'
+    return f'''<section class="dossier-panel{variant}"><div class="dossier-panel-copy"><div class="side-label">{label}</div><h2>{title}</h2><p>{intro}</p><div class="dossier-proof">{proof}</div></div><button type="button" class="dossier-open" data-dossier-open data-dossier-key="{dossier_key(base+'data/chronology.md')}">{open_label} <span>↗</span></button><div class="dossier-quick-list">{overview}</div></section>{dialog}'''
 
 def paper_page(p,lang):
     fa=lang=='fa'; source=p[f'source_{lang}']; title=p[f'title_{lang}']; kicker=p[f'kicker_{lang}']; date=p[f'date_{lang}']; status=p[f'status_{lang}']
