@@ -127,9 +127,26 @@ WCB_DOSSIER=[
 ]
 
 def dossier_files(p):
-    if p['slug']!='we-are-code-that-breathes': return []
     base=p['repo']+'/'
-    return [(group,label,base+path) for group,label,path in WCB_DOSSIER]
+    if p['slug']=='we-are-code-that-breathes':
+        return [(group,label,base+path) for group,label,path in WCB_DOSSIER]
+    canonical={p['source_en'],p['source_fa']}
+    def usable(path):
+        raw=path.read_text(encoding='utf-8').strip()
+        return len(raw)>=80 and raw.lower() not in {'test content','placeholder'}
+    files=sorted(path for path in (ROOT/p['repo']).rglob('*.md') if path.as_posix().removeprefix(ROOT.as_posix()+'/') not in canonical and usable(path))
+    if len(files)<2:return []
+    def group_for(path):
+        parts=path.relative_to(ROOT/p['repo']).parts
+        name=path.name.lower()
+        if 'evaluation' in parts or name.startswith('test') or name.startswith('condition-'):return 'Evaluation'
+        if any(part in {'data','framework','machine-readable'} for part in parts):return 'Evidence'
+        if name in {'changelog.md','license.md'}:return 'Release'
+        return 'Record'
+    def title_for(path):
+        rel=path.relative_to(ROOT/p['repo']).with_suffix('')
+        return ' · '.join(part.replace('_',' ').replace('-',' ').title() for part in rel.parts)
+    return [(group_for(path),title_for(path),path.relative_to(ROOT).as_posix()) for path in files]
 
 def dossier_key(path):
     return re.sub(r'[^a-z0-9]+','-',path.lower()).strip('-').replace('-md','')
@@ -146,16 +163,17 @@ def dossier_panel(p,fa,hero=False):
     if not files:return ''
     base=p['repo']+'/'
     label='پروندهٔ پژوهش' if fa else 'Research dossier'
-    title='مسیرِ دگرگونیِ ادعا را خودتان بررسی کنید.' if fa else 'Inspect how the claim changed.'
-    intro='این یک فهرست منابع نیست؛ رکوردِ قابل‌بررسیِ چالش‌ها، اصلاح‌ها و آزمونی است که استعاره‌ی آغازین را به یک پروتکلِ قابل‌ردشدن تبدیل کرد.' if fa else 'Not a bibliography: an inspectable record of the challenges, corrections, and tests that turned an opening metaphor into a falsifiable protocol.'
-    open_label='ورود به رکورد شواهد' if fa else 'Enter the evidence record'
+    is_wcb=p['slug']=='we-are-code-that-breathes'
+    title=('مسیرِ دگرگونیِ ادعا را خودتان بررسی کنید.' if fa else 'Inspect how the claim changed.') if is_wcb else ('رکوردِ پژوهش را ورق بزنید.' if fa else 'Explore the working record.')
+    intro=('این یک فهرست منابع نیست؛ رکوردِ قابل‌بررسیِ چالش‌ها، اصلاح‌ها و آزمونی است که استعاره‌ی آغازین را به یک پروتکلِ قابل‌ردشدن تبدیل کرد.' if fa else 'Not a bibliography: an inspectable record of the challenges, corrections, and tests that turned an opening metaphor into a falsifiable protocol.') if is_wcb else ('یادداشت‌های همراه، روش، مدل‌ها و اسناد انتشار را بدون خروج از همین صفحه بخوانید.' if fa else 'Read the companion notes, methods, models, and release records without leaving this page.')
+    open_label=('ورود به رکورد شواهد' if fa else 'Enter the evidence record') if is_wcb else ('باز کردن پروندهٔ پژوهش' if fa else 'Open the research dossier')
     grouped={}
     for group,doc_title,path in files: grouped.setdefault(group,[]).append((doc_title,path))
-    pathways=[
+    pathways=([
         ('نقطهٔ آغاز: گاه‌شمار', 'Start: origin chronology', base+'data/chronology.md'),
         ('تغییرها: انتقال‌های ادعا', 'See: claim transitions', base+'data/worked-claim-transitions.md'),
         ('آزمون: طرح ارزیابی', 'Test: evaluation design', base+'data/evaluation-plan.md'),
-    ]
+    ] if is_wcb else [(f'شروع: {items[0][0]}',f'Start: {items[0][0]}',items[0][1]) for _,items in list(grouped.items())[:3]])
     overview=''.join(f'<button type="button" class="dossier-quick" data-dossier-open data-dossier-key="{dossier_key(path)}"><span>{fa_label if fa else en_label}</span><b>↗</b></button>' for fa_label,en_label,path in pathways)
     dialog_groups=[]
     for group,items in grouped.items():
@@ -165,8 +183,9 @@ def dossier_panel(p,fa,hero=False):
     docs={dossier_key(path):path for _,_,path in files}
     dialog=f'''<dialog class="dossier-dialog" data-dossier-dialog><div class="dossier-frame"><aside class="dossier-nav"><div class="dossier-nav-head"><span class="side-label">{label}</span><button type="button" class="dossier-close" data-dossier-close aria-label="{'بستن' if fa else 'Close'}">×</button></div><p>{'نسخه‌های منبع به زبان اصلی حفظ می‌شوند.' if fa else 'Source documents remain in their original language.'}</p>{''.join(dialog_groups)}</aside><section class="dossier-reader"><header><div><span class="side-label">{'سند منبع' if fa else 'Source document'}</span><h2 data-dossier-title>{'یک سند را انتخاب کنید' if fa else 'Choose a document'}</h2></div><a data-dossier-github target="_blank" rel="noopener" hidden>{'مشاهده در GitHub ↗' if fa else 'Open on GitHub ↗'}</a></header><div class="dossier-loading" data-dossier-loading>{'از فهرستِ کناری انتخاب کنید.' if fa else 'Select an item from the left.'}</div><div class="dossier-content" data-dossier-content></div></section></div></dialog>'''
     variant=' dossier-panel--hero' if hero else ''
-    proof='۴۱ سندِ اصلی <i></i> ۷ انتقال ادعا <i></i> ۵ طبقهٔ شواهد' if fa else '41 primary documents <i></i> 7 claim transitions <i></i> 5 evidence classes'
-    return f'''<section class="dossier-panel{variant}"><div class="dossier-panel-copy"><div class="side-label">{label}</div><h2>{title}</h2><p>{intro}</p><div class="dossier-proof">{proof}</div></div><button type="button" class="dossier-open" data-dossier-open data-dossier-key="{dossier_key(base+'data/chronology.md')}">{open_label} <span>↗</span></button><div class="dossier-quick-list">{overview}</div></section>{dialog}'''
+    proof=('۴۱ سندِ اصلی <i></i> ۷ انتقال ادعا <i></i> ۵ طبقهٔ شواهد' if fa else '41 primary documents <i></i> 7 claim transitions <i></i> 5 evidence classes') if is_wcb else (f'{len(files)} سندِ همراه <i></i> منبع و نسخه‌بندی قابل‌بررسی' if fa else f'{len(files)} supporting documents <i></i> inspectable source and version record')
+    first_path=pathways[0][2]
+    return f'''<section class="dossier-panel{variant}"><div class="dossier-panel-copy"><div class="side-label">{label}</div><h2>{title}</h2><p>{intro}</p><div class="dossier-proof">{proof}</div></div><button type="button" class="dossier-open" data-dossier-open data-dossier-key="{dossier_key(first_path)}">{open_label} <span>↗</span></button><div class="dossier-quick-list">{overview}</div></section>{dialog}'''
 
 def paper_page(p,lang):
     fa=lang=='fa'; source=p[f'source_{lang}']; title=p[f'title_{lang}']; kicker=p[f'kicker_{lang}']; date=p[f'date_{lang}']; status=p[f'status_{lang}']
