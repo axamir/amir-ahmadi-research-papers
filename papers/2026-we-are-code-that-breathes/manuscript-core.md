@@ -27,6 +27,10 @@ The public thread is not treated as peer review or as a controlled adversarial e
 
 The broad intuition that persistent Human↔AI interaction may be useful as a unit of analysis cannot carry the novelty claim. Cybernetics, enactive and embodied cognition, extended/distributed cognition, belief revision, provenance research, scientific claim/evidence models, mixed-initiative systems, and contemporary Human–AI interaction already occupy substantial parts of that territory. The surviving problem is narrower: **provenance through epistemic transformation**.
 
+![Five material traces surround an opening lens: a visual key to the paper's five evidence classes.](assets/opening-evidence-layers.png)
+
+*Figure 1. **Evidence before assertion.** The five concentric traces encode the five evidence classes used in this study: public record (E0), external literature (E1), trajectory reconstruction (E2), research hypothesis (E3), and philosophical metaphor (E4). The central aperture is a question under examination—not a claim that biology is software.*
+
 If a claim begins as C0, is challenged, corrected into C1, compared with prior literature, independently converges with another framework, is reformulated through model-assisted dialogue, and later becomes C2, what evidence must survive so that an external reader can reconstruct the transition without relying on the author's memory?
 
 ## 2. Related Work and Novelty Boundary
@@ -92,6 +96,10 @@ A minimal transition can be represented as:
 A crucial relation is `independently_convergent_with`. It must remain distinct from `derived_from`, `adopted_from`, `influenced_by`, `quoted_from`, and `coauthored_with`. Conceptual similarity alone is insufficient evidence of lineage.
 
 PRCEP therefore treats the transition itself as inspectable research data while explicitly refusing to equate provenance quality with truth.
+
+![An archival path of witness nodes with an adjacent independent path that converges without joining.](assets/prcep-transition-path.png)
+
+*Figure 2. **A transition is a record, not a straight line.** The primary path encodes the eleven fields of the minimal PRCEP transition tuple. The nearby green path is deliberately separate: it represents `independently_convergent_with`, where conceptual resemblance must not be rewritten as shared lineage, derivation, or co-authorship. The torn layers mark revision, correction, and retained uncertainty.*
 
 ## 7. Case Transitions
 
@@ -177,6 +185,10 @@ PRCEP also imposes cost. More provenance can mean more storage, annotation effor
 Model configuration is another limitation. Version, context, memory, instructions, tools, and product behavior can affect persistent Human–AI interaction. Where historical configuration is unavailable, the record preserves uncertainty rather than implying reproducibility.
 
 Finally, reconstruction is not epistemic quality. A perfectly reconstructable argument may still be false. PRCEP targets auditability; truth, validity, predictive performance, and scientific quality require their own methods.
+
+![Two distinct archival paths approach an open calibration gate beneath seven distant lights.](assets/falsification-horizon.png)
+
+*Figure 3. **The falsification horizon.** The two paths represent the provenance-rich condition and the matched-information control. The seven lights encode the proposed outcomes: origin attribution, transition reconstruction, correction visibility, independence discrimination, model-mediation transparency, current-state fidelity, and evidence-link completeness. The gate remains open because a protocol that adds no material benefit relative to its cost should be simplified or rejected.*
 
 ## 13. Discussion
 
