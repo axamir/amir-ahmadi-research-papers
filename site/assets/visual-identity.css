@@ -57,6 +57,8 @@
   radial-gradient(circle at 75% 30%,rgba(169,201,183,.22),transparent 20%),
   linear-gradient(145deg,#0d2023,#2d5552 55%,#88a797)}
 .cover.hacs::before,.reading-cover.hacs::before{width:250px;height:250px;right:9%;top:12%;border-radius:22%;border:1px solid rgba(255,255,255,.18);transform:rotate(45deg)}
+.cover.wcb,.reading-cover.wcb{background:radial-gradient(circle at 72% 23%,#aad7cf 0 2%,transparent 2.6%),linear-gradient(145deg,#13252d,#24525b 55%,#5c9a91)}
+.cover.wcb::before,.reading-cover.wcb::before{width:270px;height:270px;right:-66px;top:-58px;border:1px solid rgba(170,215,207,.4);box-shadow:0 0 0 52px rgba(170,215,207,.05),0 0 0 104px rgba(170,215,207,.025)}
 
 .paper-card{box-shadow:0 1px 0 rgba(255,255,255,.85) inset,0 16px 42px rgba(30,34,36,.035)}
 .paper-card:hover{box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 24px 64px rgba(24,31,35,.10)}
