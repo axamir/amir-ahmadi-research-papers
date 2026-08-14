@@ -82,6 +82,83 @@ def artifact_links(p,fa):
     rows=''.join(f'<a href="{GITHUB}/blob/main/{path}" target="_blank" rel="noopener"><span>{html.escape(label)}</span><b>↗</b></a>' for label,path in arts)
     return f'<section class="artifact-panel"><div class="side-label">{heading}</div>{rows}</section>'
 
+WCB_DOSSIER=[
+    ('Record', 'Study overview', 'README.md'),
+    ('Record', 'Contribution ledger', 'CONTRIBUTIONS.md'),
+    ('Record', 'AI disclosure', 'AI_DISCLOSURE.md'),
+    ('Record', 'Discussion record', 'DISCUSSION_RECORD.en.md'),
+    ('Record', 'References', 'REFERENCES.md'),
+    ('Evidence', 'Chronology', 'data/chronology.md'),
+    ('Evidence', 'Bilingual alignment', 'data/bilingual-alignment.md'),
+    ('Evidence', 'Citation alignment', 'data/citation-alignment.md'),
+    ('Evidence', 'Claim–source matrix', 'data/claim-source-matrix.md'),
+    ('Evidence', 'Discussion map', 'data/discussion-map.md'),
+    ('Evidence', 'Worked claim transitions', 'data/worked-claim-transitions.md'),
+    ('Evidence', 'PRCEP schema', 'data/prcep-schema.md'),
+    ('Evidence', 'Model mediation manifest', 'data/model-mediation-manifest.md'),
+    ('Evidence', 'Formal model', 'data/formal-model-v0.1.md'),
+    ('Evidence', 'Literature gap matrix', 'data/literature-gap-matrix.md'),
+    ('Evidence', 'Literature audit', 'data/literature-audit-2026-08.md'),
+    ('Evidence', 'Literature gate closure', 'data/literature-gate-closure.md'),
+    ('Evidence', 'Prior-lineage audit', 'data/prior-lineage-audit.md'),
+    ('Evidence', 'Provenance gap audit', 'data/provenance-gap-audit.md'),
+    ('Evidence', 'Quote verification matrix', 'data/quote-verification-matrix.md'),
+    ('Evidence', 'Evidence policy', 'data/release-evidence-policy.md'),
+    ('Evaluation', 'Evaluation plan', 'data/evaluation-plan.md'),
+    ('Evaluation', 'Adversarial review', 'data/final-adversarial-review.md'),
+    ('Evaluation', 'Pilot protocol', 'evaluation/pilot-protocol.md'),
+    ('Evaluation', 'Pilot registry', 'evaluation/pilot-registry.md'),
+    ('Evaluation', 'Pilot run template', 'evaluation/pilot-run-template.md'),
+    ('Evaluation', 'Preregistration', 'evaluation/preregistration.md'),
+    ('Evaluation', 'Condition P', 'evaluation/condition-p.md'),
+    ('Evaluation', 'Condition C', 'evaluation/condition-c.md'),
+    ('Evaluation', 'Condition C2', 'evaluation/condition-c2.md'),
+    ('Evaluation', 'Evaluator instructions', 'evaluation/evaluator-instructions.md'),
+    ('Evaluation', 'Scoring rubric', 'evaluation/scoring-rubric.md'),
+    ('Evaluation', 'Gold standard', 'evaluation/gold-standard.md'),
+    ('Evaluation', 'Matching audit', 'evaluation/matching-audit.md'),
+    ('Evaluation', 'Evaluation index', 'evaluation/README.md'),
+    ('Evaluation', 'Evaluation questions', 'evaluation/questions.md'),
+    ('Evaluation', 'Report template', 'evaluation/report-template.md'),
+    ('Evaluation', 'Stimulus freeze manifest', 'evaluation/stimulus-freeze-manifest.md'),
+    ('Release', 'Final release audit', 'FINAL_RELEASE_AUDIT.md'),
+    ('Release', 'Publication QA', 'data/publication-qa.md'),
+    ('Release', 'Freeze gap register', 'data/freeze-gap-register.md'),
+]
+
+def dossier_files(p):
+    if p['slug']!='we-are-code-that-breathes': return []
+    base=p['repo']+'/'
+    return [(group,label,base+path) for group,label,path in WCB_DOSSIER]
+
+def dossier_key(path):
+    return re.sub(r'[^a-z0-9]+','-',path.lower()).strip('-').replace('-md','')
+
+def write_dossier_fragments(p):
+    for _,_,path in dossier_files(p):
+        article,_,_=render_markdown(path)
+        target=OUT/'dossiers'/p['slug']/(dossier_key(path)+'.html')
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(f'<article class="dossier-document">{article}</article>',encoding='utf-8')
+
+def dossier_panel(p,fa):
+    files=dossier_files(p)
+    if not files:return ''
+    label='پروندهٔ پژوهش' if fa else 'Research dossier'
+    intro='۴۱ سندِ منبع، روش و ارزیابی — داخل همین صفحه بخوانید.' if fa else '41 source, method, and evaluation documents — read them here.'
+    open_label='باز کردن پرونده' if fa else 'Open dossier'
+    grouped={}
+    for group,title,path in files: grouped.setdefault(group,[]).append((title,path))
+    overview=''.join(f'<button type="button" class="dossier-quick" data-dossier-open data-dossier-key="{dossier_key(path)}"><span>{html.escape(title)}</span><b>↗</b></button>' for title,path in grouped['Record'][:3])
+    dialog_groups=[]
+    for group,items in grouped.items():
+        group_label={'Record':'رکورد اصلی','Evidence':'شواهد و روش','Evaluation':'ارزیابی','Release':'کنترل انتشار'}[group] if fa else group
+        buttons=''.join(f'<button type="button" data-dossier-load data-dossier-key="{dossier_key(path)}" data-dossier-path="{html.escape(path,quote=True)}" data-dossier-title="{html.escape(title,quote=True)}">{html.escape(title)}</button>' for title,path in items)
+        dialog_groups.append(f'<section class="dossier-group"><h3>{group_label}</h3>{buttons}</section>')
+    docs={dossier_key(path):path for _,_,path in files}
+    dialog=f'''<dialog class="dossier-dialog" data-dossier-dialog><div class="dossier-frame"><aside class="dossier-nav"><div class="dossier-nav-head"><span class="side-label">{label}</span><button type="button" class="dossier-close" data-dossier-close aria-label="{'بستن' if fa else 'Close'}">×</button></div><p>{'نسخه‌های منبع به زبان اصلی حفظ می‌شوند.' if fa else 'Source documents remain in their original language.'}</p>{''.join(dialog_groups)}</aside><section class="dossier-reader"><header><div><span class="side-label">{'سند منبع' if fa else 'Source document'}</span><h2 data-dossier-title>{'یک سند را انتخاب کنید' if fa else 'Choose a document'}</h2></div><a data-dossier-github target="_blank" rel="noopener" hidden>{'مشاهده در GitHub ↗' if fa else 'Open on GitHub ↗'}</a></header><div class="dossier-loading" data-dossier-loading>{'از فهرستِ کناری انتخاب کنید.' if fa else 'Select an item from the left.'}</div><div class="dossier-content" data-dossier-content></div></section></div></dialog>'''
+    return f'''<section class="dossier-panel"><div class="side-label">{label}</div><p>{intro}</p><button type="button" class="dossier-open" data-dossier-open data-dossier-key="{next(iter(docs))}">{open_label} <span>↗</span></button><div class="dossier-quick-list">{overview}</div></section>{dialog}'''
+
 def paper_page(p,lang):
     fa=lang=='fa'; source=p[f'source_{lang}']; title=p[f'title_{lang}']; kicker=p[f'kicker_{lang}']; date=p[f'date_{lang}']; status=p[f'status_{lang}']
     article,plain,chars=render_markdown(source); words=max(1,len(plain.split()) if not fa else chars//5); mins=max(1,round(words/(210 if not fa else 170)))
@@ -93,7 +170,7 @@ def paper_page(p,lang):
     image_rel=p.get(f'image_{lang}')
     cover=f'<figure class="paper-image-cover"><img src="{RAW}/{image_rel}" alt="{html.escape(title)} cover"></figure>' if image_rel else f'<div class="reading-cover {p["cover"]}"><span>{html.escape(kicker)}</span><strong>{html.escape(title)}</strong><small>{html.escape(date)}</small></div>'
     schema={'@context':'https://schema.org','@type':'ScholarlyArticle','headline':title,'description':summary,'datePublished':p['date_iso'],'dateModified':'2026-08-12','inLanguage':lang,'author':{'@type':'Person','name':'Amir Ahmadi','sameAs':[ORCID,'https://github.com/axamir']},'url':url,'image':og,'version':p['version'],'keywords':p['topics'],'isPartOf':{'@type':'CollectionPage','name':'Amir Ahmadi Research','url':home}}
-    return f'''<!doctype html><html lang="{lang}"{direction}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — Amir Ahmadi Research</title><meta name="description" content="{html.escape(summary,quote=True)}"><link rel="canonical" href="{url}"><link rel="alternate" hreflang="en" href="{paper_url(p,'en')}"><link rel="alternate" hreflang="fa" href="{paper_url(p,'fa')}"><link rel="alternate" hreflang="x-default" href="{paper_url(p,'en')}"><link rel="icon" href="{BASE}/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{BASE}/assets/paper.css"><link rel="stylesheet" href="{BASE}/assets/polish.css"><meta property="og:type" content="article"><meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(summary,quote=True)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{og}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{og}"><meta name="citation_title" content="{html.escape(title,quote=True)}"><meta name="citation_author" content="Amir Ahmadi"><meta name="citation_publication_date" content="{p['date_iso']}"><meta name="citation_fulltext_html_url" content="{url}"><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False)}</script></head><body class="reading-page {'rtl' if fa else ''}" data-paper-slug="{p['slug']}"><div class="reading-progress" aria-hidden="true"><span></span></div><header class="top"><div class="shell nav"><a class="brand" href="{home}">@@ Amir Ahmadi Research</a><nav class="navlinks"><a href="{home}">{back}</a><a href="{repo_url}" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header><main><section class="reading-hero"><div class="shell reading-shell"><div class="eyebrow">{html.escape(kicker)}</div><h1>{html.escape(title)}</h1><p class="reading-note">{html.escape(provenance)}</p><div class="reading-meta"><span>{html.escape(date)}</span><span>{html.escape(p['version'])}</span><span>{html.escape(status)}</span><span>{read_label}</span></div><div class="topic-row">{topics}</div><div class="actions"><a class="btn primary" href="#paper">{'خواندن مقاله' if fa else 'Read full paper'} ↓</a><a class="btn" href="{alt}">{'English edition' if fa else 'نسخه فارسی'} ↗</a><a class="btn" href="{source_url}" target="_blank" rel="noopener">{source_label} ↗</a></div>{cover}</div></section><section class="shell reading-shell reading-layout" id="paper"><article class="markdown-body">{article}</article><aside class="reading-side"><div class="side-card publication-card"><div class="side-label">{'هویت انتشار' if fa else 'Publication identity'}</div><dl><dt>{'نویسنده' if fa else 'Author'}</dt><dd>Amir Ahmadi</dd><dt>ORCID</dt><dd><a href="{ORCID}" target="_blank" rel="noopener">0009-0000-0614-6869 ↗</a></dd><dt>{'نسخه' if fa else 'Version'}</dt><dd>{html.escape(p['version'])}</dd><dt>{'وضعیت' if fa else 'Status'}</dt><dd>{html.escape(status)}</dd><dt>{'زبان' if fa else 'Language'}</dt><dd>{'فارسی' if fa else 'English'}</dd></dl></div><div class="side-card citation-card"><div class="side-label">{cite_label}</div><p>{html.escape(citation)}</p><button class="copy-citation" data-citation="{html.escape(citation,quote=True)}">{'کپی استناد' if fa else 'Copy citation'}</button></div><div class="side-card provenance-card"><div class="side-label">{'منبع و شواهد' if fa else 'Source & provenance'}</div><a href="{source_url}" target="_blank" rel="noopener">{source_label} ↗</a><a href="{repo_url}" target="_blank" rel="noopener">{repo_label} ↗</a><a href="{GITHUB}/commits/main/{source}" target="_blank" rel="noopener">{'تاریخچه نسخه' if fa else 'Revision history'} ↗</a></div>{artifact_links(p,fa)}</aside></section></main><footer><div class="shell">© 2026 Amir Ahmadi · Independent Research · <a href="{GITHUB}">Source archive</a></div></footer><script src="{BASE}/assets/app.js"></script></body></html>'''
+    return f'''<!doctype html><html lang="{lang}"{direction}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — Amir Ahmadi Research</title><meta name="description" content="{html.escape(summary,quote=True)}"><link rel="canonical" href="{url}"><link rel="alternate" hreflang="en" href="{paper_url(p,'en')}"><link rel="alternate" hreflang="fa" href="{paper_url(p,'fa')}"><link rel="alternate" hreflang="x-default" href="{paper_url(p,'en')}"><link rel="icon" href="{BASE}/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{BASE}/assets/paper.css"><link rel="stylesheet" href="{BASE}/assets/polish.css"><meta property="og:type" content="article"><meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(summary,quote=True)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{og}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{og}"><meta name="citation_title" content="{html.escape(title,quote=True)}"><meta name="citation_author" content="Amir Ahmadi"><meta name="citation_publication_date" content="{p['date_iso']}"><meta name="citation_fulltext_html_url" content="{url}"><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False)}</script></head><body class="reading-page {'rtl' if fa else ''}" data-paper-slug="{p['slug']}"><div class="reading-progress" aria-hidden="true"><span></span></div><header class="top"><div class="shell nav"><a class="brand" href="{home}">@@ Amir Ahmadi Research</a><nav class="navlinks"><a href="{home}">{back}</a><a href="{repo_url}" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header><main><section class="reading-hero"><div class="shell reading-shell"><div class="eyebrow">{html.escape(kicker)}</div><h1>{html.escape(title)}</h1><p class="reading-note">{html.escape(provenance)}</p><div class="reading-meta"><span>{html.escape(date)}</span><span>{html.escape(p['version'])}</span><span>{html.escape(status)}</span><span>{read_label}</span></div><div class="topic-row">{topics}</div><div class="actions"><a class="btn primary" href="#paper">{'خواندن مقاله' if fa else 'Read full paper'} ↓</a><a class="btn" href="{alt}">{'English edition' if fa else 'نسخه فارسی'} ↗</a><a class="btn" href="{source_url}" target="_blank" rel="noopener">{source_label} ↗</a></div>{cover}</div></section><section class="shell reading-shell reading-layout" id="paper"><article class="markdown-body">{article}</article><aside class="reading-side"><div class="side-card publication-card"><div class="side-label">{'هویت انتشار' if fa else 'Publication identity'}</div><dl><dt>{'نویسنده' if fa else 'Author'}</dt><dd>Amir Ahmadi</dd><dt>ORCID</dt><dd><a href="{ORCID}" target="_blank" rel="noopener">0009-0000-0614-6869 ↗</a></dd><dt>{'نسخه' if fa else 'Version'}</dt><dd>{html.escape(p['version'])}</dd><dt>{'وضعیت' if fa else 'Status'}</dt><dd>{html.escape(status)}</dd><dt>{'زبان' if fa else 'Language'}</dt><dd>{'فارسی' if fa else 'English'}</dd></dl></div><div class="side-card citation-card"><div class="side-label">{cite_label}</div><p>{html.escape(citation)}</p><button class="copy-citation" data-citation="{html.escape(citation,quote=True)}">{'کپی استناد' if fa else 'Copy citation'}</button></div><div class="side-card provenance-card"><div class="side-label">{'منبع و شواهد' if fa else 'Source & provenance'}</div><a href="{source_url}" target="_blank" rel="noopener">{source_label} ↗</a><a href="{repo_url}" target="_blank" rel="noopener">{repo_label} ↗</a><a href="{GITHUB}/commits/main/{source}" target="_blank" rel="noopener">{'تاریخچه نسخه' if fa else 'Revision history'} ↗</a></div>{artifact_links(p,fa)}{dossier_panel(p,fa)}</aside></section></main><footer><div class="shell">© 2026 Amir Ahmadi · Independent Research · <a href="{GITHUB}">Source archive</a></div></footer><script src="{BASE}/assets/app.js"></script></body></html>'''
 
 def inject_home_metadata(path,lang):
     text=path.read_text(encoding='utf-8'); fa=lang=='fa'; url=f'{BASE}/fa/' if fa else f'{BASE}/'; title='پژوهش‌های امیر احمدی' if fa else 'Amir Ahmadi Research'; desc='آرشیو پژوهش‌های مستقل درباره سامانه‌های انسان–هوش مصنوعی، حکمرانی، هویت و معماری‌های قابل راستی‌آزمایی.' if fa else 'Independent research on human–AI systems, governance, identity, decision intelligence and verifiable architectures.'
@@ -131,6 +208,7 @@ def main():
     shutil.copytree(SOURCE,OUT,ignore=shutil.ignore_patterns('build.py','validate.py','__pycache__'))
     inject_home_metadata(OUT/'index.html','en'); inject_home_metadata(OUT/'fa'/'index.html','fa')
     for p in PAPERS:
+        write_dossier_fragments(p)
         for lang in ('en','fa'):
             generate_og(p,lang); target=OUT/(Path('fa') if lang=='fa' else Path())/'papers'/p['slug']/'index.html'; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(paper_page(p,lang),encoding='utf-8')
     enforce_publication_surfaces(); write_sitemap(); print(f'Built publication-grade bilingual Research Hub with {len(PAPERS)} papers × 2 languages.')

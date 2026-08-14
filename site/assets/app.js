@@ -136,6 +136,51 @@ document.querySelectorAll('.copy-citation').forEach(button=>{
   });
 });
 
+// The dossier is built from the repository's canonical Markdown at publish time.
+// It is served from this site (rather than a third-party raw-file preview) so reading
+// remains reliable inside constrained browsers while GitHub stays the source archive.
+const dossier=document.querySelector('[data-dossier-dialog]');
+if(dossier){
+  const body=document.body;
+  const slug=body.dataset.paperSlug;
+  const reader=dossier.querySelector('[data-dossier-content]');
+  const loading=dossier.querySelector('[data-dossier-loading]');
+  const title=dossier.querySelector('[data-dossier-title]');
+  const github=dossier.querySelector('[data-dossier-github]');
+  let activeKey='';
+  const loadDocument=async(button)=>{
+    const key=button.dataset.dossierKey;
+    const path=button.dataset.dossierPath;
+    if(!key||!path||key===activeKey)return;
+    activeKey=key;
+    dossier.querySelectorAll('[data-dossier-load]').forEach(item=>item.classList.toggle('active',item===button));
+    title.textContent=button.dataset.dossierTitle||button.textContent;
+    reader.replaceChildren();
+    loading.hidden=false;
+    loading.textContent=isFa?'در حال باز کردن سند…':'Opening source document…';
+    github.href=`https://github.com/axamir/amir-ahmadi-research-papers/blob/main/${path}`;
+    github.hidden=false;
+    try{
+      const response=await fetch(`${repoBase}/dossiers/${slug}/${key}.html`,{cache:'force-cache'});
+      if(!response.ok)throw new Error(`HTTP ${response.status}`);
+      reader.innerHTML=await response.text();
+      loading.hidden=true;
+      dossier.querySelector('.dossier-reader').scrollTop=0;
+    }catch(error){
+      loading.textContent=isFa?'سند در این مرورگر بارگذاری نشد؛ نسخهٔ اصلی GitHub را باز کنید.':'This document could not load here; open the canonical GitHub source.';
+    }
+  };
+  const openDossier=(key)=>{
+    if(!dossier.open)dossier.showModal();
+    const button=[...dossier.querySelectorAll('[data-dossier-load]')].find(item=>item.dataset.dossierKey===key)||dossier.querySelector('[data-dossier-load]');
+    if(button)loadDocument(button);
+  };
+  document.querySelectorAll('[data-dossier-open]').forEach(button=>button.addEventListener('click',()=>openDossier(button.dataset.dossierKey)));
+  dossier.querySelectorAll('[data-dossier-load]').forEach(button=>button.addEventListener('click',()=>loadDocument(button)));
+  dossier.querySelectorAll('[data-dossier-close]').forEach(button=>button.addEventListener('click',()=>dossier.close()));
+  dossier.addEventListener('click',event=>{if(event.target===dossier)dossier.close()});
+}
+
 // Curated network: intentionally limited to the five public surfaces that support the research narrative.
 const footer=document.querySelector('.footer');
 if(footer&&!footer.querySelector('.research-network')){
