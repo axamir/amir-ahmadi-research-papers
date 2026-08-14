@@ -11,9 +11,11 @@
 
 ## Read the paper
 
+- **Publication page:** https://axamir.github.io/amir-ahmadi-research-papers/papers/we-are-code-that-breathes/
 - **English:** [`manuscript-core.md`](./manuscript-core.md)
 - **فارسی:** [`manuscript.fa.md`](./manuscript.fa.md)
 - **References:** [`REFERENCES.md`](./REFERENCES.md)
+- **Citation metadata:** [`CITATION.cff`](./CITATION.cff)
 - **AI mediation disclosure:** [`AI_DISCLOSURE.md`](./AI_DISCLOSURE.md)
 
 The Persian edition is epistemically aligned with the English release candidate; it is not an independent adaptation. See [`data/bilingual-alignment.md`](./data/bilingual-alignment.md).
@@ -43,6 +45,7 @@ Its narrower question is:
 | [`manuscript-core.md`](./manuscript-core.md) | English release-candidate manuscript |
 | [`manuscript.fa.md`](./manuscript.fa.md) | Aligned Persian research edition |
 | [`REFERENCES.md`](./REFERENCES.md) | Release-candidate bibliography and prior-art boundary |
+| [`CITATION.cff`](./CITATION.cff) | Machine-readable citation metadata |
 | [`AI_DISCLOSURE.md`](./AI_DISCLOSURE.md) | Concise AI-mediation disclosure |
 | [`CONTRIBUTIONS.md`](./CONTRIBUTIONS.md) | Contribution and attribution ledger |
 
@@ -84,7 +87,7 @@ The remaining files under [`data/`](./data/) preserve literature-gap work, prove
 
 ## Current scientific status
 
-The English conceptual manuscript, aligned Persian edition, literature boundary, citation alignment, provenance policy, model-mediation record, and adversarial review are freeze-ready.
+The English conceptual manuscript, aligned Persian edition, literature boundary, citation alignment, provenance policy, model-mediation record, adversarial review, publication metadata, and Research Hub integration are freeze-ready.
 
 The principal unresolved scientific step is **external evaluation**. The proposed test compares a provenance-rich condition with a matched-information control and measures origin attribution, transition reconstruction, correction visibility, independence discrimination, model-mediation transparency, current-state fidelity, evidence-link completeness, and maintenance cost.
 
@@ -99,4 +102,5 @@ Public contributors named in the evidence layer are contributors to the document
 ---
 
 **Release candidate:** RC v0.3  
-**Next gate:** artifact consistency check → merge decision → publication/landing integration
+**Publication layer:** integrated into Research Hub  
+**Next scientific gate:** independent PRCEP evaluation
