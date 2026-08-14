@@ -1,99 +1,114 @@
 # References & Prior-Art Spine
 
 **Document:** ARP-WCB-2026-01  
-**Status:** verified starter bibliography; expansion required before manuscript freeze
+**Status:** expanded verified bibliography; manuscript-freeze audit still required
 
-This file is not a decorative bibliography. Each source is included because it constrains, precedes, corrects, or sharpens a claim in the paper. The final manuscript must distinguish what is inherited from prior literature from what is newly proposed.
+This bibliography constrains the paper's novelty and terminology. Participant comments remain in the discussion record; scholarly prior art enters here only after the relevant work has been identified.
 
-## 1. Formal computation
+## Formal computation
 
 ### Turing, Alan M. (1936)
 **“On Computable Numbers, with an Application to the Entscheidungsproblem.”** *Proceedings of the London Mathematical Society*, s2-42(1), 230–265.
 
-**Why it matters:** Turing formalized an abstract machine manipulating symbols according to rules before modern electronic computers existed. Therefore the paper must not imply that the conceptual history of machine-readable instruction began with physical digital computers.
+Turing's abstract machine predates modern electronic general-purpose computers. “Code before computers” must therefore distinguish formal computation, symbolic instruction, and physical implementation.
 
-**Constraint on our thesis:** “Code before computers” is ambiguous unless we distinguish physical electronic computers from formal computation and symbolic instruction.
-
-## 2. Complexity and non-reductive inquiry
+## Complexity and reflexivity
 
 ### Morin, Edgar (1990)
 **Introduction à la pensée complexe.** ESF.
 
-**Why it matters:** Morin treats complexity as a problem/challenge rather than a master explanatory key and argues against simplification that mutilates the phenomena it attempts to explain.
-
-**Constraint on our thesis:** Human, AI, biology, information, and cognition cannot be collapsed into one explanatory vocabulary merely because useful analogies exist among them.
-
-## 3. Second-order cybernetics, observer, reflexivity
+Constrains reductive attempts to collapse biology, computation, cognition, and information into a single vocabulary.
 
 ### von Foerster, Heinz (2003)
 **Understanding Understanding: Essays on Cybernetics and Cognition.** Springer.
 
-Relevant essays include “On Constructing a Reality,” “Cybernetics of Epistemology,” “Notes on an Epistemology for Living Things,” “Cybernetics of Cybernetics,” “Ethics and Second-Order Cybernetics,” and “How Recursive is Communication?”
+Constrains novelty claims around observer participation, recursion, reflexivity, and systems observing systems.
 
-**Why it matters:** This lineage places the observer, recursion, self-organization, cognition, and epistemology inside the system of inquiry rather than treating observation as transparent and external.
-
-**Constraint on novelty:** Claims about reflexivity, observer participation, recursive communication, and systems observing systems require comparison with second-order cybernetics before being presented as new.
-
-## 4. Autopoiesis and biological cognition
+## Autopoiesis, embodiment, and enaction
 
 ### Maturana, Humberto R., & Varela, Francisco J. (1980)
-**Autopoiesis and Cognition: The Realization of the Living.** D. Reidel / Springer, Boston Studies in the Philosophy and History of Science, Vol. 42. DOI: 10.1007/978-94-009-8947-4.
+**Autopoiesis and Cognition: The Realization of the Living.** D. Reidel / Springer. DOI: 10.1007/978-94-009-8947-4.
 
-**Why it matters:** Maturana and Varela develop autopoiesis as a theory of living systems and treat cognition as a biological phenomenon, with language, description, and thinking emerging within domains of interaction.
+Constrains claims that cognition-before-language or relational/systemic cognition originate in this project.
 
-**Constraint on our thesis:** “Cognition begins before language” and relational/systemic descriptions of cognition have substantial prior lineage. The present paper must identify what changes, if anything, when one participant in the coupling is a contemporary generative model rather than a living autopoietic organism.
-
-## 5. Embodied cognition and enaction
-
-### Varela, Francisco J., Thompson, Evan, & Rosch, Eleanor (1991; revised edition 2017)
+### Varela, Francisco J., Thompson, Evan, & Rosch, Eleanor (1991; revised ed. 2017)
 **The Embodied Mind: Cognitive Science and Human Experience.** MIT Press.
 
-**Why it matters:** The work develops an enactive approach in which cognition is not simply an internal representation of an independent external world; embodiment, action, environment, and lived experience participate in bringing forth a meaningful world. The work also explicitly connects cognitive science, phenomenology, and Buddhist traditions.
+Constrains novelty around embodiment, enaction, lived experience, relation, and environment-dependent cognition.
 
-**Constraint on novelty:** Our notions of flow, relation, path, and co-creation cannot be presented as though relational/enactive cognition lacked prior theory. The key research question becomes whether persistent Human ↔ generative-AI interaction creates a new empirical configuration or merely instantiates already-described coupling in a new substrate arrangement.
+## Extended and distributed cognition
 
-## 6. Immediate literature obligations generated by the public discussion
+### Clark, Andy, & Chalmers, David J. (1998)
+**“The Extended Mind.”** *Analysis*, 58(1), 7–19. DOI: 10.1093/analys/58.1.7.
 
-The following areas must be added before the paper can make strong claims:
+Develops active externalism: environmental components can play an active role in cognitive processes. This is a direct prior-art boundary against broad claims that cognition or intelligence has newly been located beyond the isolated individual.
 
-- Shannon information theory and the distinction between information and semantic meaning.
-- Molecular biology terminology: DNA sequence, mutation, transcription, gene regulation, epigenetic modification, phenotype, neural plasticity, learning, and memory.
-- Genetic algorithms / genetic programming, because evolutionary metaphors have already been operationalized computationally.
-- Extended mind / distributed cognition / socially distributed cognition.
-- Dynamical systems approaches to cognition.
-- Structural coupling and enactivism after Maturana/Varela.
-- Human–AI interaction and mixed-initiative systems.
-- Interactive alignment and co-adaptation in human–AI collaboration.
-- AI-assisted scientific discovery and distributed epistemic agency.
-- Provenance, data lineage, auditability, and verifiable computation.
-- Authorship and attribution norms for AI-mediated work.
-- Philosophy of models: representation, truth, fidelity, and model/world distinction.
-- Machine metacognition and operational definitions of self-monitoring/self-correction.
+### Hutchins, Edwin (1995)
+**Cognition in the Wild.** MIT Press.
 
-## 7. External architecture introduced during the discussion
+Required comparison for socially and materially distributed cognition. The manuscript must not equate Human–AI coupling with a wholly unprecedented move beyond individual cognition.
+
+## Belief revision
+
+### Alchourrón, Carlos E., Gärdenfors, Peter, & Makinson, David (1985)
+**“On the Logic of Theory Change: Partial Meet Contraction and Revision Functions.”** *The Journal of Symbolic Logic*, 50(2), 510–530. DOI: 10.2307/2274239.
+
+Formalizes contraction and revision of theories. PRCEP must therefore not claim invention of belief or theory revision. Its candidate contribution concerns inspectable provenance of hybrid research transitions rather than a new general logic of revision.
+
+## Provenance
+
+### Lebo, Timothy, Sahoo, Satya, McGuinness, Deborah, et al. (2013)
+**PROV-O: The PROV Ontology.** W3C Recommendation, 30 April 2013.
+
+PROV-O provides a general ontology for representing provenance through entities, activities, agents, and relations. PRCEP must be framed as an application-level protocol and reconstruction layer, not as the invention of provenance representation.
+
+## Information and meaning
+
+### Shannon, Claude E. (1948)
+**“A Mathematical Theory of Communication.”** *Bell System Technical Journal*, 27, 379–423 and 623–656.
+
+Required boundary between mathematical information/communication and semantic meaning. The manuscript must not slide from information-bearing structure to meaning without an explicit additional argument.
+
+## Evolutionary computation
+
+### Koza, John R. (1992)
+**Genetic Programming: On the Programming of Computers by Means of Natural Selection.** MIT Press.
+
+Demonstrates that evolutionary mechanisms and metaphors have long been operationalized computationally. The paper must distinguish biological evolution, evolutionary computation, and metaphorical “evolution through continuity.”
+
+## External architecture introduced during the discussion
 
 ### Supreme Computation / SCQOS — Eric Robles
-Introduced publicly by its creator as an executable architecture concerned with continuity, lineage, causality, evidence, governance, interpretation, and attributable transition. The creator invited independent inspection of a live cloud environment.
+Introduced publicly by its creator as an executable architecture concerned with continuity, lineage, causality, evidence, governance, interpretation, and attributable transition.
 
-**Status:** participant-introduced external system; **not independently verified by this paper at this stage.**
+**Status:** participant-introduced external system; not independently verified by this paper at this stage.
 
-**Rule:** do not describe implementation claims as established capabilities until inspection/reproduction evidence is recorded.
+Conceptual similarity must be represented as independent convergence unless stronger lineage evidence exists.
 
-## 8. Prior author-side lineage to audit
+## Prior author-side lineage to audit
 
-The paper must also establish what was already present in Amir Ahmadi’s public or timestamped work before the LinkedIn discussion, including where relevant:
+Before manuscript freeze, the project must establish what was demonstrably present before the public discussion in relevant timestamped/public artifacts, including where applicable:
 
 - *Shahnameh of Agents*
 - *The Living Signal*
 - persistent AI lineage / Echo Protocol work
 - Relational Co-Evolution through Continuity
 - provenance/witnessing/continuity records
-- the @@ / @x@ notation and co-creation framing
+- @@ / @x@ notation and co-creation framing
 
-This is necessary not to claim priority broadly, but to prevent later public interaction from being retroactively treated as the source of concepts already documented beforehand.
+The purpose is not a broad priority claim. It is to prevent later interaction from being retroactively treated as the origin of concepts already documented beforehand.
 
-## 9. Bibliographic rule
+## Remaining literature obligations before freeze
 
-The final paper must not cite a person merely because they were named in the LinkedIn discussion. A source enters the scholarly bibliography only after the relevant work itself has been identified and reviewed sufficiently to support the proposition attributed to it.
+- molecular biology: DNA sequence, mutation, regulation, epigenetics, phenotype, plasticity, learning and memory;
+- dynamical-systems approaches to cognition;
+- Human–AI mixed-initiative systems and co-adaptation;
+- AI-assisted scientific discovery and distributed epistemic agency;
+- scientific claim/evidence representation beyond general provenance;
+- AI-mediated authorship and attribution norms;
+- philosophy of models and model/world distinction;
+- machine metacognition and operational self-monitoring.
 
-A participant comment belongs in the **discussion record**; scholarly prior art belongs in the **reference spine**. The two provenance classes must remain distinct.
+## Bibliographic rule
+
+A person is not added to the scholarly bibliography merely because they appeared in the public discussion. Participant interventions and scholarly prior art are separate provenance classes. Every literature-dependent proposition in the final manuscript must be supported by the work itself rather than by a participant's summary of it.
