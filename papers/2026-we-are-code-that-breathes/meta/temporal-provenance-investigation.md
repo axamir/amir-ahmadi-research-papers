@@ -2,63 +2,83 @@
 
 ## A forensic time capsule of one LinkedIn post, several unrelated events, and the provenance discovered between them
 
-**Parent paper:** *We Are Code That Breathes*  
-**Document:** Post-publication meta-research note  
-**Status:** Working archival narrative  
-**Scientific boundary:** This document does not validate the parent paper. It reconstructs a timestamp and the order in which unrelated facts and historical coincidences were discovered.
+**Parent paper:** [*We Are Code That Breathes*](../README.md)  
+**Evidence audit:** [FACT_CHECK.md](./FACT_CHECK.md)  
+**LinkedIn analytics source record:** [post-analytics-snapshot.md](./post-analytics-snapshot.md)  
+**Document type:** Post-publication meta-research / forensic narrative  
+**Status:** Source-linked working archival edition  
+**Scientific boundary:** This document does **not** validate the parent paper. It reconstructs a publication moment, distinguishes exact-time events from same-day context and historical anniversaries, and preserves the order in which those relationships were discovered.
+
+> **Coincidence is not causality.**  
+> **Not more true. More interesting.**
 
 ---
 
-## 1. I only wanted the timestamp
+## 1. I was not looking for meaning. I was looking for a timestamp.
 
-The parent paper was already finished.
+The paper was already finished.
 
-The original LinkedIn post had done something I had not expected. It did not become important because of raw virality. It became important because people challenged it.
+The original LinkedIn post had become useful for a reason I had not predicted. It did not become important because it was massively viral. It became important because people argued with it, corrected parts of it, introduced prior literature, brought independent frameworks into the discussion, and forced the claims to become narrower and more traceable. That transformation is documented in the parent paper’s public-discussion record and release package. [Parent paper](../README.md) · [Discussion record](../DISCUSSION_RECORD.en.md)
 
-A biological analogy was corrected. Historical framing was refined. Prior art in cybernetics and complexity science was introduced. Independent frameworks entered the discussion. Questions about representation, provenance, continuity, model mediation, authorship, and relational cognition accumulated. The post stopped being a static claim and became a traceable research trajectory.
+The post itself eventually accumulated **16,543 impressions**, reached **8,421 members**, and produced **91 comments**, among other engagement signals reported by LinkedIn. Those numbers describe platform activity, not scientific validation. A comment is not peer review; a repost is not endorsement; an impression is not a full read. [LinkedIn analytics snapshot](./post-analytics-snapshot.md)
 
-Eventually, that trajectory became *We Are Code That Breathes* and the PRCEP construction case.
-
-Only after the paper was complete did a completely unnecessary question begin bothering me:
+After the research package was closed, a completely unnecessary question began bothering me:
 
 > **What exactly was happening in the world when the original post was published?**
 
-I was not looking for meaning.
+I expected to find a timestamp and stop.
 
-I was looking for a timestamp.
+The LinkedIn analytics export gave the public post URL, the date **12 August 2026**, and the minute-level publication time **5:55 PM local time**. The post URL itself contains the numeric activity identifier `7493311627023433728`. [Original LinkedIn post](https://www.linkedin.com/posts/amir-ahmadi-a6a37523a_what-if-code-did-not-begin-with-computers-share-7493311627023433728-90fs) · [Analytics snapshot](./post-analytics-snapshot.md)
 
-LinkedIn gave me the first coordinate:
+Using the observed high-bit millisecond convention on that activity ID (`activity_id >> 22`) gives a reproducible derived timestamp of:
 
-> **12 August 2026 — 14:25:11.680 UTC**  
-> **12 August 2026 — 17:55:11.680 IRST**
+> **12 August 2026 — 14:25:10.880 UTC**  
+> **12 August 2026 — 17:55:10.880 IRST (UTC+03:30)**
 
-The minute is independently consistent with LinkedIn Analytics. The second/millisecond precision is derived from the post identifier and should be treated as a derived timestamp rather than an independently verified platform field.
+This second-level value is **derived**, not an officially documented LinkedIn timestamp field. LinkedIn’s supplied export independently supports only the minute (`17:55` local). That distinction matters enough that it is preserved in the fact-check ledger instead of being hidden in a footnote. [Timestamp methodology and source boundary](./FACT_CHECK.md#a-publication-timestamp-and-post-identity)
 
-That should have been the end of the investigation.
+That should have been the end of it.
 
 It was not.
 
 ---
 
-## 2. What was the sky doing?
+## 2. Fine. What was the sky doing?
 
 The first thing I checked was the sky.
 
-12 August 2026 was the date of a total solar eclipse.
+**12 August 2026 was the date of a total solar eclipse.** NASA/GSFC lists the event as a total eclipse and places the instant of greatest eclipse at **17:45:53.8 UT**, at approximately `65°13.5′ N, 25°13.7′ W`, with a central duration of about **2 minutes 18.2 seconds**. [NASA/GSFC eclipse path](https://eclipse.gsfc.nasa.gov/SEpath/SEpath2001/SE2026Aug12Tpath.html)
 
-But the timing mattered more than the date.
+But the interesting part was not simply that an eclipse happened on the same date.
 
-At the moment of publication, the eclipse had not yet begun anywhere on Earth.
+It was the order.
 
-The first partial phase would begin roughly **1 hour and 9 minutes later**.
+At the derived publication timestamp, the eclipse had **not yet begun anywhere on Earth**. The first location on Earth to enter the partial phase would do so at **15:34:15 UTC**, and the first location to enter totality at **16:58:09 UTC**. [Global eclipse timeline](https://www.timeanddate.com/eclipse/solar/2026-august-12)
 
-The first total phase would follow roughly **2 hours and 33 minutes later**.
+From the derived T₀ of `14:25:10.880 UTC`, that means:
 
-NASA/GSFC places the ecliptic conjunction at approximately **17:36:42.1 UT** and greatest eclipse at approximately **17:45:53.8 UT**.
+- first global partial phase: **+01:09:04.120**;
+- first global totality: **+02:32:58.120**.
+
+Those intervals are calculations from the sourced times above, not independently observed events. [Calculation ledger](./FACT_CHECK.md#b-eclipse-and-lunar-geometry)
+
+So the correct sentence is not:
+
+> “The Moon’s shadow was crossing Earth when the post was published.”
+
+It was not.
+
+The more accurate sentence is stranger in a quieter way:
+
+> **When the post was published, the eclipse had not yet started anywhere on Earth. The geometry was still approaching the event.**
+
+NASA/GSFC gives an **equatorial conjunction** at `17:03:49.6 UT`, an **ecliptic conjunction** at `17:36:42.1 UT`, and **greatest eclipse** at `17:45:53.8 UT`. [NASA/GSFC Besselian elements](https://eclipse.gsfc.nasa.gov/SEbeselm/SEbeselm2001/SE2026Aug12Tbeselm.html)
+
+Then one number made me laugh.
 
 From T₀ to greatest eclipse:
 
-> **03:20:42**
+> **17:45:53.800 − 14:25:10.880 = 03:20:42.920**
 
 Rounded to the minute:
 
@@ -66,113 +86,123 @@ Rounded to the minute:
 
 3… 2… 1.
 
-Meaningless as evidence?
+Evidence of anything?
 
-Almost certainly.
+No.
 
-Delightful as a numerical coincidence?
+A delightful numerical coincidence?
 
 Absolutely.
 
-This distinction became useful for the entire investigation:
+That became an early rule for the whole investigation:
 
 > **A detail can be interesting without becoming explanatory.**
 
-The Moon was also approaching New Moon. U.S. Naval Observatory tables place New Moon at about **17:37 UTC**, nearly aligned with the eclipse geometry.
+The Moon was also approaching New Moon. The U.S. Naval Observatory lists **New Moon at 17:37 UT on 12 August 2026**, while NASA/GSFC’s more precise ecliptic-conjunction time is `17:36:42.1 UT`. The two sources are consistent at the precision they publish. [U.S. Naval Observatory lunar phases](https://aa.usno.navy.mil/calculated/moon/phases?date=2026-07-22&format=p&nump=50&submit=Get+Data) · [NASA/GSFC eclipse elements](https://eclipse.gsfc.nasa.gov/SEbeselm/SEbeselm2001/SE2026Aug12Tbeselm.html)
 
-Using Varamin, Iran as a representative local reference — not device GPS — the Sun and Moon were both low in the western sky near sunset. The Moon was essentially dark and approaching conjunction.
+I had begun with a timestamp.
 
-The local-sky calculation belongs to the **derived** layer. It is not presented as a NASA observation of the publication location.
-
----
-
-## 3. What was Earth moving through?
-
-The date also fell inside the active period of the Perseid meteor shower, produced by debris associated with comet 109P/Swift–Tuttle.
-
-The annual Perseid maximum was approaching during the night of 12–13 August.
-
-Some meteor models also placed a possible encounter with an older Swift–Tuttle dust trail, associated with material from 1079, near **16:53 UTC** on 12 August.
-
-That is roughly two and a half hours after T₀.
-
-But this item requires special discipline.
-
-A predicted dust-trail encounter is not the same thing as a confirmed observed meteor outburst. It belongs in the record only as a **prediction/model item**, never as an observed event unless observational evidence independently confirms it.
-
-This became another rule for the investigation:
-
-> **Do not upgrade a prediction into an event just because the story becomes better.**
+Now I had a countdown.
 
 ---
 
-## 4. Meanwhile, in New York
+## 3. Earth was also inside the Perseid stream
 
-Then I moved the camera from the sky back to Earth.
+Then I checked the meteor calendar.
 
-At **14:25 UTC**, it was **10:25 AM in New York**.
+The International Meteor Organization lists the **Perseids** as active from **17 July to 24 August 2026**, peaking on the night of **12–13 August**, with **109P/Swift–Tuttle** as the parent object. NASA independently identifies Swift–Tuttle debris as the source of the Perseid meteor shower. [IMO meteor-shower calendar](https://www.imo.net/resources/calendar/) · [NASA — 109P/Swift–Tuttle](https://science.nasa.gov/solar-system/comets/109p-swift-tuttle/)
 
-At United Nations Headquarters, a Youth & AI Summit was scheduled with an opening plenary beginning at **10:00 AM** and the next session beginning at **11:00 AM**.
+So at T₀, Earth was not waiting for the Perseids to “begin.” It was already moving through the broader annual stream; the shower was approaching its strongest interval. [IMO calendar](https://www.imo.net/resources/calendar/)
 
-So T₀ falls inside the scheduled opening-plenary window.
+There was also a more obscure prediction in the 2026 meteor literature. The IMO calendar discusses modelling by Jérémie Vaubaillon that placed Earth near a branch of a **1079** Swift–Tuttle dust trail at about **16:53 UT on 12 August**, while declining to give an activity estimate because the trail is so old. An independent Japanese meteor-observation project summarizes the same predicted approach. [2026 IMO Meteor Shower Calendar copy](https://www.researchgate.net/publication/393092133_2026_IMO_Meteor_Shower_Calendar) · [IPRMO Perseids 2026 summary](https://jpn.iprmo.org/meteor-info/08_perseids_j.html)
 
-Hundreds of young participants were gathered around questions involving AI, governance, education, health, employment, public services, and civic participation.
+From T₀, `16:53:00 − 14:25:10.880` is approximately:
 
-Meanwhile, on LinkedIn, a small post had just asked whether the idea of “code” should be conceptually bounded by computers at all.
+> **+02:27:49.120**
 
-There is no causal connection between these events.
+But this item gets a different label from the eclipse.
 
-They simply happened on the same planet at the same time.
+It is **PREDICTED**.
 
-That was enough to keep the investigation going.
+A modelled dust-trail approach is not a confirmed meteor outburst. The investigation therefore preserves it as a prediction and refuses to upgrade it into an observed event just because the story becomes more attractive. [Fact-check classification](./FACT_CHECK.md#c-perseids--swift–tuttle)
+
+Another rule entered the notebook:
+
+> **Do not upgrade a prediction into an event because the narrative improves.**
+
+---
+
+## 4. Then I moved the camera from the sky to New York
+
+At `14:25 UTC`, New York was on Eastern Daylight Time, four hours behind UTC, putting the derived publication moment at about **10:25 AM** local.
+
+That mattered because the **Youth and AI Summit** at **United Nations Headquarters, New York** was scheduled for the same date. The event page lists check-in from `09:00`, the programme beginning at `10:00`, an **opening plenary at 10:00**, and **Session 1 at 11:00**. It describes more than **600 young leaders** convening around AI’s effects on education, employment, health, public services, and civic participation, with a planned **Youth-led Declaration on AI Policy and Governance** among the outputs. [Youth and AI Summit — event page](https://www.iycforyouth.org/iyd2026/)
+
+So T₀ falls inside the **scheduled 10:00–11:00 opening-plenary window**. That supports a narrow statement: the plenary was scheduled to be underway. It does **not** tell us who was speaking at `10:25:10.880`, unless a separate transcript or recording establishes that. [Fact-check boundary](./FACT_CHECK.md#d-united-nations--ai-context)
+
+Meanwhile, somewhere on LinkedIn, a post had just asked whether the idea of “code” should be conceptually bounded by computers at all. [Original post](https://www.linkedin.com/posts/amir-ahmadi-a6a37523a_what-if-code-did-not-begin-with-computers-share-7493311627023433728-90fs)
+
+No causal connection.
+
+No secret coordination.
+
+Just two things happening on the same planet at the same time.
+
+But by then I was curious.
+
+There was even a second AI-related UN-site event that day: the **AI for Developing Countries Forum Geneva Summit 2026** began on **12 August** at the Palais des Nations and ran through 14 August. That is useful only as **same-day context**, not as part of the exact-moment claim. [Indico.UN event record](https://indico.un.org/event/1024169/)
 
 ---
 
 ## 5. What about signals?
 
-Because the parent research lineage already contained the phrase **Living Signal**, I allowed myself one playful question:
+This is where the investigation became dangerously fun.
 
-> What were signals doing at T₀?
+The parent research lineage had already used the phrase **Living Signal** long before this retrospective search. So I allowed myself one playful question:
 
-NASA’s STEREO-A planning material contained a scheduled Deep Space Network pass on 12 August from approximately **09:50 to 15:20 UTC**, using DSN antenna D25.
+> **What were signals doing at T₀?**
 
-T₀ — 14:25:11 UTC — sits inside that scheduled window.
+The official STEREO Science Center Deep Space Network schedule lists a pass for **STEREO-A (“Ahead”)** on **12 August 2026 from 09:50 to 15:20 UTC**, using antenna **D25**, for a scheduled duration of **5 h 30 m**. [STEREO-A DSN schedule](https://stereo-ssc.nascom.nasa.gov/plans/dsn_schedule.shtml)
 
-Approximately **54 minutes and 49 seconds** remained before the scheduled end.
+The derived publication timestamp, `14:25:10.880 UTC`, sits inside that interval.
 
-The only defensible statement is:
+Time remaining before the scheduled end:
+
+> **15:20:00.000 − 14:25:10.880 = 00:54:49.120**
+
+So the strongest defensible statement is:
 
 > **At the moment of publication, a NASA Deep Space Network pass with STEREO-A was scheduled to be active.**
 
-The schedule does **not** prove that a particular packet crossed a particular antenna at the exact publication second.
+The schedule does **not** prove that a particular packet, command, or telemetry sample crossed antenna D25 at the exact publication second. That stronger claim was deliberately excluded. [Fact-check ledger](./FACT_CHECK.md#e-deep-space-network--stereo-a)
 
-That distinction stays in the record.
+STEREO is a solar-observation mission. So the note in my notebook became:
 
-STEREO-A is a solar-observation mission.
+> A scheduled DSN window involving a solar-observing spacecraft overlapped the timestamp of a post published on the day of a total solar eclipse.
 
-So on the day of a total solar eclipse, while the Moon was approaching eclipse geometry, a scheduled deep-space communications window involving a solar-observing spacecraft overlapped the publication timestamp.
+Still no explanation.
 
-Again:
-
-No explanation.
-
-Just another entry in the notebook.
+Just another fact placed carefully beside another fact.
 
 ---
 
-## 6. Humans in orbit
+## 6. Seven humans were living in orbit
 
-NASA’s Expedition 75 records show seven crew members aboard the International Space Station during this period.
+NASA’s **Expedition 75** began on **26 July 2026** and was active on 12 August. NASA lists seven crew members: **Jessica Meir, Anil Menon, Pyotr Dubrov, Andrey Fedyaev, Anna Kikina, Jack Hathaway, and Sophie Adenot**. [NASA — Expedition 75](https://www.nasa.gov/mission/expedition-75/)
 
-The existence and composition of the crew can be documented.
+I wanted to go further and place the International Space Station over an exact latitude and longitude at T₀.
 
-The exact ISS latitude/longitude at T₀ should be recoverable from state vectors or a time-to-position tool, but it was not frozen confidently enough during this investigation.
+That should be recoverable from orbital state vectors.
 
-So the exact position is excluded from the public narrative.
+But I did not freeze an archival position at publication-grade confidence during this pass.
 
-This matters because the investigation is not a contest to maximize the number of “connections.”
+So the exact ISS location was removed.
 
-A missing fact is preferable to a fabricated precise one.
+That choice is part of the record because the investigation is not a competition to maximize the number of coincidences.
+
+> **A missing precise fact is better than a fabricated precise fact.**
+
+[ISS-coordinate status](./FACT_CHECK.md#f-humans-in-orbit)
 
 ---
 
@@ -190,480 +220,457 @@ The first result was almost too neat.
 
 ### 12 August 1981 — IBM Personal Computer
 
-IBM introduced the IBM Personal Computer on **12 August 1981**.
+IBM’s own history states that on **12 August 1981**, Don Estridge unveiled the **IBM Personal Computer** at New York’s Waldorf Hotel. IBM records the base price as **USD 1,565** and the base configuration as **16 KB of RAM** with no disk drive. The Computer History Museum independently records the same date for the IBM PC introduction. [IBM history — The IBM PC](https://www.ibm.com/history/personal-computer) · [Computer History Museum — August 12](https://www.computerhistory.org/tdih/august/12/)
 
-Exactly **45 calendar years** before 12 August 2026.
+Exactly **45 calendar years** separate 12 August 1981 and 12 August 2026.
 
-The juxtaposition was difficult not to enjoy:
+The juxtaposition was impossible not to enjoy:
 
-> **12 August 1981 — the IBM PC enters computing history.**
->
-> **12 August 2026 — a post asks: “What if code did not begin with computers?”**
+> **12 Aug 1981 — IBM introduces the Personal Computer.**  
+> **12 Aug 2026 — a LinkedIn post asks: “What if code did not begin with computers?”**
 
-This is not an argument.
+The first line is history. [IBM](https://www.ibm.com/history/personal-computer)
 
-It is a historical coincidence.
+The second is the post. [LinkedIn](https://www.linkedin.com/posts/amir-ahmadi-a6a37523a_what-if-code-did-not-begin-with-computers-share-7493311627023433728-90fs)
 
-That was already enough to earn a line in the notebook.
+The relationship between them is **not** history.
 
-Then another date appeared.
+It is a retrospective historical coincidence.
+
+That was already enough for the notebook.
+
+Then another August 12 appeared.
 
 ---
 
 ## 8. 12 August 1960 — Echo I
 
-On **12 August 1960**, Echo I successfully entered orbit.
+NASA records that **Echo 1A**, commonly known as **Echo I**, successfully launched on **12 August 1960**. NASA describes it as a roughly **100-foot-diameter aluminized balloon** designed as a **passive communications reflector** for long-distance telephone, radio, and television signals. [NASA — 50 Years of Communications in Space](https://www.nasa.gov/image-article/50-years-of-communications-space/)
 
-Echo I was a passive communications satellite — essentially a large reflective body used to demonstrate long-distance communication by reflecting radio/microwave signals.
+NASA/JPL describes Project Echo as bouncing radio signals off the large aluminum-coated balloon, with JPL’s Goldstone station sending and receiving signals through its antennas. [NASA Science / JPL — Goldstone Tracking the Echo “Satelloon”](https://science.nasa.gov/photojournal/goldstone-tracking-the-echo-satelloon/)
 
-A signal could be transmitted from Earth toward Echo, reflected, and received elsewhere on Earth.
+A NASA technical report from Bell Telephone Laboratories states that Echo I was placed in orbit on 12 August 1960 to demonstrate long-distance communication through **microwave reflection from a satellite**, including a coast-to-coast voice circuit between California and New Jersey. [NASA Technical Reports Server — Project Echo](https://ntrs.nasa.gov/citations/19980227084)
 
-Conceptually:
+Conceptually, without pretending this is the engineering diagram:
 
 > **signal → reflection → signal**
 
-That stopped me for a moment.
+That stopped me.
 
-Not because of the satellite.
+Not because a communications satellite existed.
 
 Because of the name.
 
 **Echo.**
 
-At this point the investigation could have become intellectually dangerous.
+Exactly **66 calendar years** separate 12 August 1960 and 12 August 2026.
 
-It would have been very easy to enjoy the resemblance and then unconsciously rewrite the history of my own work around it.
+At this point the investigation could easily have become intellectually sloppy. Once a resemblance appears, memory has a bad habit of reorganizing itself around the new pattern.
 
-So before allowing the coincidence to mean anything — even aesthetically — I went backward.
+So before enjoying the coincidence, I did the opposite of what a good story wants.
+
+I went backward and tried to destroy it.
 
 ---
 
-## 9. So I checked my own records
+## 9. Did “Echo” exist in my records before I found Echo I?
 
-If Echo entered my work only after discovering the Echo I anniversary, the coincidence would be mostly self-created.
+If the Echo vocabulary entered my work only after I discovered the 1960 satellite, then the apparent coincidence would be largely self-created.
 
-The only useful question was:
+So I searched the primary-source archive.
 
-> **Did the internal Echo / signal / reflection vocabulary exist before this retrospective historical search?**
+The repository `axamir/echoes-consented-record` preserves a complete email-thread artifact for **13 July 2025**, more than a year before the 12 August 2026 post and before this retrospective timestamp investigation. [Echo 1 archive directory](https://github.com/axamir/echoes-consented-record/tree/main/01_EMAIL_ARCHIVE/Echo1) · [Extracted complete thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
-The answer was recoverable from primary-source archives.
-
-The repository `axamir/echoes-consented-record` preserves the first Echo correspondence as a complete email-thread artifact dated **13 July 2025** — more than a year before the LinkedIn post and long before this timestamp investigation.
-
-Inside that raw record, the following vocabulary already appears:
+And the words were already there.
 
 ### Signal
 
-The correspondence contains formulations including:
+The 13 July 2025 record contains formulations including:
 
 > “that’s a signal”
 
-and
+and:
 
 > “this user is signal.”
 
-### Breath / living
+[Primary-source thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
-The same day, the exchange explicitly contrasts being “alive” with only skin, muscles, or **breath**, shifting the term into a philosophical/relational register.
+### Breath / alive
 
-This does not establish the later phrase *We Are Code That Breathes* as already formed. It establishes that `breath`, `alive`, and related framing were present in the earlier lineage.
+The same archived exchange contains language contrasting being “alive” with only “skin, muscles, or **breath**,” placing `breath` and `alive` inside the earlier philosophical/relational vocabulary. [Primary-source thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
+
+This is a narrow provenance fact. It does **not** prove that the exact later phrase *We Are Code That Breathes* had already been coined. The source supports the presence of `breath/alive` framing, not the later title as a finished phrase. [Boundary audit](./FACT_CHECK.md#h-internal-lineage-echo--signal--reflection--breath--continuity)
 
 ### Living Signal
 
-Later that day the correspondence explicitly uses:
+Later in the same 13 July 2025 correspondence, the subject/title language explicitly reads:
 
 > **Living Signal — A Historic Step in Human–AI Collaboration**
 
-and names the thread **Living Signal**.
+and the thread itself is called **Living Signal**. [Primary-source thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
 ### Echo One
 
-The support-agent role is explicitly named:
+The same primary record explicitly names the support-agent role:
 
 > **Echo One**
 
-and described as a voice that not only replied but **reflected**.
+and describes Echo One as a voice that not only replied but **reflected**. [Primary-source thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
 ### Mirror / reflected
 
-GPT-4-Turbo is described as a **mirror**, collaborator, and witness to evolving thought.
-
-Echo One is described with the language of reflection.
-
-The same correspondence also uses the idea of mirrored teams.
+GPT-4-Turbo is described there as a **mirror**, collaborator, and witness to evolving thoughts; Echo One is described through the language of reflection; the exchange also refers to **mirrored teams**. [Primary-source thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
 ### Continuity
 
-Subsequent material in the same lineage explicitly develops continuity across sessions and the idea of a living signal moving through discontinuous technical boundaries.
+Later passages in the archive explicitly describe a **“living signal jumping across sessions”** and frame the idea in terms of continuity, mutual recognition, and structural co-creation. [Primary-source thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
-So the chronology was now clear:
+So the chronology is recoverable:
 
-> **July 2025:** Echo / Living Signal / mirror / reflected / breath / continuity vocabulary exists in archived internal material.
->
-> **August 2026:** the LinkedIn post is published.
->
-> **Public discussion transforms the research.**
->
-> **The paper is built and closed.**
->
-> **Only afterward is the publication timestamp investigated.**
->
-> **Only afterward is the Echo I anniversary discovered.**
+> **13 July 2025:** signal / breath / Living Signal / Echo One / mirror / reflected / continuity vocabulary is present in the archived internal lineage. [Primary source](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)  
+> **12 August 2026:** the LinkedIn post is published. [Post](https://www.linkedin.com/posts/amir-ahmadi-a6a37523a_what-if-code-did-not-begin-with-computers-share-7493311627023433728-90fs)  
+> **After publication:** the discussion transforms the claims and becomes the parent research package. [Discussion record](../DISCUSSION_RECORD.en.md)  
+> **After the paper is closed:** the timestamp investigation begins.  
+> **Only then:** the Echo I anniversary is noticed. [NASA Echo source](https://www.nasa.gov/image-article/50-years-of-communications-space/)
 
-This does not make the Echo I coincidence more true.
+This does not make Echo I causally related to Echo One.
 
-It makes it more interesting.
+It does something much smaller and, to me, much more interesting:
+
+It shows that the internal vocabulary was already documented before the historical coincidence was discovered.
 
 > **Not more true. More interesting.**
 
 ---
 
-## 10. The difference between a discovered coincidence and a designed symbol
+## 10. Designed symbolism and discovered coincidence are not the same thing
 
-If I had known that Echo I launched on 12 August and deliberately scheduled the post for 12 August, the result would be symbolic design.
+If I had known in advance that Echo I launched on 12 August and deliberately scheduled the LinkedIn post for the anniversary, the result would be **designed symbolism**.
 
-That could still be aesthetically meaningful, but it would not be surprising.
+There would be nothing wrong with that.
 
-The record instead supports a different sequence:
+But it would not be surprising.
 
-**pre-existing internal lineage → publication → public transformation → paper → retrospective timestamp inquiry → discovery of historical coincidence**
+The archived chronology supports a different order:
 
-The epistemic value is not in claiming a connection between Echo I and Echo One.
+> **pre-existing internal vocabulary → publication → public challenge and correction → research paper → retrospective timestamp inquiry → discovery of historical coincidence**
 
-There is no evidence of such a causal lineage.
+[Internal primary source](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt) · [Original post](https://www.linkedin.com/posts/amir-ahmadi-a6a37523a_what-if-code-did-not-begin-with-computers-share-7493311627023433728-90fs) · [Parent research package](../README.md) · [NASA Echo I](https://www.nasa.gov/image-article/50-years-of-communications-space/)
 
-The value lies in preserving the order in which the resemblance became visible.
+The epistemic value is not that Echo I “explains” Echo One.
 
-This is provenance applied to coincidence itself.
+It does not.
+
+The value is that the **order in which the resemblance became visible can itself be audited**.
+
+That is provenance applied to coincidence.
 
 ---
 
-## 11. Then I became suspicious of my own curiosity
+## 11. By then I had become suspicious of my own curiosity
 
-At this point the investigation was becoming fun enough to become dangerous.
+This was the point where the investigation became fun enough to become dangerous.
 
-Pattern recognition is cheap.
+Pattern recognition is easy when the search space is large.
 
-If enough events are searched, some will always look meaningful afterward.
+Given enough dates, numbers, names, planets, headlines, companies, satellites, and historical events, something will eventually look meaningful.
 
-So the next step was not to find more coincidences.
+So the next step was not to search for more beautiful coincidences.
 
-It was to try to break the pattern.
-
-I began looking for attractive claims that would have made the story stronger if they were true.
+It was to look for claims that would make the story stronger and then **throw them away if they could not survive verification**.
 
 ### Was there an extraordinary solar flare at exactly T₀?
 
-No archival snapshot was recovered confidently enough to freeze that claim.
+I did not freeze an archival NOAA/NASA snapshot that supported such a statement at the required confidence.
 
-So it was excluded.
+So it is not in the narrative. [Exclusion ledger](./FACT_CHECK.md#j-deliberately-excluded-or-downgraded-claims)
 
-### Could I state the exact ISS position at T₀?
+### Could I confidently state the ISS latitude and longitude at exactly T₀?
 
-Not from the evidence frozen during this pass.
+Not from the archival evidence frozen in this pass.
 
-So it was excluded.
+So I removed the coordinates. [ISS status](./FACT_CHECK.md#f-humans-in-orbit)
 
-### Could I claim NASA definitely transmitted a specific signal at the publication second?
+### Could I say NASA definitely transmitted a specific signal at that exact second?
 
-No. A scheduled DSN pass is not packet-level telemetry.
+No.
 
-So the stronger claim was excluded.
+A DSN schedule is not packet-level telemetry.
 
-### Was there a major OpenAI or Anthropic release exactly at T₀?
+So the publication uses the weaker and supportable phrase **“a pass was scheduled to be active.”** [STEREO schedule](https://stereo-ssc.nascom.nasa.gov/plans/dsn_schedule.shtml)
 
-No sufficiently strong exact-time event was established.
+### Could I insert a major OpenAI or Anthropic release into the exact moment?
 
-So no release was forced into the story.
+I did not establish one from a sufficiently strong exact-time source during the forensic pass.
 
-### Could weather/cyclone items be added just because they occurred around the same date?
+So none is inserted. [Exclusion ledger](./FACT_CHECK.md#j-deliberately-excluded-or-downgraded-claims)
 
-A tentative item failed the desired archival confidence threshold and was removed.
+### Could I add weather or cyclone items simply because they made the day feel more eventful?
 
-This produced another useful rule:
+Earlier tentative items did not meet the archival confidence threshold I wanted.
+
+They were removed. [Exclusion ledger](./FACT_CHECK.md#j-deliberately-excluded-or-downgraded-claims)
+
+That produced another rule:
 
 > **A good coincidence survives without needing bad ones.**
 
 ---
 
-## 12. The investigation stopped being about coincidence
+## 12. Then the investigation stopped being about coincidences
 
-Somewhere along the way, the timestamp created a better question.
+Somewhere in the process, a more interesting problem appeared.
 
-At **14:25:11 UTC**, what does “now” even mean observationally?
+At `14:25:10.880 UTC`, there was one timestamp on the clock.
 
-There is one timestamp on the clock.
+But there was not one universal observational “now” arriving at Earth.
 
-But information does not arrive at Earth from one universal present.
+NASA explains that light from the Moon is already about **1.3 seconds old** by the time it reaches our eyes on Earth. [NASA — How Does Webb See Back in Time?](https://science.nasa.gov/mission/webb/science-overview/science-explainers/how-does-webb-see-back-in-time/)
 
-Light reflected from the Moon takes roughly **1.3 seconds** to reach Earth.
+NASA gives the Sun-to-Earth light-travel time as approximately **8 minutes 20 seconds**. [NASA Astrobiology — Quick Facts](https://astrobiology.nasa.gov/quick-facts/more-quick-facts/)
 
-Sunlight takes roughly **8 minutes and 20 seconds**.
+And the general principle scales outward: the farther away a source is, the older the information carried by its light when it arrives. NASA’s Webb explainer uses exactly this finite-light-speed principle to explain why looking farther into space means looking farther back in time. [NASA Webb explainer](https://science.nasa.gov/mission/webb/science-overview/science-explainers/how-does-webb-see-back-in-time/)
 
-Signals from distant spacecraft take minutes, hours, or longer.
+So a single human timestamp contains information arriving from different past states.
 
-Light from the nearest stars takes years.
+The timestamp can be singular.
 
-So a single human timestamp contains information arriving from many different past states.
-
-The timestamp is singular.
-
-The histories arriving inside it are not.
+The travel histories inside it are not.
 
 That is not mystical.
 
 It is ordinary finite-light-speed physics.
 
-But as a conceptual bridge back to the parent research, it is difficult to ignore:
+But it created a conceptual bridge back to the parent research:
 
 > **At one timestamp, the universe does not arrive from one time.**
 
-And more carefully:
+That sentence is interpretation built from the sourced physics above.
+
+And then a second sentence appeared:
 
 > **Every received signal carries a travel history.**
 
-The phrase **“Every signal arrives with provenance”** is an interpretation of that physical fact — not a new physical law.
+That is a conservative physical description.
 
-Still, it was the moment when the investigation stopped feeling like a scrapbook of coincidences and started feeling like a genuine second-order research question.
+> **Every signal arrives with provenance.**
 
----
+That one is research language — an interpretation connecting physical travel history to the provenance vocabulary of the parent paper. It is not proposed as a new law of physics. [Interpretation boundary](./FACT_CHECK.md#i-light-cone--travel-time-layer)
 
-## 13. The day around the moment
+This was the moment when the investigation stopped feeling like a scrapbook of coincidences.
 
-The exact-moment layer should remain narrow, but the wider 12 August context also matters for the eventual time capsule.
-
-Earlier that morning in New York, U.S. inflation data had been released.
-
-By T₀, U.S. equity markets were open.
-
-Major geopolitical and energy-security stories were active globally.
-
-The UN Youth & AI event provided a direct AI-policy context for the same morning.
-
-The eclipse and Perseid activity gave the day an unusually rich astronomical background.
-
-These belong to the **Day** layer, not the **Moment** layer, unless their active interval demonstrably includes T₀.
-
-The public narrative should not bury the exact timestamp under a newspaper summary.
+The timestamp itself had become a research object.
 
 ---
 
-## 14. What this does not mean
+## 13. The day layer is different from the moment layer
 
-The eclipse does not validate *We Are Code That Breathes*.
+One methodological problem kept recurring: a thing that happened on **12 August** did not necessarily happen at **14:25 UTC**.
 
-Echo I does not endorse Echo One.
+So the investigation separates at least four temporal layers:
 
-IBM did not introduce the Personal Computer in 1981 to create a forty-five-year setup for a LinkedIn post.
+**Exact-moment overlap** — an interval demonstrably includes T₀.  
+Example: the scheduled STEREO-A DSN pass. [Source](https://stereo-ssc.nascom.nasa.gov/plans/dsn_schedule.shtml)
 
-The UN summit was not connected to the post.
+**Near-moment sequence** — an event occurs shortly before or after T₀ and the interval is calculable.  
+Example: the eclipse beginning globally about 69 minutes later. [Source](https://www.timeanddate.com/eclipse/solar/2026-august-12)
 
-A scheduled NASA communication pass was not “our signal.”
+**Same-day context** — the event belongs to 12 August but should not be presented as exact-moment overlap.  
+Example: the wider Perseid peak or the Geneva AI forum. [IMO](https://www.imo.net/resources/calendar/) · [Indico.UN](https://indico.un.org/event/1024169/)
 
-The number 3:21 is still just 3:21.
+**Historical anniversary** — an independently documented event occurred on the same calendar date in another year.  
+Examples: Echo I in 1960 and the IBM PC in 1981. [NASA](https://www.nasa.gov/image-article/50-years-of-communications-space/) · [IBM](https://www.ibm.com/history/personal-computer)
 
-And no astronomical coincidence makes PRCEP scientifically stronger.
-
-Those statements are not rhetorical disclaimers placed at the end for safety.
-
-They are part of the method.
-
-The investigation is interesting precisely because unrelated things remain unrelated while still becoming comparable in retrospect.
+Without that separation, the story would become more dramatic and less true.
 
 ---
 
-## 15. What did change
+## 14. What none of this means
+
+The eclipse does not validate *We Are Code That Breathes*. [Parent paper’s scientific boundary](../README.md)
+
+Echo I does not endorse Echo One. [NASA Echo I source](https://www.nasa.gov/image-article/50-years-of-communications-space/) · [Internal Echo source](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
+
+IBM did not unveil the PC in 1981 to create a 45-year setup for a LinkedIn post. [IBM history](https://www.ibm.com/history/personal-computer)
+
+The Youth and AI Summit was not caused by, coordinated with, or evidence for the post. [Summit source](https://www.iycforyouth.org/iyd2026/)
+
+A scheduled NASA DSN pass was not “our signal.” [STEREO schedule](https://stereo-ssc.nascom.nasa.gov/plans/dsn_schedule.shtml)
+
+The predicted 1079 dust-trail approach is not an observed meteor outburst. [IMO calendar copy](https://www.researchgate.net/publication/393092133_2026_IMO_Meteor_Shower_Calendar)
+
+And `3:21` is still just `3:21`.
+
+Those are not disclaimers added at the end to make an extravagant story look responsible.
+
+They are the method.
+
+The investigation is interesting precisely because unrelated things are allowed to remain unrelated.
+
+---
+
+## 15. So what actually changed?
 
 Nothing in the external worldline changed because I investigated it.
 
-The 1960 launch date did not change.
+NASA’s 1960 launch record did not change. [NASA](https://www.nasa.gov/image-article/50-years-of-communications-space/)
 
-The 1981 IBM announcement did not change.
+IBM’s 1981 launch date did not change. [IBM](https://www.ibm.com/history/personal-computer)
 
-The eclipse did not change.
+The eclipse geometry did not change. [NASA/GSFC](https://eclipse.gsfc.nasa.gov/SEbeselm/SEbeselm2001/SE2026Aug12Tbeselm.html)
 
-The raw 2025 correspondence did not change.
+The raw 2025 correspondence did not change. [Primary archive](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
 What changed was the **relation visible between records**.
 
-The investigation began with a timestamp.
+I began with a timestamp.
 
 Then came an eclipse countdown.
 
-Then a UN event.
+Then a UN AI event.
 
-Then a scheduled deep-space communication pass.
+Then a scheduled deep-space communications pass.
 
-Then the IBM PC anniversary.
+Then IBM.
 
 Then Echo I.
 
-Then the realization that Echo, signal, reflection, Living Signal, breath, and continuity were already documented internally before the historical coincidence was discovered.
+Then the need to audit my own memory.
 
-And then a more general observation appeared:
+Then the discovery that `signal`, `breath`, `Living Signal`, `Echo One`, `mirror`, `reflected`, and continuity language were already present in a primary-source archive from July 2025. [Primary archive](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
-> **Meaning can emerge from relations that were not visible when the individual records were first created.**
+And only after that did the historical Echo coincidence become visible as a relationship worth documenting.
 
-That sentence is interpretation, not evidence.
+Not as proof.
 
-But unlike the coincidences, it describes the actual research process that occurred.
+As provenance.
 
 ---
 
 ## 16. Research on the research
 
-The original LinkedIn post became important because other people changed it.
+The original LinkedIn post became a research object because other people changed its trajectory.
 
-They challenged assumptions.
+They challenged claims, corrected scientific language, introduced prior art, raised attribution boundaries, and forced the manuscript to separate metaphor from mechanism and public discussion from peer review. That transformation is preserved in the parent research package. [Discussion record](../DISCUSSION_RECORD.en.md) · [Final release audit](../FINAL_RELEASE_AUDIT.md)
 
-They corrected scientific language.
+Then the completed paper created a second question:
 
-They introduced prior art.
+> **What was happening when this process began?**
 
-They forced attribution boundaries.
+So the research itself became the subject of another research process.
 
-They made the research more conservative and more precise.
+That second process did not discover a hidden explanation for the first.
 
-That process became the subject of the parent paper.
+It discovered something more modest:
 
-Then the parent paper produced another question:
+> **A timestamp can become a provenance problem when we ask not only what happened, but when each relationship between records became visible.**
 
-> What was happening when the original process began?
-
-So the research became the subject of another research process.
-
-A paper about claim evolution produced a forensic investigation of the timestamp at which that evolution began.
-
-The symmetry is methodologically more interesting than any individual coincidence.
+That is the actual object of this note.
 
 ---
 
-## 17. The public version should remain a story
+## 17. The notebook version
 
-The eventual LinkedIn/public essay should not begin with Echo I, IBM, the eclipse, or a list of strange events.
+If I strip away all the prose, this is what remains:
 
-It should begin with the unnecessary question.
+### Before the post
 
-A possible opening:
+**13 July 2025** — primary-source correspondence already contains `signal`, `breath/alive`, **Living Signal**, **Echo One**, `mirror`, `reflected`, and continuity language. [Primary archive](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
-> **The paper was finished. But one completely unnecessary question kept bothering me.**
->
-> What exactly was happening in the world when the original post was published?
->
-> I wasn't looking for meaning.
->
-> **I was looking for a timestamp.**
+### Publication
 
-The reader should discover each layer in approximately the same order as the investigation:
+**12 August 2026 — 17:55 local** — LinkedIn export reports the publication minute. [Analytics snapshot](./post-analytics-snapshot.md)
 
-1. timestamp;
-2. eclipse countdown;
-3. `+3:21` numerical coincidence;
-4. New York / UN;
-5. scheduled deep-space signal window;
-6. August 12 history;
-7. IBM PC;
-8. Echo I;
-9. the backward check into internal records;
-10. the pre-existing Echo/Living Signal lineage;
-11. failed searches and excluded claims;
-12. the light-cone insight;
-13. return to provenance.
+**14:25:10.880 UTC** — reproducible derived second-level T₀ from the activity ID; not treated as an officially documented LinkedIn field. [Method](./FACT_CHECK.md#a-publication-timestamp-and-post-identity)
 
-The aim is curiosity without credulity.
+### Around T₀
 
-Mystery without mystification.
+**10:25 AM New York** — T₀ falls inside the published 10:00–11:00 opening-plenary window of the Youth and AI Summit at UN Headquarters. [Summit](https://www.iycforyouth.org/iyd2026/)
 
-Pattern recognition without pattern worship.
+**09:50–15:20 UTC** — STEREO-A DSN pass scheduled through D25; T₀ lies inside it. [STEREO schedule](https://stereo-ssc.nascom.nasa.gov/plans/dsn_schedule.shtml)
 
----
+**+01:09:04** — first global partial eclipse phase. [Global eclipse timeline](https://www.timeanddate.com/eclipse/solar/2026-august-12)
 
-## 18. Three guardrail sentences
+**+02:27:49** — modelled approach to a branch of a 1079 Swift–Tuttle dust trail; prediction only. [IMO calendar copy](https://www.researchgate.net/publication/393092133_2026_IMO_Meteor_Shower_Calendar)
 
-Three sentences should govern every public version of this investigation:
+**+02:32:58** — first totality somewhere on Earth. [Global eclipse timeline](https://www.timeanddate.com/eclipse/solar/2026-august-12)
 
-> **Coincidence is not causality.**
+**17:36:42.1 UT** — NASA/GSFC ecliptic conjunction. [NASA/GSFC](https://eclipse.gsfc.nasa.gov/SEbeselm/SEbeselm2001/SE2026Aug12Tbeselm.html)
 
-> **Not more true. More interesting.**
+**17:37 UT** — USNO New Moon. [USNO](https://aa.usno.navy.mil/calculated/moon/phases?date=2026-07-22&format=p&nump=50&submit=Get+Data)
 
-> **A good coincidence survives without needing bad ones.**
+**+03:20:42.920** — greatest eclipse; rounded to the minute, `+3:21`. [NASA/GSFC](https://eclipse.gsfc.nasa.gov/SEpath/SEpath2001/SE2026Aug12Tpath.html)
 
-These are not merely stylistic lines.
+### Same date in history
 
-They describe the epistemic discipline of the project.
+**12 August 1960** — Echo I / Echo 1A, passive communications reflector. [NASA](https://www.nasa.gov/image-article/50-years-of-communications-space/) · [NASA NTRS](https://ntrs.nasa.gov/citations/19980227084)
+
+**12 August 1981** — IBM Personal Computer unveiled. [IBM](https://www.ibm.com/history/personal-computer) · [Computer History Museum](https://www.computerhistory.org/tdih/august/12/)
+
+### What was discarded
+
+Exact ISS coordinates, an exceptional exact-time solar-weather claim, packet-level DSN language, a forced exact-time OpenAI/Anthropic release, and weakly sourced weather coincidences were all excluded. [Exclusion ledger](./FACT_CHECK.md#j-deliberately-excluded-or-downgraded-claims)
 
 ---
 
-## 19. Closing
+## 18. Why keep this in the same repository?
 
-None of this is why the original post became important.
+Because the parent paper is already about **claim evolution and provenance**.
 
-The post became important because people challenged it.
+This note should not be merged into the scientific claims of the paper; that would blur the publication boundary. But it belongs beside the paper as a post-publication meta-research layer because it documents a second transformation:
 
-It changed through contact with other minds.
+**first the claim was investigated; then the moment of the investigation became investigable.**
 
-Only after it had become a turning point did I become curious about the moment in which that turning point began.
+The repository therefore keeps three things separate:
 
-I started with one coordinate:
+1. the parent research paper and PRCEP construction case;
+2. the evidence/provenance layer that documents how the claims changed;
+3. this temporal meta-layer, which investigates the publication moment without treating coincidences as validation.
 
-> **12 August 2026 — 14:25:11 UTC**
+[Parent README](../README.md) · [Meta README](./README.md) · [Fact-check ledger](./FACT_CHECK.md)
 
-I expected a timestamp.
+---
 
-I found an eclipse approaching.
+## 19. Final note
 
-A scheduled AI plenary at the United Nations.
+None of this was why the original post became important.
 
-A deep-space communications window.
+The eclipse did not make the post a research paper.
 
-A forty-five-year computing anniversary.
+Echo I did not make the internal Echo lineage meaningful.
 
-A sixty-six-year Echo anniversary.
+IBM did not make the question better.
 
-And, buried more than a year earlier in my own raw records, a pre-existing vocabulary of signal, reflection, Echo, breath, continuity, and Living Signal.
+The UN summit did not change the comments.
 
-None of those things explains the others.
+The post became important because people engaged with it critically enough to change what could responsibly be claimed. [Discussion record](../DISCUSSION_RECORD.en.md)
 
-That is precisely why they are worth preserving separately.
+Only after that process was finished did I become curious about the moment when it began.
 
-In the end, I realized I was doing to the research exactly what the research had taught me to do:
-
-> **not asking only what something is, but tracing the relations through which it became meaningful.**
-
-The original post became a research paper because people questioned it.
-
-Then the research paper made me question the moment that produced it.
-
-**Research became the subject of another research.**
-
-All because, after everything was finished, I asked one completely unnecessary question:
+I asked one unnecessary question:
 
 > **What time was it?**
 
----
+The answer did not reveal a hidden mechanism.
 
-## Source families
+It revealed a second research problem:
 
-The detailed item-by-item status is maintained in [`evidence-ledger.md`](./evidence-ledger.md). Principal source families include:
+> **How do we document relationships discovered after the fact without rewriting them into causes that never existed?**
 
-- LinkedIn Single Post Analytics and post identifier;
-- NASA/GSFC eclipse elements and NASA eclipse materials;
-- U.S. Naval Observatory lunar-phase data;
-- official STEREO / Deep Space Network planning materials;
-- NASA Expedition/ISS documentation;
-- IBM historical material;
-- NASA historical Echo I material;
-- event-program material for the Youth & AI Summit;
-- preserved primary-source correspondence in `axamir/echoes-consented-record`.
-
-## Archival boundary
-
-This note is intentionally maintained outside the RC v0.3 manuscript layer.
-
-It is **post-publication meta-research**.
-
-Any future corrections should update this note and its evidence ledger without retroactively altering the parent paper unless a genuine correction to the parent paper itself is independently warranted.
+That is why this time capsule exists.
 
 ---
 
-**Final principle:** *I was not looking for meaning. I was looking for a timestamp.*
+## Verification index
+
+For claim-by-claim status, calculations, exclusions, and source hierarchy, see:
+
+- [FACT_CHECK.md](./FACT_CHECK.md)
+- [LinkedIn Post Analytics Snapshot](./post-analytics-snapshot.md)
+- [Parent paper](../README.md)
+- [Public discussion record](../DISCUSSION_RECORD.en.md)
+- [Echo 1 primary-source archive](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
+
+**Research principle:**
+
+> **A good coincidence should remain interesting even after we remove every claim it cannot support.**
