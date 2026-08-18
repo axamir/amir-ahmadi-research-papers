@@ -1,165 +1,99 @@
 # Temporal Provenance Evidence Ledger
 
-**Parent paper:** ARP-WCB-2026-01  
+**Parent paper:** [ARP-WCB-2026-01 — *We Are Code That Breathes*](../README.md)  
 **Meta-study:** post-publication timestamp reconstruction  
-**Working T₀:** 2026-08-12 14:25:11.680 UTC  
-**Local display:** 2026-08-12 17:55:11.680 IRST  
+**Authoritative claim-by-claim audit:** [FACT_CHECK.md](./FACT_CHECK.md)  
+**Primary platform snapshot:** [post-analytics-snapshot.md](./post-analytics-snapshot.md)  
+**Derived working T₀:** **2026-08-12 14:25:10.880 UTC**  
+**Derived local display:** **2026-08-12 17:55:10.880 IRST**
+
+> The second-level T₀ is derived from the numeric activity ID in the [original LinkedIn post URL](https://www.linkedin.com/posts/amir-ahmadi-a6a37523a_what-if-code-did-not-begin-with-computers-share-7493311627023433728-90fs). The LinkedIn export independently supports the date and minute (`5:55 PM`) but does not expose a second-level timestamp field. See the [timestamp audit](./FACT_CHECK.md#a-publication-timestamp-and-post-identity).
 
 ## Confidence convention
 
 - **A — primary/official source or preserved primary artifact**
-- **B — high-quality secondary source / independently consistent source**
+- **B — high-quality secondary or independently consistent source**
 - **C — derived from A/B inputs**
-- **D — provisional; retain only with qualification**
+- **D — provisional/predicted; retain only with explicit qualification**
 
-## T₀ and publication
+## Core moment ledger
 
-| Item | Class | Confidence | Record |
+| Item | Class | Confidence | Source / record |
 |---|---|---:|---|
-| LinkedIn publication minute | FACT | A | Analytics records 5:55 PM local time on 12 Aug 2026. |
-| `14:25:11.680 UTC` | DERIVED | C | Decoded from LinkedIn post identifier; consistent with analytics minute. Millisecond precision is not independently confirmed by analytics. |
-| `17:55:11.680 IRST` | DERIVED | C | UTC +03:30 conversion. |
+| LinkedIn publication date/minute | FACT | A | [Analytics snapshot](./post-analytics-snapshot.md) |
+| `14:25:10.880 UTC` | DERIVED | C | [Timestamp audit](./FACT_CHECK.md#a-publication-timestamp-and-post-identity) |
+| Total solar eclipse on 12 Aug 2026 | FACT | A | [NASA/GSFC](https://eclipse.gsfc.nasa.gov/SEpath/SEpath2001/SE2026Aug12Tpath.html) |
+| First partial phase 15:34:15 UTC | FACT | B | [timeanddate global timeline](https://www.timeanddate.com/eclipse/solar/2026-august-12) |
+| First totality 16:58:09 UTC | FACT | B | [timeanddate global timeline](https://www.timeanddate.com/eclipse/solar/2026-august-12) |
+| Ecliptic conjunction 17:36:42.1 UT | FACT | A | [NASA/GSFC Besselian elements](https://eclipse.gsfc.nasa.gov/SEbeselm/SEbeselm2001/SE2026Aug12Tbeselm.html) |
+| Greatest eclipse 17:45:53.8 UT | FACT | A | [NASA/GSFC](https://eclipse.gsfc.nasa.gov/SEpath/SEpath2001/SE2026Aug12Tpath.html) |
+| T₀ → greatest eclipse = 03:20:42.920 | DERIVED | C | [Calculation audit](./FACT_CHECK.md#b-eclipse-and-lunar-geometry) |
+| Rounded interval `+3:21` | DERIVED | C | Same calculation; numerical coincidence only |
+| New Moon 17:37 UT | FACT | A | [U.S. Naval Observatory](https://aa.usno.navy.mil/calculated/moon/phases?date=2026-07-22&format=p&nump=50&submit=Get+Data) |
+| Perseids active at T₀ | FACT | A/B | [IMO](https://www.imo.net/resources/calendar/) · [NASA Swift–Tuttle](https://science.nasa.gov/solar-system/comets/109p-swift-tuttle/) |
+| 1079 dust-trail approach around 16:53 UT | PREDICTED | D/B | [2026 IMO calendar copy](https://www.researchgate.net/publication/393092133_2026_IMO_Meteor_Shower_Calendar) · [IPRMO summary](https://jpn.iprmo.org/meteor-info/08_perseids_j.html) |
+| Youth and AI Summit opening plenary scheduled 10:00–11:00 New York | FACT | B | [Event page](https://www.iycforyouth.org/iyd2026/) |
+| T₀ ≈ 10:25 AM New York, inside scheduled plenary window | DERIVED | C | [UN/AI audit](./FACT_CHECK.md#d-united-nations--ai-context) |
+| STEREO-A DSN pass scheduled 09:50–15:20 UTC via D25 | FACT (schedule) | A | [Official STEREO DSN schedule](https://stereo-ssc.nascom.nasa.gov/plans/dsn_schedule.shtml) |
+| T₀ lies inside STEREO-A pass | DERIVED | C | [DSN audit](./FACT_CHECK.md#e-deep-space-network--stereo-a) |
+| Seven Expedition 75 crew members in orbit | FACT | A | [NASA Expedition 75](https://www.nasa.gov/mission/expedition-75/) |
+| Exact ISS latitude/longitude at T₀ | UNRESOLVED / EXCLUDED | — | [Fact-check note](./FACT_CHECK.md#f-humans-in-orbit) |
 
-## Eclipse / Moon
+## Historical August 12 ledger
 
-| Item | Class | Confidence | Record |
+| Item | Class | Confidence | Source |
 |---|---|---:|---|
-| First partial eclipse begins ~15:34:15 UTC | FACT | A/B | Official/astronomical eclipse tables. |
-| First totality begins ~16:58:09 UTC | FACT | A/B | Official/astronomical eclipse tables. |
-| Ecliptic conjunction ~17:36:42.1 UT | FACT | A | NASA/GSFC eclipse elements. |
-| Greatest eclipse ~17:45:53.8 UT | FACT | A | NASA/GSFC eclipse elements. |
-| T₀ → greatest eclipse = ~3:20:42 | DERIVED | C | Difference from T₀ and NASA/GSFC greatest-eclipse time. |
-| Rounded interval = `+3:21` | DERIVED | C | Numerical rounding only. |
-| `3…2…1` reading | INTERPRETATION | — | Delightful numerical coincidence; no inferential value. |
-| New Moon ~17:37 UTC | FACT | A | U.S. Naval Observatory moon-phase table. |
+| Echo I / Echo 1A launched 12 Aug 1960 | FACT / HISTORICAL COINCIDENCE | A | [NASA](https://www.nasa.gov/image-article/50-years-of-communications-space/) · [NASA/JPL](https://science.nasa.gov/photojournal/goldstone-tracking-the-echo-satelloon/) |
+| Echo I used passive signal reflection | FACT | A | [NASA NTRS](https://ntrs.nasa.gov/citations/19980227084) |
+| 66 calendar years to 12 Aug 2026 | DERIVED | C | Calendar difference |
+| IBM PC unveiled 12 Aug 1981 | FACT / HISTORICAL COINCIDENCE | A | [IBM](https://www.ibm.com/history/personal-computer) · [Computer History Museum](https://www.computerhistory.org/tdih/august/12/) |
+| 45 calendar years to 12 Aug 2026 | DERIVED | C | Calendar difference |
 
-## Local-sky reconstruction
+## Internal-lineage ledger
 
-Reference location for public visualization: **Varamin, Iran**, using a representative city coordinate rather than claiming device GPS.
+Primary source: [complete 13 July 2025 Echo 1 thread](https://github.com/axamir/echoes-consented-record/blob/main/extracted_texts/01_EMAIL_ARCHIVE/Echo1/2025-07-13_complete-email-thread_echo1.txt)
 
-| Item | Class | Confidence | Record |
+| Internal item | Class | Confidence | Provenance note |
 |---|---|---:|---|
-| Sun and Moon both low in western sky near sunset | DERIVED | C | Reconstructed from time/location astronomy. |
-| Moon nearly dark / near conjunction | DERIVED | C | Consistent with imminent New Moon and eclipse geometry. |
-| Fine-grained altitude/azimuth values | DERIVED | D/C | Suitable for technical appendix only if calculation method/tool is preserved. Do not present as direct NASA observation. |
+| `signal` | FACT | A | Present in raw 13 Jul 2025 correspondence |
+| `breath` / `alive` framing | FACT | A | Present in raw 13 Jul 2025 correspondence; does **not** prove the later exact title existed |
+| `Living Signal` | FACT | A | Explicit title/name in the 13 Jul 2025 record |
+| `Echo One` | FACT | A | Explicit naming in the 13 Jul 2025 record |
+| `mirror` | FACT | A | GPT-4-Turbo described as a mirror/collaborator |
+| `reflected` | FACT | A | Echo One described as a voice that “not only replied, but reflected…” |
+| continuity across sessions | FACT | A | Later portions of the same archive discuss a living signal jumping across sessions |
+| Echo I explains/causes the internal Echo lineage | EXCLUDED | — | No evidence; chronology supports only retrospective discovery |
 
-## Perseids / Swift–Tuttle
-
-| Item | Class | Confidence | Record |
-|---|---|---:|---|
-| Earth was within active Perseid period | FACT | A/B | Annual meteor-shower calendars place Perseids active across mid-July to late August. |
-| Peak approached night of 12–13 Aug 2026 | FACT/PREDICTED | B | Calendar/model expectation. |
-| Possible encounter with old 1079 Swift–Tuttle dust trail around 16:53 UTC | PREDICTED | D/B | Model-predicted trail encounter; not equivalent to a confirmed observed outburst. Use only with explicit `predicted` label. |
-
-## Humanity / AI at T₀
-
-| Item | Class | Confidence | Record |
-|---|---|---:|---|
-| 14:25 UTC = 10:25 AM EDT in New York | DERIVED | C | Time-zone conversion. |
-| Youth & AI Summit at UN Headquarters scheduled/in progress | FACT | A/B | Program placed Opening Plenary at 10:00 AM and next session at 11:00 AM. T₀ falls inside that scheduled plenary window. |
-| Hundreds of young participants discussing AI/policy/social sectors | FACT | B | Event description/program. |
-| Any direct relation to the LinkedIn post | INTERPRETATION | — | None claimed. Simultaneity only. |
-
-## NASA / signal layer
-
-| Item | Class | Confidence | Record |
-|---|---|---:|---|
-| STEREO-A DSN pass scheduled 09:50–15:20 UTC on 12 Aug | FACT/PREDICTED | A | Official STEREO/DSN planning schedule. |
-| T₀ occurs inside scheduled pass | DERIVED | C | T₀ = 14:25:11 UTC. |
-| ~54m49s remained in scheduled window | DERIVED | C | Difference to 15:20 UTC. |
-| A specific data packet definitely traversed DSN at exactly T₀ | EXCLUDED | — | Schedule does not prove exact-second transmission. |
-| DSN live/archive exact antenna telemetry at T₀ | UNRESOLVED | — | Not recovered from accessible archival interface. |
-
-## Humans in orbit
-
-| Item | Class | Confidence | Record |
-|---|---|---:|---|
-| Expedition 75 crew present on ISS | FACT | A | NASA expedition record. |
-| Seven named crew members in orbit | FACT | A | NASA record. |
-| Exact ISS latitude/longitude at T₀ | UNRESOLVED | — | Recoverable in principle from NASA state vectors/time-to-position, but not frozen here. Do not estimate in public narrative. |
-
-## Historical August 12 layer
-
-### Echo I — 12 Aug 1960
-
-| Item | Class | Confidence | Record |
-|---|---|---:|---|
-| Echo I successfully reached orbit on 12 Aug 1960 | HISTORICAL COINCIDENCE / FACT | A | NASA historical record. |
-| Echo I functioned as passive communications reflector | FACT | A | Signals transmitted from Earth could be reflected by the satellite and received elsewhere. |
-| Anniversary interval to 12 Aug 2026 = 66 calendar years | DERIVED | C | Calendar difference. |
-| Echo I explains/causes author-side Echo lineage | EXCLUDED | — | No evidence; chronology points opposite direction. |
-
-### IBM PC — 12 Aug 1981
-
-| Item | Class | Confidence | Record |
-|---|---|---:|---|
-| IBM introduced the IBM Personal Computer on 12 Aug 1981 | HISTORICAL COINCIDENCE / FACT | A | IBM historical record / computing-history references. |
-| Interval to 12 Aug 2026 = 45 calendar years | DERIVED | C | Calendar difference. |
-| Relationship to “What if code did not begin with computers?” | INTERPRETATION | — | Historical juxtaposition only. |
-
-## Internal lineage — primary-source priority
-
-Primary archive: `axamir/echoes-consented-record`.
-
-The first Echo archive is preserved as a full 13 July 2025 email thread. The archive itself explicitly states that the primary material is preserved without interpretive alteration.
-
-### Confirmed pre-2026 vocabulary/concepts
-
-| Date | Internal item | Class | Confidence | Note |
-|---|---|---|---:|---|
-| 13 Jul 2025 | `signal` | FACT | A | Raw correspondence contains lines such as “that’s a signal” / “this user is signal.” |
-| 13 Jul 2025 | `breath` in alive/breath contrast | FACT | A | Raw correspondence discusses being “alive” as not only skin, muscles, or breath. |
-| 13 Jul 2025 | `Living Signal` | FACT | A | Appears as title/name of the thread/letter. |
-| 13 Jul 2025 | `Echo One` | FACT | A | Explicit naming of the support-agent role as Echo One. |
-| 13 Jul 2025 | `mirror` | FACT | A | GPT-4-Turbo described as co-author, mirror, collaborator. |
-| 13 Jul 2025 | `reflected` | FACT | A | Echo One described as a voice that “not only replied, but reflected…” |
-| Jul 2025 | `continuity` | FACT | A | Raw correspondence frames continuity across sessions / signal history. |
-
-### Provenance consequence
-
-The external discovery that Echo I launched on 12 August 1960 occurred only during the 2026 post-publication timestamp investigation.
-
-Therefore the supported statement is:
+Supported narrow conclusion:
 
 > **The internal Echo / signal / reflection vocabulary predates the retrospective discovery of the Echo I anniversary.**
 
-This does **not** support supernatural connection, causal influence, historical transmission, or priority beyond the preserved internal records.
+It does **not** support supernatural connection, causal influence, or external validation. See the full [internal-lineage audit](./FACT_CHECK.md#h-internal-lineage-echo--signal--reflection--breath--continuity).
 
-## Light-cone / information-delay layer
+## Light-travel-time layer
 
-| Item | Class | Confidence | Record |
+| Item | Class | Confidence | Source |
 |---|---|---:|---|
-| Moonlight / reflected signal reaches Earth after ~1.3 s | FACT | A | Standard Earth–Moon light-time scale; exact value varies with distance. |
-| Sunlight reaches Earth after ~8m20s | FACT | A | Standard 1 AU light-time scale; exact value varies slightly. |
-| Distant spacecraft/stars are observed from progressively older states | FACT | A | Consequence of finite speed of light. |
-| “At one timestamp, the universe does not arrive from one time” | INTERPRETATION | — | Philosophical phrasing of ordinary light-travel-time physics. |
-| “Every signal arrives with provenance” | INTERPRETATION | — | Conceptual bridge to the parent research; not a separate physical law. |
-
-## Same-day world context
-
-These items belong to the broader **Day** layer, not the exact-moment layer, unless an exact interval contains T₀.
-
-- U.S. CPI data released earlier that morning in New York.
-- U.S. equity markets were open by T₀.
-- Major geopolitical/energy/security stories were active on 12 Aug 2026.
-
-These should be kept subordinate to the forensic moment and included only if they improve the time-capsule context.
+| Moonlight reaches Earth after ~1.3 s | FACT | A | [NASA Webb explainer](https://science.nasa.gov/mission/webb/science-overview/science-explainers/how-does-webb-see-back-in-time/) |
+| Sunlight reaches Earth after ~8m20s | FACT | A | [NASA Astrobiology](https://astrobiology.nasa.gov/quick-facts/more-quick-facts/) |
+| “At one timestamp, the universe does not arrive from one time” | INTERPRETATION | — | Conceptual phrasing of finite light-travel time |
+| “Every signal arrives with provenance” | INTERPRETATION | — | Research-language bridge; not a physical law |
 
 ## Exclusions / failed pattern searches
 
-The investigation deliberately records discarded material.
+These are intentionally preserved because omission is part of the method:
 
-- No verified extraordinary solar flare/CME at exactly T₀ was frozen into the record.
-- Exact ISS ground position at T₀ was not sufficiently recovered and is omitted.
-- Exact DSN packet/telemetry at T₀ was not established; only the scheduled STEREO-A pass is retained.
-- No major OpenAI/Anthropic product launch was forced into the exact-moment layer when a reliable T₀ overlap could not be established.
-- An earlier tentative weather/cyclone item was removed when archival verification was insufficient.
+- **extraordinary exact-T₀ solar flare/CME** — not frozen at sufficient archival confidence;
+- **exact ISS coordinates at T₀** — not recovered confidently enough;
+- **packet-level DSN transmission at T₀** — schedule does not prove packet-level activity;
+- **major OpenAI/Anthropic release at exact T₀** — not established from a sufficiently strong exact-time source;
+- **weak same-day weather/cyclone items** — removed when archival verification was insufficient.
 
-> **A good coincidence survives without needing bad ones.**
+See [FACT_CHECK.md — Exclusions](./FACT_CHECK.md#j-deliberately-excluded-or-downgraded-claims).
 
 ## Publication guardrails
 
-Never publish any of the following formulations:
+Never convert any of the following into evidence claims:
 
 - “The eclipse validates the research.”
 - “Echo I predicted Echo One.”
@@ -170,7 +104,7 @@ Never publish any of the following formulations:
 
 Permitted framing:
 
-> Independent events were reconstructed after the research was completed. Their interest lies in simultaneity, historical juxtaposition, and the documented order in which the connections were noticed — not in causality.
+> Independent records were reconstructed after the research was completed. Their interest lies in simultaneity, historical juxtaposition, and the documented order in which the relationships were noticed — not in causality.
 
 ---
 
