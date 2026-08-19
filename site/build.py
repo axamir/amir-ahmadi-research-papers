@@ -104,6 +104,12 @@ WCB_DOSSIER=[
     ('Evidence', 'Provenance gap audit', 'data/provenance-gap-audit.md'),
     ('Evidence', 'Quote verification matrix', 'data/quote-verification-matrix.md'),
     ('Evidence', 'Evidence policy', 'data/release-evidence-policy.md'),
+    ('Meta', 'Meta index', 'meta/README.md'),
+    ('Meta', 'Fact-check ledger', 'meta/FACT_CHECK.md'),
+    ('Meta', 'Evidence ledger', 'meta/evidence-ledger.md'),
+    ('Meta', 'LinkedIn analytics snapshot', 'meta/post-analytics-snapshot.md'),
+    ('Meta', 'Temporal provenance investigation', 'meta/temporal-provenance-investigation.md'),
+    ('Meta', 'Temporal provenance investigation (Persian)', 'meta/temporal-provenance-investigation.fa.md'),
     ('Evaluation', 'Evaluation plan', 'data/evaluation-plan.md'),
     ('Evaluation', 'Adversarial review', 'data/final-adversarial-review.md'),
     ('Evaluation', 'Pilot protocol', 'evaluation/pilot-protocol.md'),
@@ -177,7 +183,7 @@ def dossier_panel(p,fa,hero=False):
     overview=''.join(f'<button type="button" class="dossier-quick" data-dossier-open data-dossier-key="{dossier_key(path)}"><span>{fa_label if fa else en_label}</span><b>↗</b></button>' for fa_label,en_label,path in pathways)
     dialog_groups=[]
     for group,items in grouped.items():
-        group_label={'Record':'رکورد اصلی','Evidence':'شواهد و روش','Evaluation':'ارزیابی','Release':'کنترل انتشار'}[group] if fa else group
+        group_label={'Record':'رکورد اصلی','Evidence':'شواهد و روش','Meta':'فراپژوهش پس از انتشار','Evaluation':'ارزیابی','Release':'کنترل انتشار'}[group] if fa else group
         buttons=''.join(f'<button type="button" data-dossier-load data-dossier-key="{dossier_key(path)}" data-dossier-path="{html.escape(path,quote=True)}" data-dossier-title="{html.escape(title,quote=True)}">{html.escape(title)}</button>' for title,path in items)
         dialog_groups.append(f'<section class="dossier-group"><h3>{group_label}</h3>{buttons}</section>')
     docs={dossier_key(path):path for _,_,path in files}
