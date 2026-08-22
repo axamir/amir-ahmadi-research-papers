@@ -94,3 +94,8 @@ html[lang='fa'] body{line-height:1.82}.reading-page.rtl .markdown-body{font-size
 }
 
 @media(prefers-reduced-motion:reduce){.reading-progress{display:none}}
+
+/* Dedicated treatment for the TCSAI case study: readable title and a high-contrast cover. */
+.reading-page[data-paper-slug='when-a-claim-meets-a-test'] .reading-hero h1{font-size:clamp(2.8rem,5vw,4.9rem);line-height:.97;max-width:20ch;letter-spacing:-.045em}
+.reading-cover.tcsai{background:radial-gradient(circle at 80% 18%,rgba(185,217,207,.28),transparent 22%),radial-gradient(circle at 16% 88%,rgba(83,144,143,.38),transparent 28%),linear-gradient(135deg,#101c25 0%,#1b3e4b 54%,#365f61 100%)}
+.reading-cover.tcsai strong{max-width:17ch;font-size:clamp(2.8rem,4.8vw,4.6rem)}
