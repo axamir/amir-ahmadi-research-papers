@@ -12,6 +12,7 @@ This is the only evidence layer proposed for public distribution. It intentional
 | PUB-06 | `methods/data-freeze.md` | Anti-post-hoc testing rule and Phase II admission criteria. |
 | PUB-07 | `evidence/EVIDENCE-MANIFEST.md` | Hash references and custody descriptions, excluding raw binary uploads. |
 | PUB-08 | `publication/RIGHT-OF-REPLY.md` plus completed delivery log | Correction/right-of-reply policy. |
+| PUB-09 | `site/assets/evidence/tcsai-screen-recording-2026-08-22.m4v` | Public 960×540 derivative of the supplied 375 MB screen recording; SHA-256 `7d8652bfa72348793100bbaa2656283571608066094ece95c6cf861f852887d7`. It documents the recorded interface session and does not establish undisclosed backend state. |
 
 ## Explicit exclusions
 
@@ -19,5 +20,7 @@ This is the only evidence layer proposed for public distribution. It intentional
 - `evidence/raw-local/RAW-002-screen-recording.mov`
 - `evidence/raw/DER-002-exact-visual-capture.pdf`
 - All `EXH-*.png` originals, unless a distinct redacted derivative is reviewed and approved.
+
+The public compressed recording is a derivative, not a replacement for RAW-002. The original is retained separately in local custody.
 
 The hash references establish later comparison against held material; they do not invite public redistribution of that material.
