@@ -1,0 +1,13 @@
+# Key preserved artifacts captured 2026-08-22
+# SHA-256  relative artifact description
+0b4f2f0dd1d208435137c3d2c1e29bb73d8c2468bcd17668a0fb03e352f9ba94  interface/neurosapiens-chat-original.webarchive
+43ae4b627dc57c1c5b2aed52ee53fad56586ed25a8ee2f11996a63c6a2c26082  interface/primary-transcript-export.txt
+433314e9802a71bae93c9c5103d92a881b57edef7f50bc07dbe94fc07efaecc8  interface/visual-capture.pdf
+32708c3bbecacf20145cddb0d7ab416a75052d2ecf2c9b13f16ec6e6de59fdf8  interface/readable-derivative.pdf
+d26e253d49f11670a755948d104d73fd70cf5054e9a3c15b33a1e1dc421c813c  linkedin/linkedin-dm-visual-capture.pdf
+281cd35b63e58ed4f9ff568b375747da13aa5ad4e34c5dcb8a3145ce93fa7d67  browser-replication/Screenshot-2026-08-22-03.39.40.png
+1b2569d052f54b5f9f4e41d38eefeb8abd3d2aa40b7508749139f8aa17328134  browser-replication/Screenshot-2026-08-22-03.41.41.png
+
+# Important
+# These hashes establish integrity of the captured bytes after hashing.
+# They do not independently prove the state of an undisclosed remote backend before capture.
