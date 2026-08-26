@@ -6,6 +6,7 @@ This directory contains the bilingual public working paper:
 
 - [English](paper.en.md)
 - [فارسی](paper.fa.md)
+- [English PDF](output/pdf/continuity-governance.en.pdf)
 - [Conceptual architecture](assets/continuity-architecture.svg)
 - [LinkedIn cover — English](assets/cover.linkedin.en.png)
 - [LinkedIn cover — without text](assets/cover.linkedin.png)

@@ -137,6 +137,7 @@ This versioned conceptual position paper extends the Green Personalisation resea
 
 | Title | Date | DOI | English | فارسی | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| Continuity Governance for Long-Duration Critical Infrastructure | Aug 2026 | Pending | [Text](papers/2026-continuity-governance/paper.en.md) · [PDF](papers/2026-continuity-governance/output/pdf/continuity-governance.en.pdf) | [متن](papers/2026-continuity-governance/paper.fa.md) | 🧪 Public Working Paper v0.1.0 |
 | Living Decision Governance: An Executable Architecture for Continuous Human–AI Decision Governance | Aug 2026 | Pending | [Complete](papers/2026-living-decision-governance/LDG_COMPLETE.md) · [Microsite](papers/2026-living-decision-governance/website/index.html) | [نسخه جامع](papers/2026-living-decision-governance/LDG_COMPLETE.fa.md) | 🧪 Public Working Paper / Executable Artifact v0.2.0-draft |
 | From Green Personalisation to Relational Co-Evolution | Jul 2026 | Pending | [Text](papers/2026-relational-co-evolution/paper.en.md) | [متن](papers/2026-relational-co-evolution/paper.fa.md) | 🌐 Public Working Paper v0.2.0 |
 | Beyond Models: Toward Enduring Human–AI Collaborative Systems | Jul 2026 | Pending | [Text](2026/beyond-models-hacs/paper.en.md) | [متن](2026/beyond-models-hacs/paper.fa.md) | 🔄 v1.1.0-dev / v1.0.0 stable |

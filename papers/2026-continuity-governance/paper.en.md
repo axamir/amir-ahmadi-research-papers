@@ -21,6 +21,10 @@ keywords: [continuity governance, critical infrastructure, lunar infrastructure,
 **Document ID:** ARP-CG-2026-01  
 **Version:** 0.1.0 — Public Working Paper
 
+![Cover: Continuity Governance — A Fourth Layer Beyond Owner, Integrator, and Operator](assets/cover.linkedin.en.png)
+
+\newpage
+
 ## Abstract
 
 Long-duration critical infrastructure—illustrated here by a lunar installation—may outlive its founding company, operating contractor, software stack, and original decision-makers. A familiar division of responsibility assigns roles to an **Owner**, **Integrator**, and **Operator**. This paper argues that the division is incomplete when safe and legitimate operation depends on preserving the reasons, evidence, authority boundaries, and obligations that survive each handover. It proposes a fourth, non-operational layer: **Continuity**.
