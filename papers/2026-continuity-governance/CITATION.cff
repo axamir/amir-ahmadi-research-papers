@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Continuity Governance for Long-Duration Critical Infrastructure"
+subtitle: "A Fourth Layer Beyond Owner, Integrator, and Operator"
+type: article
+authors:
+  - family-names: Ahmadi
+    given-names: Amir
+    orcid: "https://orcid.org/0009-0000-0614-6869"
+date-released: 2026-08-26
+version: 0.1.0
+license: CC-BY-4.0
+repository-code: "https://github.com/axamir/amir-ahmadi-research-papers/tree/main/papers/2026-continuity-governance"
+keywords:
+  - continuity governance
+  - critical infrastructure
+  - lunar infrastructure
+  - provenance
+  - accountability
