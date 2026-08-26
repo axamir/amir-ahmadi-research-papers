@@ -248,7 +248,7 @@ def inject_home_metadata(path,lang):
 def write_sitemap():
     urls=[f'{BASE}/',f'{BASE}/fa/']
     for p in PAPERS:urls += [paper_url(p,lang) for lang in p.get('languages',('en','fa'))]
-    lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']+[f'  <url><loc>{html.escape(u)}</loc><lastmod>2026-08-22</lastmod></url>' for u in urls]+['</urlset>']; (OUT/'sitemap.xml').write_text('\n'.join(lines),encoding='utf-8')
+    lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']+[f'  <url><loc>{html.escape(u)}</loc><lastmod>2026-08-26</lastmod></url>' for u in urls]+['</urlset>']; (OUT/'sitemap.xml').write_text('\n'.join(lines),encoding='utf-8')
 
 def enforce_publication_surfaces():
     """Make the international surface English-only and Persian canonical-to-English."""

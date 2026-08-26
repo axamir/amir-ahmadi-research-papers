@@ -8,6 +8,7 @@ OUT=ROOT/'_site'
 BASE='https://axamir.github.io/amir-ahmadi-research-papers'
 
 PAPERS={
+'continuity-governance':('Continuity Governance for Long-Duration Critical Infrastructure','Public Working Paper','Owner → Integrator → Operator → Continuity',('#0b1721','#274754','#9fd9d3'),'continuity'),
 'living-decision-governance':('Living Decision Governance','Executable Research Artifact · LDG','Decision → Observe → Correct',('#0d1720','#315a55','#a7d7cf'),'rings'),
 'beyond-intelligence-ai-evolution':('Beyond Intelligence — AI Evolution','Research Paper','Capability → Relationship → Evolution',('#0d1319','#668f95','#8bbec0'),'trajectory'),
 'relational-co-evolution':('From Green Personalisation to Relational Co-Evolution','Public Working Paper','Relationship as unit of design',('#221829','#bc9079','#d2a58e'),'relation'),
@@ -43,7 +44,11 @@ def mix(a,b,t): return tuple(int(a[i]*(1-t)+b[i]*t) for i in range(3))
 def draw_motif(d,motif,accent):
     a=rgb(accent)
     soft=tuple(min(255,x+25) for x in a)
-    if motif=='rings':
+    if motif=='continuity':
+        for r in (58,116,176): d.ellipse((940-r,250-r,940+r,250+r),outline=accent if r==58 else soft,width=2)
+        d.line((764,250,1116,250),fill=accent,width=2)
+        d.line((940,74,940,426),fill=soft,width=1)
+    elif motif=='rings':
         for r in (70,128,190): d.ellipse((910-r,180-r,910+r,180+r),outline=soft,width=2)
         d.ellipse((898,168,922,192),fill=accent)
     elif motif=='trajectory':
