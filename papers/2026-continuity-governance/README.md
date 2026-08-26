@@ -7,7 +7,8 @@ This directory contains the bilingual public working paper:
 - [English](paper.en.md)
 - [فارسی](paper.fa.md)
 - [Conceptual architecture](assets/continuity-architecture.svg)
-- [LinkedIn cover](assets/cover.linkedin.png)
+- [LinkedIn cover — English](assets/cover.linkedin.en.png)
+- [LinkedIn cover — without text](assets/cover.linkedin.png)
 
 **Author:** Amir Ahmadi  
 **Affiliation:** Independent Researcher  
