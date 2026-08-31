@@ -4,69 +4,87 @@
 
 **Author:** Amir Ahmadi  
 **Year:** 2026  
-**Status:** Working paper / evidence-backed personal investigation
+**Current audited release:** **v0.1 — 31 August 2026**
 
-This paper examines a simple but difficult question: what is intuition actually good for when it points toward a real external event, but the first controls begin to weaken the causal story?
+This project asks a narrow but difficult question: what is intuition actually good for when it points toward a real external event, but the first controls begin to weaken the causal story?
 
-The investigation began with an unusual week of fatigue, sleepiness, muscular weakness, reduced exercise capacity, and difficulty sustaining deep work. Before checking any space-weather reports, the author formed an unusual hypothesis that something outside the body might have changed and looked toward solar activity.
+The investigation began with an unusual period of fatigue, sleepiness, muscular weakness, reduced exercise capacity and difficulty sustaining deep work. Before checking space-weather reports, an intuition directed attention toward solar activity. A real solar/geomagnetic sequence existed in the same broad period—but the behavioral record also contained important counterexamples.
 
-A real solar/geomagnetic sequence was present in the same broad period. But the behavioral record also contained important counterexamples, including days with geomagnetic activity and relatively strong computer use. The paper therefore treats intuition as a hypothesis generator rather than evidence.
-
-Core thesis:
+The project therefore treats intuition as a **hypothesis generator**, not as evidence.
 
 > **Anomaly Detection ≠ Causal Identification**
 
-and:
-
 > **Maybe intuition is not a way of knowing. Maybe it is a way of noticing where knowing should begin.**
 
-## Repository structure
+## Read the audited release
 
-- `paper.en.md` — English working paper
-- `paper.fa.md` — Persian version
-- `evidence/` — evidence manifests, provenance and source-archive documentation
-- `data/` — extracted behavioral and environmental datasets
-- `figures/` — article-ready visualizations
-- `methods/` — analysis plan, assumptions, controls, and limitations
-- `references/` — source notes and citations
+- **English:** [`releases/v0.1/paper.en.md`](releases/v0.1/paper.en.md)
+- **فارسی:** [`releases/v0.1/paper.fa.md`](releases/v0.1/paper.fa.md)
+- **Release notes:** [`releases/v0.1/RELEASE_NOTES.md`](releases/v0.1/RELEASE_NOTES.md)
+- **Source audit:** [`references/audit-sources-v0.1.md`](references/audit-sources-v0.1.md)
+
+The root-level `paper.en.md` and `paper.fa.md` are retained as historical working drafts. **v0.1 is the canonical audited text.** In particular, the initial English draft contained an August 18 Mac Screen Time transcription of `11h02m`; the audited value in the dataset and v0.1 is **11h22m (682 minutes)**.
 
 ## Figure 1
 
 ![Behavioral timeline with selected space-weather markers](figures/figure-01-behavior-space-weather.svg)
 
-Figure 1 places the reconstructed Mac behavioral record on one timeline with a deliberately small set of selected space-weather markers. The shaded interval is the retrospectively reported unusual-state window. The figure is descriptive, not causal: Screen Time is a behavioral proxy, and the environmental markers are not evidence of biological effect.
+Figure 1 places daily Mac activity beside selected audited space-weather markers. It is descriptive and must not be interpreted as evidence of causality.
 
-A key counterexample is visible around August 18–19: observed Kp≈5 / Kp≈5+ intervals occurred while Mac activity remained comparatively high. This weakens a simple model in which geomagnetic activity alone is sufficient to produce the later behavioral state.
+## Project structure
+
+- `releases/v0.1/` — canonical audited English and Persian manuscripts
+- `paper.en.md`, `paper.fa.md` — historical working drafts
+- `evidence/` — evidence manifest, screenshot inventory and package metadata
+- `data/` — extracted behavioral and environmental datasets
+- `figures/` — article-ready visualizations
+- `methods/` — analysis plan, assumptions, controls and limitations
+- `references/` — factual audit trail and scientific literature
+
+## Current behavioral finding
+
+Across the extracted Mac dataset, average total Mac activity was approximately **9h29/day during Aug 15–22** and **5h27/day during Aug 23–30**, a decline of roughly **43%**. The Productivity & Finance category declined much less, from roughly **3h46/day to 3h31/day** (~7%).
+
+This does not establish fatigue or impairment, but it is more consistent with a reduction in sustained active engagement than with a complete loss of productive capacity. Screen Time categories remain coarse behavioral proxies.
+
+The iPhone record provides an additional contrast: on Aug 30, roughly 11h24 of 12h54 total Screen Time was Social + Entertainment, while Aug 10 had 16h20 total use with roughly 9h25 categorized as Productivity & Finance. Total device time alone is therefore a poor state proxy in this record.
+
+## Space-weather control logic
+
+The project explicitly preserves counterevidence. SIDC reported minor-storm-level NOAA Kp intervals around Aug 18–19, yet Mac activity remained approximately **11h22** and **11h24** on those days. Conversely, SIDC described the preceding 24 hours on Aug 27 as globally quiet (Kp 1–2) while part of the behavioral anomaly was already present in the broader late-August period.
+
+This weakens the simple hypothesis:
+
+> `higher geomagnetic activity → lower functioning`
+
+It does not rule out every possible environmental hypothesis, but the project does not rescue the original idea by freely changing variables or time lags after seeing the data.
+
+## Locked next-phase analysis
+
+The prospective phase predefines five environmental variables:
+
+`Kp`, `Dst`, `IMF Bz`, `solar-wind speed`, `solar-wind density`
+
+with fixed lag windows:
+
+`0h`, `6h`, `12h`, `24h`
+
+Quiet periods, stronger events with normal behavior, and poor-behavior periods during quiet conditions must remain in the dataset.
 
 ## Methodological position
 
-This is not presented as evidence that space weather caused the reported symptoms. The current evidence supports a behavioral state change and confirms that measurable space-weather events occurred in the same broad period, but a direct causal relationship has not been established.
+This project is **not** presented as evidence that space weather caused the reported symptoms. The current evidence supports a behavioral state change and confirms that measurable solar/geomagnetic events occurred in the same broad period, but a direct causal relationship has not been established.
 
-The project is explicitly designed to preserve counterevidence and to make the initial hypothesis easy to falsify.
+Forecasts and watches are kept separate from observations. Planetary Kp is not treated as a local exposure measurement. Screen Time is not treated as a biomarker. Proposed biological mechanisms in the literature are background hypotheses, not explanations of this individual episode.
 
 ## Evidence policy
 
-Original screenshots are treated as source records rather than illustrations. Numerical values used in analysis must remain traceable from source capture → manifest → extracted dataset → figure. A SHA-256 manifest (`evidence/raw-evidence-manifest.csv`) records the canonical filename, original capture filename, byte size and digest for 40 reviewed source images.
+Original screenshots are treated as source records. Numerical values should remain traceable from source screenshot → manifest → extracted dataset → analysis → figure. The SHA-256 source manifest records canonical filename, original capture filename, byte size and digest for the reviewed image set.
 
-The source set was visually reviewed for unrelated sensitive identifiers. The Mac captures did not show unrelated personal identifiers; the iPhone captures display the account label `@@` but no unrelated private message, contact, financial-account number or notification content was observed in the reviewed set.
+The source captures were visually reviewed for unrelated sensitive identifiers. Binary evidence packages have been prepared separately; the repository contains their manifests and integrity metadata. Binary screenshot upload remains a separate publication step from the text/SVG audit trail.
 
-## Current status
+## Status
 
-Completed so far:
+**v0.1 is ready for public reading as a transparent working research essay.** It is not a medical conclusion and not a causal finding about space weather.
 
-- English and Persian working-paper drafts
-- Mac daily Screen Time dataset for August 1–31
-- selected iPhone Screen Time dataset
-- initial observed/forecast-separated space-weather event table
-- evidence mapping and SHA-256 source manifest for 40 unique screenshots
-- initial falsification/control notes
-- Figure 1 behavioral/space-weather timeline
-
-Still pending before a public evidence release:
-
-- commit of the binary screenshot source package into the public repository
-- fuller environmental time-series acquisition (Kp, Dst, IMF Bz, solar-wind speed and density)
-- fixed-lag analysis using the preregistered 0/6/12/24-hour windows
-- prospective blinded follow-up
-
-The binary screenshot package is intentionally treated as a separate release step so the paper does not imply that a hash manifest alone is equivalent to publicly available raw evidence.
+The next meaningful upgrade is prospective blinded observation with better physiological data and complete observed space-weather time series.
