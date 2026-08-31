@@ -1,0 +1,13 @@
+Before I Knew What to Measure — evidence package hashes
+Generated: 2026-08-31
+
+SHA-256
+f4dc10bf46a1816eba0065c7b6d06e542cc9090c0e77e9d1f269fa45c9bd7a41  before-i-knew-what-to-measure-raw-evidence.zip
+fe36ba765e4b9df7139552f8ce5703610e4bec284de003ed8fbd8dbc3e4374c8  before-i-knew-what-to-measure-public-evidence.zip
+17e4eef870e9d42d51019a97d6eacc8015a92a8900dac46da8c3bfcc2ccbb93e  figure-01-behavior-space-weather.png
+d78b94679bf643fb2a1bce7024dbd1046dcd94834b133640555bc4876df57507  figure-01-compact.svg
+
+Notes:
+- raw-evidence.zip contains 40 unique source captures with canonical filenames plus the raw evidence manifest.
+- public-evidence.zip contains review-friendly JPEG derivatives of the same 40 source captures plus the manifest.
+- The repository-native Figure 1 is stored as figures/figure-01-behavior-space-weather.svg; the compact SVG hash above corresponds to the locally generated source used for that commit.
