@@ -24,11 +24,19 @@ and:
 
 - `paper.en.md` — English working paper
 - `paper.fa.md` — Persian version
-- `evidence/` — de-identified source screenshots and evidence manifest
+- `evidence/` — evidence manifests, provenance and source-archive documentation
 - `data/` — extracted behavioral and environmental datasets
 - `figures/` — article-ready visualizations
 - `methods/` — analysis plan, assumptions, controls, and limitations
 - `references/` — source notes and citations
+
+## Figure 1
+
+![Behavioral timeline with selected space-weather markers](figures/figure-01-behavior-space-weather.svg)
+
+Figure 1 places the reconstructed Mac behavioral record on one timeline with a deliberately small set of selected space-weather markers. The shaded interval is the retrospectively reported unusual-state window. The figure is descriptive, not causal: Screen Time is a behavioral proxy, and the environmental markers are not evidence of biological effect.
+
+A key counterexample is visible around August 18–19: observed Kp≈5 / Kp≈5+ intervals occurred while Mac activity remained comparatively high. This weakens a simple model in which geomagnetic activity alone is sufficient to produce the later behavioral state.
 
 ## Methodological position
 
@@ -38,8 +46,27 @@ The project is explicitly designed to preserve counterevidence and to make the i
 
 ## Evidence policy
 
-Original screenshots may be preserved as source evidence, but personal or irrelevant identifying information should be redacted before public release. Numerical values used in analysis should be traceable from raw evidence to extracted datasets and figures.
+Original screenshots are treated as source records rather than illustrations. Numerical values used in analysis must remain traceable from source capture → manifest → extracted dataset → figure. A SHA-256 manifest (`evidence/raw-evidence-manifest.csv`) records the canonical filename, original capture filename, byte size and digest for 40 reviewed source images.
+
+The source set was visually reviewed for unrelated sensitive identifiers. The Mac captures did not show unrelated personal identifiers; the iPhone captures display the account label `@@` but no unrelated private message, contact, financial-account number or notification content was observed in the reviewed set.
 
 ## Current status
 
-Initial narrative and hypothesis framework drafted. Evidence ingestion, structured transcription, timeline reconstruction, and prospective blinded follow-up remain in progress.
+Completed so far:
+
+- English and Persian working-paper drafts
+- Mac daily Screen Time dataset for August 1–31
+- selected iPhone Screen Time dataset
+- initial observed/forecast-separated space-weather event table
+- evidence mapping and SHA-256 source manifest for 40 unique screenshots
+- initial falsification/control notes
+- Figure 1 behavioral/space-weather timeline
+
+Still pending before a public evidence release:
+
+- commit of the binary screenshot source package into the public repository
+- fuller environmental time-series acquisition (Kp, Dst, IMF Bz, solar-wind speed and density)
+- fixed-lag analysis using the preregistered 0/6/12/24-hour windows
+- prospective blinded follow-up
+
+The binary screenshot package is intentionally treated as a separate release step so the paper does not imply that a hash manifest alone is equivalent to publicly available raw evidence.
