@@ -1,6 +1,6 @@
 cff-version: "1.2.0"
-message: "If you use or discuss this working paper, please cite this version."
-title: "Before I Knew What to Measure: Following an Intuition Through Behavioral Data, Space Weather, and the Search for What Actually Changed"
+message: "Please cite the working paper using the preferred citation below."
+title: "Before I Knew What to Measure — Evidence Package"
 type: dataset
 authors:
   - family-names: "Ahmadi"
@@ -8,7 +8,6 @@ authors:
 version: "0.1"
 date-released: "2026-08-31"
 repository: "https://github.com/axamir/amir-ahmadi-research-papers/tree/main/2026/before-i-knew-what-to-measure"
-url: "https://github.com/axamir/amir-ahmadi-research-papers/blob/main/2026/before-i-knew-what-to-measure/releases/v0.1/paper.en.md"
 license: "CC0-1.0"
 keywords:
   - "intuition"
@@ -21,4 +20,13 @@ keywords:
   - "self-tracking"
   - "falsification"
 abstract: >-
-  This evidence-backed personal investigation examines whether intuition can be useful as an early anomaly-detection signal without being treated as evidence of causation. A retrospectively reported period of fatigue, sleepiness, muscular weakness, reduced exercise capacity, and reduced ability to sustain deep work was reconstructed using Mac and iPhone behavioral traces and compared with selected space-weather observations. The record contains both temporal coincidence and important counterexamples. In particular, geomagnetically active intervals on August 18–19 occurred alongside comparatively high Mac activity, weakening a simple model in which geomagnetic activity alone is sufficient to explain the later behavioral state. The paper therefore treats intuition as a hypothesis generator and distinguishes anomaly detection from causal identification. No causal biological effect of space weather is claimed.
+  Versioned evidence package accompanying a working paper on intuition as hypothesis generation, behavioral anomaly detection, and the attempted falsification of a proposed space-weather explanation. The package contains article versions, extracted behavioral data, evidence provenance, methods, references, and figures. It does not establish or claim a causal biological effect of space weather.
+preferred-citation:
+  type: article
+  title: "Before I Knew What to Measure: Following an Intuition Through Behavioral Data, Space Weather, and the Search for What Actually Changed"
+  authors:
+    - family-names: "Ahmadi"
+      given-names: "Amir"
+  year: 2026
+  month: 8
+  url: "https://github.com/axamir/amir-ahmadi-research-papers/blob/main/2026/before-i-knew-what-to-measure/releases/v0.1/paper.en.md"
