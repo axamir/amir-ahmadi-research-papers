@@ -4,7 +4,8 @@
 
 **Author:** Amir Ahmadi  
 **Year:** 2026  
-**Current audited release:** **v0.1 — 31 August 2026**
+**Current audited release:** **v0.1 — 31 August 2026**  
+**Release state:** **FROZEN RESEARCH SNAPSHOT**
 
 This project asks a narrow but difficult question: what is intuition actually good for when it points toward a real external event, but the first controls begin to weaken the causal story?
 
@@ -16,12 +17,15 @@ The project therefore treats intuition as a **hypothesis generator**, not as evi
 
 > **Maybe intuition is not a way of knowing. Maybe it is a way of noticing where knowing should begin.**
 
-## Read the audited release
+## Read the frozen v0.1 release
 
 - **English:** [`releases/v0.1/paper.en.md`](releases/v0.1/paper.en.md)
 - **فارسی:** [`releases/v0.1/paper.fa.md`](releases/v0.1/paper.fa.md)
 - **Release notes:** [`releases/v0.1/RELEASE_NOTES.md`](releases/v0.1/RELEASE_NOTES.md)
+- **Archival manifest:** [`releases/v0.1/ARCHIVE_MANIFEST.md`](releases/v0.1/ARCHIVE_MANIFEST.md)
 - **Source audit:** [`references/audit-sources-v0.1.md`](references/audit-sources-v0.1.md)
+- **Citation metadata:** [`CITATION.cff`](CITATION.cff) / [`CITATION.bib`](CITATION.bib)
+- **Publication metadata:** [`PUBLICATION_METADATA.md`](PUBLICATION_METADATA.md)
 
 The root-level `paper.en.md` and `paper.fa.md` are retained as historical working drafts. **v0.1 is the canonical audited text.** In particular, the initial English draft contained an August 18 Mac Screen Time transcription of `11h02m`; the audited value in the dataset and v0.1 is **11h22m (682 minutes)**.
 
@@ -30,16 +34,6 @@ The root-level `paper.en.md` and `paper.fa.md` are retained as historical workin
 ![Behavioral timeline with selected space-weather markers](figures/figure-01-behavior-space-weather.svg)
 
 Figure 1 places daily Mac activity beside selected audited space-weather markers. It is descriptive and must not be interpreted as evidence of causality.
-
-## Project structure
-
-- `releases/v0.1/` — canonical audited English and Persian manuscripts
-- `paper.en.md`, `paper.fa.md` — historical working drafts
-- `evidence/` — evidence manifest, screenshot inventory and package metadata
-- `data/` — extracted behavioral and environmental datasets
-- `figures/` — article-ready visualizations
-- `methods/` — analysis plan, assumptions, controls and limitations
-- `references/` — factual audit trail and scientific literature
 
 ## Current behavioral finding
 
@@ -77,14 +71,18 @@ This project is **not** presented as evidence that space weather caused the repo
 
 Forecasts and watches are kept separate from observations. Planetary Kp is not treated as a local exposure measurement. Screen Time is not treated as a biomarker. Proposed biological mechanisms in the literature are background hypotheses, not explanations of this individual episode.
 
-## Evidence policy
+## Evidence and archive policy
 
 Original screenshots are treated as source records. Numerical values should remain traceable from source screenshot → manifest → extracted dataset → analysis → figure. The SHA-256 source manifest records canonical filename, original capture filename, byte size and digest for the reviewed image set.
 
-The source captures were visually reviewed for unrelated sensitive identifiers. Binary evidence packages have been prepared separately; the repository contains their manifests and integrity metadata. Binary screenshot upload remains a separate publication step from the text/SVG audit trail.
+A typeset v0.1 PDF and an archival ZIP snapshot have been generated outside the repository. They are not represented here as GitHub-hosted binary files unless and until they are actually deposited through a binary-capable channel. The archival manifest defines the freeze and integrity rules for this release.
+
+## Freeze policy
+
+**v0.1 is frozen as the first auditable research snapshot.** Substantive changes to claims, measurements, methods or interpretation must move to a later version rather than silently rewriting v0.1. A DOI may be appended after an archival deposit without changing the underlying result, with that metadata change recorded in the changelog.
 
 ## Status
 
-**v0.1 is ready for public reading as a transparent working research essay.** It is not a medical conclusion and not a causal finding about space weather.
+**v0.1 is ready for public reading and archival deposit as a transparent working research essay.** It is not a medical conclusion and not a causal finding about space weather.
 
-The next meaningful upgrade is prospective blinded observation with better physiological data and complete observed space-weather time series.
+The next research upgrade is prospective blinded observation with better physiological data and complete observed space-weather time series. The next publication action is deposit of the frozen archival package and assignment of its permanent identifier.
