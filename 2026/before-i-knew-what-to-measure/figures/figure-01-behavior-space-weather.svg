@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.small{font-size:12px}.med{font-size:15px}.title{font-size:22px;font-weight:700}.note{font-size:12px;fill:#444}</style>
+<text x="75" y="34" class="title">Behavioral timeline with selected space-weather markers — August 2026</text>
+<text x="75" y="55" class="note">Mac Screen Time is a behavioral proxy, not a physiological measurement. Aug 31 is partial.</text>
+<rect x="878.0" y="70" width="255.5" height="405" fill="#777" opacity="0.10"/>
+<line x1="75" y1="475.0" x2="1170" y2="475.0" stroke="#ddd"/><text x="63" y="479.0" text-anchor="end" class="small">0</text>
+<line x1="75" y1="417.1" x2="1170" y2="417.1" stroke="#ddd"/><text x="63" y="421.1" text-anchor="end" class="small">2</text>
+<line x1="75" y1="359.3" x2="1170" y2="359.3" stroke="#ddd"/><text x="63" y="363.3" text-anchor="end" class="small">4</text>
+<line x1="75" y1="301.4" x2="1170" y2="301.4" stroke="#ddd"/><text x="63" y="305.4" text-anchor="end" class="small">6</text>
+<line x1="75" y1="243.6" x2="1170" y2="243.6" stroke="#ddd"/><text x="63" y="247.6" text-anchor="end" class="small">8</text>
+<line x1="75" y1="185.7" x2="1170" y2="185.7" stroke="#ddd"/><text x="63" y="189.7" text-anchor="end" class="small">10</text>
+<line x1="75" y1="127.9" x2="1170" y2="127.9" stroke="#ddd"/><text x="63" y="131.9" text-anchor="end" class="small">12</text>
+<line x1="75" y1="70.0" x2="1170" y2="70.0" stroke="#ddd"/><text x="63" y="74.0" text-anchor="end" class="small">14</text>
+<text x="75.0" y="510" text-anchor="middle" class="small">Aug 1</text><text x="221.0" y="510" text-anchor="middle" class="small">Aug 5</text><text x="367.0" y="510" text-anchor="middle" class="small">Aug 9</text><text x="513.0" y="510" text-anchor="middle" class="small">Aug 13</text><text x="659.0" y="510" text-anchor="middle" class="small">Aug 17</text><text x="805.0" y="510" text-anchor="middle" class="small">Aug 21</text><text x="951.0" y="510" text-anchor="middle" class="small">Aug 25</text><text x="1097.0" y="510" text-anchor="middle" class="small">Aug 29</text><text x="1170.0" y="510" text-anchor="middle" class="small">Aug 31</text>
+<line x1="695.5" y1="70" x2="695.5" y2="475" stroke="#666" stroke-dasharray="5,5" opacity="0.75"/><text x="699.5" y="85" class="small" transform="rotate(90 699.5 85)">Kp≈5</text>
+<line x1="732.0" y1="70" x2="732.0" y2="475" stroke="#666" stroke-dasharray="5,5" opacity="0.75"/><text x="736.0" y="85" class="small" transform="rotate(90 736.0 85)">Kp≈5+</text>
+<line x1="951.0" y1="70" x2="951.0" y2="475" stroke="#666" stroke-dasharray="5,5" opacity="0.75"/><text x="955.0" y="85" class="small" transform="rotate(90 955.0 85)">M6.9</text>
+<line x1="1024.0" y1="70" x2="1024.0" y2="475" stroke="#666" stroke-dasharray="5,5" opacity="0.75"/><text x="1028.0" y="85" class="small" transform="rotate(90 1028.0 85)">Kp 1–2</text>
+<line x1="1060.5" y1="70" x2="1060.5" y2="475" stroke="#666" stroke-dasharray="5,5" opacity="0.75"/><text x="1064.5" y="85" class="small" transform="rotate(90 1064.5 85)">Kp 1–2*</text>
+<polyline points="75.0,462.0 111.5,219.9 148.0,323.6 184.5,347.7 221.0,269.6 257.5,341.4 294.0,475.0 330.5,475.0 367.0,413.8 403.5,475.0 440.0,337.6 476.5,290.3 513.0,341.9 549.5,149.1 586.0,140.4 622.5,405.6 659.0,84.0 695.5,146.2 732.0,145.2 768.5,253.2 805.0,327.9 841.5,92.2 878.0,372.3 914.5,342.9 951.0,239.7 987.5,322.2 1024.0,331.8 1060.5,283.1 1097.0,328.4 1133.5,318.3 1170.0,447.5" fill="none" stroke="#1f77b4" stroke-width="3"/>
+<polyline points="75.0,473.1 111.5,376.2 148.0,438.4 184.5,447.0 221.0,422.0 257.5,432.6 294.0,475.0 330.5,475.0 367.0,464.4 403.5,475.0 440.0,447.5 476.5,441.7 513.0,433.5 549.5,376.2 586.0,314.9 622.5,465.8 659.0,287.9 695.5,372.8 732.0,339.0 768.5,416.2 805.0,453.3 841.5,277.3 878.0,401.2 914.5,376.2 951.0,357.8 987.5,369.4 1024.0,383.4 1060.5,372.8 1097.0,363.6 1133.5,361.7 1170.0,456.2" fill="none" stroke="#ff7f0e" stroke-width="3"/>
+<text x="18" y="272.5" class="med" transform="rotate(-90 18 272.5)">Hours</text>
+<line x1="75" y1="520" x2="105" y2="520" stroke="#1f77b4" stroke-width="3"/><text x="112" y="525" class="med">Mac total active time</text>
+<line x1="300" y1="520" x2="330" y2="520" stroke="#ff7f0e" stroke-width="3"/><text x="337" y="525" class="med">Mac Productivity &amp; Finance</text>
+<rect x="590" y="508" width="30" height="18" fill="#777" opacity="0.10"/><text x="627" y="523" class="med">Retrospective unusual-state window</text>
+<text x="850" y="545" class="small">* preceding 24 h in SIDC bulletin</text>
+</svg>
