@@ -1,0 +1,6 @@
+date,total_minutes,productivity_finance_minutes,social_minutes,entertainment_minutes,travel_minutes,utilities_minutes,other_minutes,source,notes
+2026-08-09,472,279,60,0,21,0,0,Apple Screen Time iPhone screenshot,"selected control day"
+2026-08-10,980,565,211,214,0,0,0,Apple Screen Time iPhone screenshot,"high total use with substantial productivity"
+2026-08-29,253,0,199,0,11,0,6,Apple Screen Time iPhone screenshot,"categories shown in screenshot"
+2026-08-30,774,0,256,428,0,12,0,Apple Screen Time iPhone screenshot,"social + entertainment = 684 min (88.4% of total)"
+2026-08-31,24,18,0,0,0,0,0,Apple Screen Time iPhone screenshot,"partial day; captured ~03:57 local"
